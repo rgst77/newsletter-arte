@@ -13,5 +13,8 @@
   {"nombre": "Francisco de Quevedo", "disciplina": "poesía", "siglo": "siglo XVII", "corriente_orientativa": "Baroque / Conceptismo"},
   {"nombre": "Le Corbusier", "disciplina": "arquitectura", "siglo": "siglo XX", "corriente_orientativa": "Modern Movement"},
   {"nombre": "Pablo Picasso", "disciplina": "pintura", "siglo": "siglo XX", "corriente_orientativa": "Cubism"},
-  {"nombre": "Federico García Lorca", "disciplina": "poesía", "siglo": "siglo XX", "corriente_orientativa": "Generation of '27"}
+  {"nombre": "Federico García Lorca", "disciplina": "poesía", "siglo": "siglo XX", "corriente_orientativa": "Generation of '27"},
+  {"nombre": "Zaha Hadid", "disciplina": "arquitectura", "siglo": "siglo XXI", "corriente_orientativa": "Parametricism / Deconstructivism"},
+  {"nombre": "Renzo Piano", "disciplina": "arquitectura", "siglo": "siglo XXI", "corriente_orientativa": "High-tech architecture"},
+  {"nombre": "Louise Glück", "disciplina": "poesía", "siglo": "siglo XXI", "corriente_orientativa": "Contemporary American poetry"}
 ]

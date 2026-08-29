@@ -38,16 +38,25 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
     flashcard = redactar(notas, imagenes, modelo_redactor)
     resultado = verificar(flashcard, notas, modelo_verificador)
 
+    RUTA_SALIDA.mkdir(exist_ok=True)
+    nombre_archivo = resultado.flashcard.nombre.lower().replace(" ", "_")
+    ruta_html = RUTA_SALIDA / f"{nombre_archivo}.html"
+    ruta_html.write_text(renderizar_html(resultado.flashcard), encoding="utf-8")
+
+    # Se guarda la ruta relativa (no absoluta de esta máquina) porque el HTML
+    # vive en el propio repo público: es el archivo histórico, sin base de
+    # datos aparte.
     registrar_envio(
         RegistroEnvio(
             nombre=autor.nombre,
             corriente=flashcard.corriente,
             periodo=flashcard.periodo,
             siglo=solicitud.siglo,
+            archivo_html=str(ruta_html.relative_to(Path(__file__).resolve().parent)),
         )
     )
 
-    return resultado
+    return resultado, ruta_html
 
 
 if __name__ == "__main__":
@@ -58,7 +67,7 @@ if __name__ == "__main__":
         or "cualquiera",
     )
 
-    resultado = generar_newsletter(solicitud)
+    resultado, ruta_html = generar_newsletter(solicitud)
 
     print(f"\nFiabilidad: {resultado.fiabilidad}")
     if resultado.advertencias:
@@ -66,10 +75,6 @@ if __name__ == "__main__":
         for advertencia in resultado.advertencias:
             print(f" - {advertencia}")
 
-    RUTA_SALIDA.mkdir(exist_ok=True)
-    nombre_archivo = resultado.flashcard.nombre.lower().replace(" ", "_")
-    ruta_html = RUTA_SALIDA / f"{nombre_archivo}.html"
-    ruta_html.write_text(renderizar_html(resultado.flashcard), encoding="utf-8")
     print(f"\nNewsletter guardado en: {ruta_html}")
 
     gasto = resumen_gasto()

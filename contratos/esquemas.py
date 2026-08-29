@@ -61,6 +61,9 @@ class RegistroEnvio(BaseModel):
     corriente: str
     periodo: str
     siglo: str
+    archivo_html: str = Field(
+        default="", description="Ruta relativa en el repo al HTML enviado, para archivo público"
+    )
     fecha_envio: datetime = Field(default_factory=datetime.now)
 
 
