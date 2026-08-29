@@ -1,0 +1,17 @@
+[
+  {"nombre": "Auguste Rodin", "disciplina": "escultura", "siglo": "siglo XIX", "corriente_orientativa": "Sculptural Impressionism"},
+  {"nombre": "Camille Claudel", "disciplina": "escultura", "siglo": "siglo XIX", "corriente_orientativa": "Symbolism"},
+  {"nombre": "Antoni Gaudí", "disciplina": "arquitectura", "siglo": "siglo XIX", "corriente_orientativa": "Catalan Modernism"},
+  {"nombre": "Eugène Delacroix", "disciplina": "pintura", "siglo": "siglo XIX", "corriente_orientativa": "Romanticism"},
+  {"nombre": "Charles Baudelaire", "disciplina": "poesía", "siglo": "siglo XIX", "corriente_orientativa": "Symbolism"},
+  {"nombre": "Gustave Eiffel", "disciplina": "arquitectura", "siglo": "siglo XIX", "corriente_orientativa": "Iron architecture"},
+  {"nombre": "Filippo Brunelleschi", "disciplina": "arquitectura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
+  {"nombre": "Donatello", "disciplina": "escultura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
+  {"nombre": "Sandro Botticelli", "disciplina": "pintura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
+  {"nombre": "Gian Lorenzo Bernini", "disciplina": "escultura", "siglo": "siglo XVII", "corriente_orientativa": "Baroque"},
+  {"nombre": "Francisco de Zurbarán", "disciplina": "pintura", "siglo": "siglo XVII", "corriente_orientativa": "Spanish Baroque"},
+  {"nombre": "Francisco de Quevedo", "disciplina": "poesía", "siglo": "siglo XVII", "corriente_orientativa": "Baroque / Conceptismo"},
+  {"nombre": "Le Corbusier", "disciplina": "arquitectura", "siglo": "siglo XX", "corriente_orientativa": "Modern Movement"},
+  {"nombre": "Pablo Picasso", "disciplina": "pintura", "siglo": "siglo XX", "corriente_orientativa": "Cubism"},
+  {"nombre": "Federico García Lorca", "disciplina": "poesía", "siglo": "siglo XX", "corriente_orientativa": "Generation of '27"}
+]
