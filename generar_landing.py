@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+from plantillas.archivo import cargar_incluidos, tarjeta_html
+
+RUTA_SALIDA = Path(__file__).resolve().parent / "index.html"
+
+# El formulario NO está conectado a nada todavía (no hay Supabase montado):
+# solo confirma visualmente y avisa de que las suscripciones aún no están
+# abiertas. Nunca debe fingir que guarda un email que en realidad se pierde.
+SCRIPT_FORMULARIO = """
+<script>
+  document.getElementById('form-suscripcion').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('mensaje-formulario').textContent =
+      "Thanks for the interest — sign-ups aren't open yet. Check back soon.";
+  });
+</script>
+"""
+
+
+def generar() -> None:
+    destacados = cargar_incluidos()[:3]
+    tarjetas = "".join(tarjeta_html(r, prefijo_ruta="") for r in destacados)
+
+    RUTA_SALIDA.write_text(
+        f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -38,34 +63,7 @@
 
     <p style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; color:#6b6b6b; margin:0 0 24px 0;">SEE A REAL ISSUE</p>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:24px; margin-bottom:32px;">
-      
-    <a href="salida/sandro_botticelli.html" style="text-decoration:none; display:block;">
-      <div style="height:220px; overflow:hidden; border:1px solid #222222; position:relative; background:#0a0a0a;">
-        <iframe src="salida/sandro_botticelli.html" title="Sandro Botticelli"
-                style="width:600px; height:900px; border:0; transform:scale(0.4); transform-origin:top left; pointer-events:none;"
-                tabindex="-1"></iframe>
-      </div>
-      <p style="margin:12px 0 0 0; font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:18px; font-weight:900; color:#f5f5f5;">Sandro Botticelli</p>
-      <p style="margin:2px 0 0 0; font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; letter-spacing:0.5px; color:#6b6b6b;">15TH CENTURY &nbsp;/&nbsp; Early Renaissance</p>
-    </a>
-    <a href="salida/gian_lorenzo_bernini.html" style="text-decoration:none; display:block;">
-      <div style="height:220px; overflow:hidden; border:1px solid #222222; position:relative; background:#0a0a0a;">
-        <iframe src="salida/gian_lorenzo_bernini.html" title="Gian Lorenzo Bernini"
-                style="width:600px; height:900px; border:0; transform:scale(0.4); transform-origin:top left; pointer-events:none;"
-                tabindex="-1"></iframe>
-      </div>
-      <p style="margin:12px 0 0 0; font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:18px; font-weight:900; color:#f5f5f5;">Gian Lorenzo Bernini</p>
-      <p style="margin:2px 0 0 0; font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; letter-spacing:0.5px; color:#6b6b6b;">17TH CENTURY &nbsp;/&nbsp; Baroque</p>
-    </a>
-    <a href="salida/le_corbusier.html" style="text-decoration:none; display:block;">
-      <div style="height:220px; overflow:hidden; border:1px solid #222222; position:relative; background:#0a0a0a;">
-        <iframe src="salida/le_corbusier.html" title="Le Corbusier"
-                style="width:600px; height:900px; border:0; transform:scale(0.4); transform-origin:top left; pointer-events:none;"
-                tabindex="-1"></iframe>
-      </div>
-      <p style="margin:12px 0 0 0; font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:18px; font-weight:900; color:#f5f5f5;">Le Corbusier</p>
-      <p style="margin:2px 0 0 0; font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; letter-spacing:0.5px; color:#6b6b6b;">20TH CENTURY &nbsp;/&nbsp; Modern Movement</p>
-    </a>
+      {tarjetas}
     </div>
     <a href="archivo/index.html" style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; font-weight:700; letter-spacing:0.5px; color:#00cc00; text-decoration:none;">
       Browse the full archive &rarr;
@@ -75,14 +73,13 @@
       Built in the open — <a href="https://github.com/rgst77/newsletter-arte" style="color:#6b6b6b;">source on GitHub</a>
     </p>
   </div>
-  
-<script>
-  document.getElementById('form-suscripcion').addEventListener('submit', function (e) {
-    e.preventDefault();
-    document.getElementById('mensaje-formulario').textContent =
-      "Thanks for the interest — sign-ups aren't open yet. Check back soon.";
-  });
-</script>
-
+  {SCRIPT_FORMULARIO}
 </body>
-</html>
+</html>""",
+        encoding="utf-8",
+    )
+    print(f"Landing generated with {len(destacados)} featured issues -> {RUTA_SALIDA}")
+
+
+if __name__ == "__main__":
+    generar()
