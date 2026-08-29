@@ -32,7 +32,9 @@ HERRAMIENTA_ENTREGAR_BIOGRAFIA = DefinicionHerramienta(
 )
 
 
-def redactar(notas: NotasAutor, imagenes: list[ImagenObra], modelo: ModeloLLM) -> FlashcardNewsletter:
+def redactar(
+    notas: NotasAutor, disciplina: str, siglo: str, imagenes: list[ImagenObra], modelo: ModeloLLM
+) -> FlashcardNewsletter:
     fuentes_texto = "\n".join(f"- {f.titulo}: {f.url}" for f in notas.fuentes)
     historial = [
         {
@@ -62,6 +64,8 @@ def redactar(notas: NotasAutor, imagenes: list[ImagenObra], modelo: ModeloLLM) -
                 # nunca los regenera el LLM: evita que invente o reescriba URLs.
                 return FlashcardNewsletter(
                     nombre=notas.nombre,
+                    disciplina=disciplina,
+                    siglo=siglo,
                     corriente=notas.corriente,
                     periodo=notas.periodo,
                     biografia=entrega.argumentos["biografia"],

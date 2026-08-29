@@ -35,7 +35,7 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
     imagenes = elegir_imagenes(notas.nombre, notas.titulos_obras_conocidas, cantidad=3)
     logger.info(f"Imágenes encontradas: {len(imagenes)}/3")
 
-    flashcard = redactar(notas, imagenes, modelo_redactor)
+    flashcard = redactar(notas, autor.disciplina, autor.siglo, imagenes, modelo_redactor)
     resultado = verificar(flashcard, notas, modelo_verificador)
 
     RUTA_SALIDA.mkdir(exist_ok=True)

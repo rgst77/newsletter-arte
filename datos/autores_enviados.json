@@ -4,6 +4,7 @@
     "corriente": "Arte Moderno y Simbolismo (con influencias de impresionismo escultórico, romanticismo y naturalismo realista)",
     "periodo": "1840-1917 (actividad artística: c. 1860-1917)",
     "siglo": "siglo XIX",
+    "archivo_html": "",
     "fecha_envio": "2026-08-29T13:19:47.542192"
   },
   {
@@ -11,6 +12,15 @@
     "corriente": "Modernism",
     "periodo": "1879-1905",
     "siglo": "siglo XIX",
+    "archivo_html": "",
     "fecha_envio": "2026-08-29T13:31:45.064916"
+  },
+  {
+    "nombre": "Antoni Gaudí",
+    "corriente": "Catalan Modernisme",
+    "periodo": "1852-1926 (active 1878-1926)",
+    "siglo": "siglo XIX",
+    "archivo_html": "salida/antoni_gaudí.html",
+    "fecha_envio": "2026-08-29T13:55:12.359189"
   }
 ]

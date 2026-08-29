@@ -43,6 +43,8 @@ class ImagenObra(BaseModel):
 
 class FlashcardNewsletter(BaseModel):
     nombre: str
+    disciplina: str
+    siglo: str
     corriente: str
     periodo: str
     biografia: str = Field(..., description="3 a 5 frases sobre el autor")
