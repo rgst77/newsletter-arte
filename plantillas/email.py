@@ -23,16 +23,6 @@ VERDE_MARCA = "#00cc00"
 GRIS_TEXTO = "#a3a3a3"
 GRIS_TENUE = "#6b6b6b"
 
-SIGLOS_EN = {
-    "siglo XV": "15TH CENTURY",
-    "siglo XVI": "16TH CENTURY",
-    "siglo XVII": "17TH CENTURY",
-    "siglo XVIII": "18TH CENTURY",
-    "siglo XIX": "19TH CENTURY",
-    "siglo XX": "20TH CENTURY",
-    "siglo XXI": "21ST CENTURY",
-}
-
 DISCIPLINAS_EN = {
     "escultura": "SCULPTURE",
     "arquitectura": "ARCHITECTURE",
@@ -40,16 +30,41 @@ DISCIPLINAS_EN = {
     "poesía": "POETRY",
 }
 
+_NUMEROS_ROMANOS = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
-def _tag(texto: str, fondo: str, color_texto: str, borde: str = "") -> str:
-    estilo_borde = f"border:1px solid {borde};" if borde else ""
-    return f"""<td style="padding:0 8px 8px 0;">
-      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
-        <td style="background-color:{fondo}; {estilo_borde} padding:6px 12px;">
-          <span style="font-family:{FUENTE_TAG}; font-size:11px; font-weight:700; letter-spacing:1.5px; color:{color_texto};">{html.escape(texto)}</span>
-        </td>
-      </tr></table>
-    </td>"""
+
+def _romano_a_entero(romano: str) -> int:
+    total, anterior = 0, 0
+    for caracter in reversed(romano):
+        valor = _NUMEROS_ROMANOS[caracter]
+        total += -valor if valor < anterior else valor
+        anterior = max(anterior, valor)
+    return total
+
+
+def _ordinal(n: int) -> str:
+    sufijo = "TH" if 10 <= n % 100 <= 20 else {1: "ST", 2: "ND", 3: "RD"}.get(n % 10, "TH")
+    return f"{n}{sufijo}"
+
+
+def _siglo_a_ordinal(siglo: str) -> str:
+    # Deriva el ordinal a partir del número romano en vez de un diccionario a
+    # mano, para que ampliar el catálogo a más siglos nunca requiera acordarse
+    # de tocar la plantilla: la coherencia visual queda garantizada por diseño.
+    partes = siglo.upper().split()
+    if len(partes) == 2 and partes[0] == "SIGLO":
+        try:
+            return _ordinal(_romano_a_entero(partes[1]))
+        except KeyError:
+            pass
+    return siglo.upper()
+
+
+def _tag(etiqueta: str, valor: str, fondo: str, color_texto: str, borde: str = "") -> str:
+    estilo_borde = f"border:1px solid {borde};" if borde else "border:1px solid transparent;"
+    return f"""<span style="display:inline-block; background-color:{fondo}; {estilo_borde} padding:6px 12px; margin:0 8px 8px 0;">
+      <span style="font-family:{FUENTE_TAG}; font-size:11px; font-weight:400; letter-spacing:1px; color:{color_texto}; opacity:0.75;">{html.escape(etiqueta)}: </span><span style="font-family:{FUENTE_TAG}; font-size:11px; font-weight:700; letter-spacing:1px; color:{color_texto};">{html.escape(valor)}</span>
+    </span>"""
 
 
 def _bloque_imagen(url_imagen: str, titulo_obra: str, creditos: str, url_fuente: str) -> str:
@@ -99,13 +114,13 @@ def _footer() -> str:
 
 
 def renderizar_html(flashcard: FlashcardNewsletter) -> str:
-    siglo_tag = SIGLOS_EN.get(flashcard.siglo, flashcard.siglo.upper())
-    disciplina_tag = DISCIPLINAS_EN.get(flashcard.disciplina, flashcard.disciplina.upper())
+    siglo_valor = _siglo_a_ordinal(flashcard.siglo)
+    disciplina_valor = DISCIPLINAS_EN.get(flashcard.disciplina, flashcard.disciplina.upper())
 
     fila_tags = (
-        _tag(siglo_tag, NEGRO_CHIP, "#ffffff", borde="#333333")
-        + _tag(disciplina_tag, VERDE_MARCA, "#0a0a0a")
-        + _tag(flashcard.corriente.upper(), "#ffffff", "#111111")
+        _tag("CENTURY", siglo_valor, NEGRO_CHIP, "#ffffff", borde="#333333")
+        + _tag("DISCIPLINE", disciplina_valor, VERDE_MARCA, "#0a0a0a")
+        + _tag("TREND", flashcard.corriente.upper(), "#ffffff", "#111111")
     )
 
     bloques_imagenes = "".join(
@@ -130,7 +145,7 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
           {_header()}
           <tr>
             <td style="padding: 24px 32px 8px 32px;">
-              <table role="presentation" cellpadding="0" cellspacing="0"><tr>{fila_tags}</tr></table>
+              <div>{fila_tags}</div>
               <h1 style="margin:16px 0 4px 0; font-family:{FUENTE_TITULO}; font-size:32px; font-weight:900; letter-spacing:0.5px; color:#f5f5f5;">
                 {html.escape(flashcard.nombre)}
               </h1>
