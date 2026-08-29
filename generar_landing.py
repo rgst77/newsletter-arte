@@ -4,16 +4,50 @@ from plantillas.archivo import cargar_incluidos, tarjeta_html
 
 RUTA_SALIDA = Path(__file__).resolve().parent / "index.html"
 
-# El formulario NO está conectado a nada todavía (no hay Supabase montado):
-# solo confirma visualmente y avisa de que las suscripciones aún no están
-# abiertas. Nunca debe fingir que guarda un email que en realidad se pierde.
-SCRIPT_FORMULARIO = """
+# La anon/publishable key de Supabase está pensada para ser pública: la
+# seguridad real la da la política de RLS en la tabla (solo INSERT, sin
+# SELECT), no el secreto de esta clave. Por eso es seguro dejarla en el HTML.
+SUPABASE_URL = "https://ctfsyrjsgnhlstrjvcog.supabase.co"
+SUPABASE_ANON_KEY = "sb_publishable_9HcH7z2LhaQs3qQArB2YuA_5oiRxiB-"
+
+SCRIPT_FORMULARIO = f"""
 <script>
-  document.getElementById('form-suscripcion').addEventListener('submit', function (e) {
+  document.getElementById('form-suscripcion').addEventListener('submit', async function (e) {{
     e.preventDefault();
-    document.getElementById('mensaje-formulario').textContent =
-      "Thanks for the interest — sign-ups aren't open yet. Check back soon.";
-  });
+    const boton = e.target.querySelector('button');
+    const mensaje = document.getElementById('mensaje-formulario');
+    const email = e.target.querySelector('input[type=email]').value;
+
+    boton.disabled = true;
+    boton.textContent = '...';
+
+    try {{
+      const respuesta = await fetch('{SUPABASE_URL}/rest/v1/suscriptores', {{
+        method: 'POST',
+        headers: {{
+          'apikey': '{SUPABASE_ANON_KEY}',
+          'Authorization': 'Bearer {SUPABASE_ANON_KEY}',
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal',
+        }},
+        body: JSON.stringify({{ email: email }}),
+      }});
+
+      if (respuesta.status === 201) {{
+        mensaje.textContent = "You're on the list. See you in the first issue.";
+        e.target.reset();
+      }} else if (respuesta.status === 409) {{
+        mensaje.textContent = "You're already subscribed — no need to sign up twice.";
+      }} else {{
+        mensaje.textContent = "Something went wrong. Please try again in a moment.";
+      }}
+    }} catch (error) {{
+      mensaje.textContent = "Something went wrong. Please try again in a moment.";
+    }}
+
+    boton.disabled = false;
+    boton.textContent = 'SUBSCRIBE';
+  }});
 </script>
 """
 
@@ -58,7 +92,7 @@ def generar() -> None:
       </button>
     </form>
     <p id="mensaje-formulario" style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; color:#6b6b6b; margin:0 0 64px 0;">
-      Launching soon — no spam, unsubscribe anytime.
+      No spam, unsubscribe anytime.
     </p>
 
     <p style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; color:#6b6b6b; margin:0 0 24px 0;">SEE A REAL ISSUE</p>
