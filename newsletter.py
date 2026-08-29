@@ -49,6 +49,7 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
     registrar_envio(
         RegistroEnvio(
             nombre=autor.nombre,
+            disciplina=autor.disciplina,
             corriente=flashcard.corriente,
             periodo=flashcard.periodo,
             siglo=solicitud.siglo,

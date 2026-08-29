@@ -22,5 +22,32 @@
     "siglo": "siglo XIX",
     "archivo_html": "salida/antoni_gaudí.html",
     "fecha_envio": "2026-08-29T13:55:12.359189"
+  },
+  {
+    "nombre": "Sandro Botticelli",
+    "disciplina": "pintura",
+    "corriente": "Early Renaissance",
+    "periodo": "c. 1445-1510 (active 1465-1505)",
+    "siglo": "siglo XV",
+    "archivo_html": "salida/sandro_botticelli.html",
+    "fecha_envio": "2026-08-29T14:24:54.823963"
+  },
+  {
+    "nombre": "Gian Lorenzo Bernini",
+    "disciplina": "escultura",
+    "corriente": "Baroque",
+    "periodo": "1598-1680",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/gian_lorenzo_bernini.html",
+    "fecha_envio": "2026-08-29T14:26:30.976445"
+  },
+  {
+    "nombre": "Le Corbusier",
+    "disciplina": "arquitectura",
+    "corriente": "Modern Movement",
+    "periodo": "1917-1965",
+    "siglo": "siglo XX",
+    "archivo_html": "salida/le_corbusier.html",
+    "fecha_envio": "2026-08-29T14:27:46.861376"
   }
 ]

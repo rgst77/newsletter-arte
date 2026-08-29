@@ -60,6 +60,7 @@ class NewsletterVerificado(BaseModel):
 
 class RegistroEnvio(BaseModel):
     nombre: str
+    disciplina: str
     corriente: str
     periodo: str
     siglo: str
