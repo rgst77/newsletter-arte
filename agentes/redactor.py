@@ -64,6 +64,7 @@ def redactar(
                 # nunca los regenera el LLM: evita que invente o reescriba URLs.
                 return FlashcardNewsletter(
                     nombre=notas.nombre,
+                    nacionalidad=notas.nacionalidad,
                     disciplina=disciplina,
                     siglo=siglo,
                     corriente=notas.corriente,

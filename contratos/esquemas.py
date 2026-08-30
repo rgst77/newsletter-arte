@@ -23,6 +23,7 @@ class ResultadoBusqueda(BaseModel):
 
 class NotasAutor(BaseModel):
     nombre: str
+    nacionalidad: str = Field(..., description="Nacionalidad verificada del autor, ej. 'French'")
     corriente: str = Field(..., description="Corriente o movimiento artístico, ej. 'Romanticismo'")
     periodo: str = Field(..., description="Años o rango concreto dentro del siglo")
     notas: str = Field(..., description="Biografía y contexto en bruto")
@@ -43,6 +44,7 @@ class ImagenObra(BaseModel):
 
 class FlashcardNewsletter(BaseModel):
     nombre: str
+    nacionalidad: str
     disciplina: str
     siglo: str
     corriente: str

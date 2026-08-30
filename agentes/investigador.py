@@ -12,7 +12,8 @@ SYSTEM_PROMPT = (
     "You are a research agent specialized in art history, sculpture, architecture "
     "and poetry. Your only job is to research ONE specific author you are given, NOT "
     "to write the final newsletter. You have a maximum of 8 searches in total. You "
-    "must cover: a short biography, the artistic movement they belonged to (verify "
+    "must cover: a short biography, the author's nationality (verify it — do not "
+    "guess it from their name alone), the artistic movement they belonged to (verify "
     "it, do not trust the initial hint without checking), their concrete "
     "period/years of activity, and above all the EXACT TITLES of at least 3 known "
     "works (sculptures, buildings, paintings or poems depending on their "
@@ -64,6 +65,7 @@ HERRAMIENTA_ENTREGAR_NOTAS = DefinicionHerramienta(
         "type": "object",
         "properties": {
             "nombre": {"type": "string"},
+            "nacionalidad": {"type": "string", "description": "Verified nationality, in English, e.g. 'French'"},
             "corriente": {"type": "string", "description": "Verified artistic movement, in English"},
             "periodo": {"type": "string", "description": "Concrete years/range of activity"},
             "notas": {"type": "string", "description": "Biography and context, in English"},
@@ -84,7 +86,7 @@ HERRAMIENTA_ENTREGAR_NOTAS = DefinicionHerramienta(
                 },
             },
         },
-        "required": ["nombre", "corriente", "periodo", "notas", "titulos_obras_conocidas", "fuentes"],
+        "required": ["nombre", "nacionalidad", "corriente", "periodo", "notas", "titulos_obras_conocidas", "fuentes"],
     },
 )
 

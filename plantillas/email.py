@@ -18,6 +18,7 @@ FUENTE_TITULO = "'Orbitron', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 FUENTE_CUERPO = "Georgia, 'Times New Roman', serif"
 
 NEGRO_MARCA = "#0a0a0a"
+PANEL_CONTEXTO = "#141414"  # ligeramente más claro que el fondo: separa el bloque de metadatos del contenido
 VERDE_MARCA = "#00cc00"
 GRIS_TEXTO = "#a3a3a3"
 GRIS_TENUE = "#6b6b6b"
@@ -62,7 +63,7 @@ def _siglo_a_ordinal(siglo: str) -> str:
 def _campo(etiqueta: str, valor: str) -> str:
     return (
         f'<span style="color:{GRIS_TENUE};">{html.escape(etiqueta)} </span>'
-        f'<span style="color:#f5f5f5; font-weight:700;">{html.escape(valor)}</span>'
+        f'<span style="color:{VERDE_MARCA}; font-weight:700;">{html.escape(valor)}</span>'
     )
 
 
@@ -121,6 +122,7 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
         [
             _campo("CENTURY", siglo_valor),
             _campo("DISCIPLINE", disciplina_valor),
+            _campo("NATIONALITY", flashcard.nacionalidad.upper()),
             _campo("TREND", flashcard.corriente.upper()),
         ]
     )
@@ -146,10 +148,14 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
                style="background-color:{NEGRO_MARCA}; max-width:600px; width:100%;">
           {_header()}
           <tr>
-            <td style="padding: 24px 32px 8px 32px; border-left:3px solid {VERDE_MARCA};">
-              <p style="margin:0 0 12px 0; font-family:{FUENTE_PEQUENA}; font-size:11px; font-weight:700; letter-spacing:1px; line-height:1.8;">
+            <td style="background-color:{PANEL_CONTEXTO}; padding:18px 32px; border-left:3px solid {VERDE_MARCA};">
+              <p style="margin:0; font-family:{FUENTE_PEQUENA}; font-size:11px; font-weight:700; letter-spacing:1px; line-height:1.8;">
                 {kicker}
               </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 32px 8px 32px;">
               <h1 style="margin:0 0 4px 0; font-family:{FUENTE_TITULO}; font-size:32px; font-weight:900; letter-spacing:0.5px; color:#f5f5f5;">
                 {html.escape(flashcard.nombre)}
               </h1>

@@ -1,6 +1,7 @@
 [
   {
     "nombre": "Auguste Rodin",
+    "disciplina": "escultura",
     "corriente": "Arte Moderno y Simbolismo (con influencias de impresionismo escultórico, romanticismo y naturalismo realista)",
     "periodo": "1840-1917 (actividad artística: c. 1860-1917)",
     "siglo": "siglo XIX",
@@ -9,6 +10,7 @@
   },
   {
     "nombre": "Camille Claudel",
+    "disciplina": "escultura",
     "corriente": "Modernism",
     "periodo": "1879-1905",
     "siglo": "siglo XIX",
@@ -17,6 +19,7 @@
   },
   {
     "nombre": "Antoni Gaudí",
+    "disciplina": "arquitectura",
     "corriente": "Catalan Modernisme",
     "periodo": "1852-1926 (active 1878-1926)",
     "siglo": "siglo XIX",
@@ -49,5 +52,14 @@
     "siglo": "siglo XX",
     "archivo_html": "salida/le_corbusier.html",
     "fecha_envio": "2026-08-29T14:27:46.861376"
+  },
+  {
+    "nombre": "Francisco de Quevedo",
+    "disciplina": "poesía",
+    "corriente": "Conceptismo",
+    "periodo": "1580-1645",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/francisco_de_quevedo.html",
+    "fecha_envio": "2026-08-30T18:26:13.113813"
   }
 ]
