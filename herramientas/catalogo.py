@@ -6,6 +6,14 @@ from contratos.esquemas import AutorCatalogo, RegistroEnvio
 RUTA_CATALOGO = Path(__file__).resolve().parent.parent / "datos" / "catalogo_autores.json"
 RUTA_ENVIADOS = Path(__file__).resolve().parent.parent / "datos" / "autores_enviados.json"
 
+# Progresión cronológica para el envío automático: cada vez se avanza al
+# siguiente siglo de la lista (con vuelta al principio), en vez de aleatorio,
+# para que la newsletter se sienta como un recorrido con sentido.
+ORDEN_SIGLOS = [
+    "siglo XV", "siglo XVI", "siglo XVII", "siglo XVIII",
+    "siglo XIX", "siglo XX", "siglo XXI",
+]
+
 
 def cargar_catalogo() -> list[AutorCatalogo]:
     with open(RUTA_CATALOGO, encoding="utf-8") as f:
@@ -29,6 +37,18 @@ def elegir_autor_pendiente(siglo: str, disciplina: str = "cualquiera") -> AutorC
         and autor.nombre not in nombres_enviados
     ]
     return candidatos[0] if candidatos else None
+
+
+def elegir_siguiente_siglo_disciplina() -> tuple[str, str]:
+    enviados = cargar_enviados()
+    indice_actual = ORDEN_SIGLOS.index(enviados[-1].siglo) if enviados and enviados[-1].siglo in ORDEN_SIGLOS else -1
+
+    for paso in range(1, len(ORDEN_SIGLOS) + 1):
+        siglo = ORDEN_SIGLOS[(indice_actual + paso) % len(ORDEN_SIGLOS)]
+        if elegir_autor_pendiente(siglo, "cualquiera") is not None:
+            return siglo, "cualquiera"
+
+    raise RuntimeError("No quedan autores pendientes en ningún siglo del catálogo")
 
 
 def registrar_envio(registro: RegistroEnvio) -> None:
