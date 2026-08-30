@@ -8,11 +8,12 @@ from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal
 RUTA_ENVIADOS = Path(__file__).resolve().parent.parent / "datos" / "autores_enviados.json"
 
 # Los envíos de antes de este corte usan una versión anterior de la plantilla
-# (fondo blanco / etiquetas en pastillas de color) y no encajarían visualmente
-# con el diseño actual. Se excluyen de las vistas públicas en vez de mostrarlos
-# inconsistentes; cuando se regeneren con el diseño final, este corte deja de
-# hacer falta.
-CORTE_DISENO_ACTUAL = datetime(2026, 8, 29, 14, 0, 0)
+# y no encajarían visualmente con el diseño actual. Se excluyen de las vistas
+# públicas en vez de mostrarlos inconsistentes; cuando se regeneren con el
+# diseño final, este corte deja de hacer falta. Subir esta fecha cada vez que
+# cambie el diseño de forma visible (última vez: bloque de contexto propio
+# con fondo diferenciado + nacionalidad).
+CORTE_DISENO_ACTUAL = datetime(2026, 8, 30, 18, 0, 0)
 
 
 def cargar_incluidos() -> list[dict]:
