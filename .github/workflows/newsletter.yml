@@ -1,0 +1,46 @@
+name: Send newsletter
+
+on:
+  schedule:
+    # 00:00 UTC = 12:00 PM NZST. NZ switches to NZDT (UTC+13) in late
+    # September, which will shift the real local send time by an hour until
+    # this is adjusted by hand — GitHub Actions cron doesn't follow DST.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: "Enviar aunque no hayan pasado 3 días desde el último envío"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Generar y enviar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          FORZAR_ENVIO: ${{ github.event.inputs.forzar }}
+        run: python enviar_automatico.py
+
+      - name: Commit del newsletter generado
+        run: |
+          git config user.name "curiosARTy bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto: newsletter enviado $(date -u +%Y-%m-%d)"
+          git push

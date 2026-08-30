@@ -37,5 +37,12 @@ def enviar_email(destinatario: str, asunto: str, html: str) -> dict:
 
 def enviar_a_lista(destinatarios: list[str], asunto: str, html: str) -> list[dict]:
     # Uno por destinatario (no un solo "to" con todos) para que nadie vea el
-    # email de los demás suscriptores.
-    return [enviar_email(destinatario, asunto, html) for destinatario in destinatarios]
+    # email de los demás suscriptores. Un fallo puntual (ej. bounce, límite de
+    # la cuenta) no debe tumbar el resto del envío.
+    resultados = []
+    for destinatario in destinatarios:
+        try:
+            resultados.append(enviar_email(destinatario, asunto, html))
+        except requests.HTTPError as error:
+            resultados.append({"destinatario": destinatario, "error": str(error)})
+    return resultados
