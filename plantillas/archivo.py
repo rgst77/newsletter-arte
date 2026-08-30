@@ -2,7 +2,7 @@ import html
 import json
 from pathlib import Path
 
-from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal
+from plantillas.email import DISCIPLINAS_EN, _romano_a_entero, _siglo_a_ordinal
 
 RUTA_PROYECTO = Path(__file__).resolve().parent.parent
 RUTA_ENVIADOS = RUTA_PROYECTO / "datos" / "autores_enviados.json"
@@ -19,6 +19,32 @@ def cargar_incluidos() -> list[dict]:
         if r.get("archivo_html")
         and (RUTA_PROYECTO / r["archivo_html"]).with_suffix(".json").exists()
     ]
+
+
+def _siglo_numero(siglo: str) -> int:
+    partes = siglo.upper().split()
+    if len(partes) == 2 and partes[0] == "SIGLO":
+        try:
+            return _romano_a_entero(partes[1])
+        except KeyError:
+            pass
+    return 0
+
+
+def agrupar_por_disciplina(incluidos: list[dict]) -> list[tuple[str, list[dict]]]:
+    # Secciones por disciplina (orden alfabético del nombre en inglés), y
+    # dentro de cada una ordenado por siglo — así el archivo se puede recorrer
+    # como una progresión histórica dentro de cada tipo de arte, en vez de
+    # una lista suelta en orden de envío.
+    grupos: dict[str, list[dict]] = {}
+    for registro in incluidos:
+        etiqueta = DISCIPLINAS_EN.get(registro.get("disciplina", ""), registro.get("disciplina", "OTHER").upper())
+        grupos.setdefault(etiqueta, []).append(registro)
+
+    for entradas in grupos.values():
+        entradas.sort(key=lambda r: _siglo_numero(r["siglo"]))
+
+    return sorted(grupos.items())
 
 
 def tarjeta_html(registro: dict, prefijo_ruta: str = "") -> str:
