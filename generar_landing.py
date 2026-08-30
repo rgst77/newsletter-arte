@@ -64,7 +64,7 @@ def generar() -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>curiosARTy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body style="margin:0; padding:0; background-color:#0a0a0a;">
   <div style="max-width:760px; margin:0 auto; padding:64px 24px;">
@@ -77,7 +77,7 @@ def generar() -> None:
     <h1 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:36px; font-weight:900; line-height:1.25; color:#f5f5f5; margin:0 0 20px 0;">
       Discover art history,<br/>one flashcard at a time.
     </h1>
-    <p style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:1.65; color:#a3a3a3; max-width:560px; margin:0 0 32px 0;">
+    <p style="font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:1.65; color:#a3a3a3; max-width:560px; margin:0 0 32px 0;">
       Every few days curiosARTy researches one real sculptor, architect, painter, or poet,
       fact-checks its own work, and illustrates it exclusively with public-domain art.
       No stock content, no filler — just one artist, done properly.

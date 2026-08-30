@@ -15,7 +15,7 @@ from contratos.esquemas import FlashcardNewsletter
 # rompe.
 FUENTE_PEQUENA = "'Helvetica Neue', Helvetica, Arial, sans-serif"
 FUENTE_TITULO = "'Orbitron', 'Helvetica Neue', Helvetica, Arial, sans-serif"
-FUENTE_CUERPO = "Georgia, 'Times New Roman', serif"
+FUENTE_CUERPO = "'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 NEGRO_MARCA = "#0a0a0a"
 PANEL_CONTEXTO = "#232323"  # gris claro de verdad, para que el bloque se note contra el negro
@@ -188,7 +188,7 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
   <meta charset="utf-8">
   <title>{html.escape(flashcard.nombre)}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body style="margin:0; padding:0; background-color:{NEGRO_MARCA};">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:{NEGRO_MARCA};">
