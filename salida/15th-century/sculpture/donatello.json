@@ -1,0 +1,33 @@
+{
+  "nombre": "Donatello",
+  "nacionalidad": "Italian",
+  "disciplina": "escultura",
+  "siglo": "siglo XV",
+  "corriente": "Early Renaissance",
+  "periodo": "c. 1386-1466 (active 1415-1466)",
+  "biografia": "Born in Florence around 1386, Donatello became one of the most revolutionary sculptors of the Early Renaissance, mastering everything from marble and bronze to wood and clay. He's famous for creating the first freestanding nude male sculpture since ancient times—his stunning David—and for pioneering innovative techniques in perspective and realistic human expression that inspired generations of artists. Rather than following the decorative Gothic style of his era, Donatello boldly looked back to classical sculpture and reinvented it for his own time, spreading these revolutionary ideas across Italy through commissions in Rome, Padua, and Siena. Though he was beloved for his friendly nature and worked with only a small circle of trusted assistants, he had a weakness for taking on more projects than he could handle and struggled with business matters. When he died in 1466, he left behind a legacy that fundamentally transformed how sculptors understood the human form and its possibilities.",
+  "imagenes": [
+    {
+      "titulo_obra": "Donatello - David - Florença.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Donatello_-_David_-_Floren%C3%A7a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Donatello_-_David_-_Florença.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "original file by Patrick A. Rodgers — CC BY-SA 2.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Donatello's Zuccone-Museo dell'Opera del Duomo -Florence.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Donatello%27s_Zuccone-Museo_dell%27Opera_del_Duomo_-Florence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Donatello's_Zuccone-Museo_dell'Opera_del_Duomo_-Florence.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Yair Haklai — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Saint George by Donatello-Bargello.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/93/Saint_George_by_Donatello-Bargello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Saint_George_by_Donatello-Bargello.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Yair Haklai — CC BY-SA 4.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-08-30T18:34:29.694042"
+}

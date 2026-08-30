@@ -9,7 +9,7 @@ from contratos.esquemas import RegistroEnvio, SolicitudNewsletter
 from costes.registro import resumen_gasto
 from herramientas.catalogo import elegir_autor_pendiente, registrar_envio
 from modelos.anthropic_adapter import AnthropicAdapter
-from plantillas.email import renderizar_html
+from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal, renderizar_html
 
 logger = logging.getLogger(__name__)
 
@@ -38,10 +38,22 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
     flashcard = redactar(notas, autor.disciplina, autor.siglo, imagenes, modelo_redactor)
     resultado = verificar(flashcard, notas, modelo_verificador)
 
-    RUTA_SALIDA.mkdir(exist_ok=True)
+    # Carpeta por siglo y disciplina (ej. salida/19th-century/sculpture/) para
+    # que la base de HTML quede organizada y navegable, no todo en un cajón.
+    carpeta_siglo = f"{_siglo_a_ordinal(autor.siglo).lower()}-century"
+    carpeta_disciplina = DISCIPLINAS_EN.get(autor.disciplina, autor.disciplina).lower()
+    carpeta_destino = RUTA_SALIDA / carpeta_siglo / carpeta_disciplina
+    carpeta_destino.mkdir(parents=True, exist_ok=True)
+
     nombre_archivo = resultado.flashcard.nombre.lower().replace(" ", "_")
-    ruta_html = RUTA_SALIDA / f"{nombre_archivo}.html"
+    ruta_html = carpeta_destino / f"{nombre_archivo}.html"
     ruta_html.write_text(renderizar_html(resultado.flashcard), encoding="utf-8")
+
+    # Se guarda también el flashcard en bruto (no solo el HTML final) para
+    # poder re-renderizar gratis cuando cambie el diseño, sin volver a pagar
+    # por investigar/redactar/verificar el mismo autor otra vez.
+    ruta_json = ruta_html.with_suffix(".json")
+    ruta_json.write_text(resultado.flashcard.model_dump_json(indent=2), encoding="utf-8")
 
     # Se guarda la ruta relativa (no absoluta de esta máquina) porque el HTML
     # vive en el propio repo público: es el archivo histórico, sin base de

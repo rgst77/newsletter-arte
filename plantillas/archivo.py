@@ -1,26 +1,23 @@
 import html
 import json
-from datetime import datetime
 from pathlib import Path
 
 from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal
 
-RUTA_ENVIADOS = Path(__file__).resolve().parent.parent / "datos" / "autores_enviados.json"
-
-# Los envíos de antes de este corte usan una versión anterior de la plantilla
-# y no encajarían visualmente con el diseño actual. Se excluyen de las vistas
-# públicas en vez de mostrarlos inconsistentes; cuando se regeneren con el
-# diseño final, este corte deja de hacer falta. Subir esta fecha cada vez que
-# cambie el diseño de forma visible (última vez: bloque de contexto propio
-# con fondo diferenciado + nacionalidad).
-CORTE_DISENO_ACTUAL = datetime(2026, 8, 30, 18, 0, 0)
+RUTA_PROYECTO = Path(__file__).resolve().parent.parent
+RUTA_ENVIADOS = RUTA_PROYECTO / "datos" / "autores_enviados.json"
 
 
 def cargar_incluidos() -> list[dict]:
+    # Solo se muestran públicamente los envíos que tienen su flashcard en
+    # bruto guardado (.json junto al .html): eso garantiza que se pueden
+    # re-renderizar con `rerender.py` y por tanto SIEMPRE coinciden con el
+    # diseño actual — nunca hay que acordarse de excluir nada a mano.
     registros = json.loads(RUTA_ENVIADOS.read_text(encoding="utf-8"))
     return [
         r for r in registros
-        if r.get("archivo_html") and datetime.fromisoformat(r["fecha_envio"]) >= CORTE_DISENO_ACTUAL
+        if r.get("archivo_html")
+        and (RUTA_PROYECTO / r["archivo_html"]).with_suffix(".json").exists()
     ]
 
 

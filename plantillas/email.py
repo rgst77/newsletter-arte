@@ -18,7 +18,7 @@ FUENTE_TITULO = "'Orbitron', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 FUENTE_CUERPO = "Georgia, 'Times New Roman', serif"
 
 NEGRO_MARCA = "#0a0a0a"
-PANEL_CONTEXTO = "#141414"  # ligeramente más claro que el fondo: separa el bloque de metadatos del contenido
+PANEL_CONTEXTO = "#232323"  # gris claro de verdad, para que el bloque se note contra el negro
 VERDE_MARCA = "#00cc00"
 GRIS_TEXTO = "#a3a3a3"
 GRIS_TENUE = "#6b6b6b"
@@ -28,6 +28,44 @@ DISCIPLINAS_EN = {
     "arquitectura": "ARCHITECTURE",
     "pintura": "PAINTING",
     "poesía": "POETRY",
+}
+
+DISCIPLINAS_EMOJI = {
+    "escultura": "\U0001F5FF",  # 🗿
+    "arquitectura": "\U0001F3DB️",  # 🏛️
+    "pintura": "\U0001F5BC️",  # 🖼️
+    "poesía": "✒️",  # ✒️
+}
+
+EMOJI_SIGLO = "⌛"  # ⏳
+EMOJI_TREND = "\U0001F3A8"  # 🎨
+
+# Cobertura no exhaustiva a propósito: si una nacionalidad no está aquí, el
+# campo simplemente se muestra sin bandera en vez de romper el render. Ir
+# ampliando según lo pida el catálogo real.
+NACIONALIDADES_BANDERA = {
+    "french": "\U0001F1EB\U0001F1F7", "italian": "\U0001F1EE\U0001F1F9",
+    "spanish": "\U0001F1EA\U0001F1F8", "german": "\U0001F1E9\U0001F1EA",
+    "dutch": "\U0001F1F3\U0001F1F1", "flemish": "\U0001F1E7\U0001F1EA",
+    "belgian": "\U0001F1E7\U0001F1EA", "english": "\U0001F1EC\U0001F1E7",
+    "british": "\U0001F1EC\U0001F1E7", "scottish": "\U0001F1EC\U0001F1E7",
+    "irish": "\U0001F1EE\U0001F1EA", "portuguese": "\U0001F1F5\U0001F1F9",
+    "austrian": "\U0001F1E6\U0001F1F9", "swiss": "\U0001F1E8\U0001F1ED",
+    "russian": "\U0001F1F7\U0001F1FA", "polish": "\U0001F1F5\U0001F1F1",
+    "greek": "\U0001F1EC\U0001F1F7", "swedish": "\U0001F1F8\U0001F1EA",
+    "norwegian": "\U0001F1F3\U0001F1F4", "danish": "\U0001F1E9\U0001F1F0",
+    "american": "\U0001F1FA\U0001F1F8", "mexican": "\U0001F1F2\U0001F1FD",
+    "brazilian": "\U0001F1E7\U0001F1F7", "argentine": "\U0001F1E6\U0001F1F7",
+    "argentinian": "\U0001F1E6\U0001F1F7", "japanese": "\U0001F1EF\U0001F1F5",
+    "chinese": "\U0001F1E8\U0001F1F3", "indian": "\U0001F1EE\U0001F1F3",
+    "czech": "\U0001F1E8\U0001F1FF", "hungarian": "\U0001F1ED\U0001F1FA",
+    "romanian": "\U0001F1F7\U0001F1F4", "turkish": "\U0001F1F9\U0001F1F7",
+    "egyptian": "\U0001F1EA\U0001F1EC", "colombian": "\U0001F1E8\U0001F1F4",
+    "cuban": "\U0001F1E8\U0001F1FA", "chilean": "\U0001F1E8\U0001F1F1",
+    "peruvian": "\U0001F1F5\U0001F1EA", "canadian": "\U0001F1E8\U0001F1E6",
+    "australian": "\U0001F1E6\U0001F1FA", "florentine": "\U0001F1EE\U0001F1F9",
+    "venetian": "\U0001F1EE\U0001F1F9", "roman": "\U0001F1EE\U0001F1F9",
+    "catalan": "\U0001F1EA\U0001F1F8", "basque": "\U0001F1EA\U0001F1F8",
 }
 
 _NUMEROS_ROMANOS = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
@@ -60,9 +98,14 @@ def _siglo_a_ordinal(siglo: str) -> str:
     return siglo.upper()
 
 
-def _campo(etiqueta: str, valor: str) -> str:
+def _bandera_nacionalidad(nacionalidad: str) -> str:
+    return NACIONALIDADES_BANDERA.get(nacionalidad.strip().lower(), "")
+
+
+def _campo(etiqueta: str, valor: str, emoji: str = "") -> str:
+    prefijo = f"{emoji} " if emoji else ""
     return (
-        f'<span style="color:{GRIS_TENUE};">{html.escape(etiqueta)} </span>'
+        f'<span style="color:{GRIS_TENUE};">{prefijo}{html.escape(etiqueta)}</span><br/>'
         f'<span style="color:{VERDE_MARCA}; font-weight:700;">{html.escape(valor)}</span>'
     )
 
@@ -116,16 +159,23 @@ def _footer() -> str:
 def renderizar_html(flashcard: FlashcardNewsletter) -> str:
     siglo_valor = _siglo_a_ordinal(flashcard.siglo)
     disciplina_valor = DISCIPLINAS_EN.get(flashcard.disciplina, flashcard.disciplina.upper())
+    emoji_disciplina = DISCIPLINAS_EMOJI.get(flashcard.disciplina, "")
+    emoji_bandera = _bandera_nacionalidad(flashcard.nacionalidad)
 
-    divisor = f'<span style="color:{VERDE_MARCA};"> &nbsp;/&nbsp; </span>'
-    kicker = divisor.join(
-        [
-            _campo("CENTURY", siglo_valor),
-            _campo("DISCIPLINE", disciplina_valor),
-            _campo("NATIONALITY", flashcard.nacionalidad.upper()),
-            _campo("TREND", flashcard.corriente.upper()),
-        ]
-    )
+    celda = 'style="width:50%; padding:0 12px 14px 0; vertical-align:top;"'
+    celda_der = 'style="width:50%; padding:0 0 14px 12px; vertical-align:top;"'
+    celda_ult = 'style="width:50%; padding:0 12px 0 0; vertical-align:top;"'
+    celda_ult_der = 'style="width:50%; padding:0 0 0 12px; vertical-align:top;"'
+    kicker = f"""<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td {celda}>{_campo("CENTURY", siglo_valor, EMOJI_SIGLO)}</td>
+          <td {celda_der}>{_campo("DISCIPLINE", disciplina_valor, emoji_disciplina)}</td>
+        </tr>
+        <tr>
+          <td {celda_ult}>{_campo("NATIONALITY", flashcard.nacionalidad.upper(), emoji_bandera)}</td>
+          <td {celda_ult_der}>{_campo("TREND", flashcard.corriente.upper(), EMOJI_TREND)}</td>
+        </tr>
+      </table>"""
 
     bloques_imagenes = "".join(
         _bloque_imagen(img.url_imagen, img.titulo_obra, img.creditos, img.url_fuente)
@@ -148,10 +198,8 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
                style="background-color:{NEGRO_MARCA}; max-width:600px; width:100%;">
           {_header()}
           <tr>
-            <td style="background-color:{PANEL_CONTEXTO}; padding:18px 32px; border-left:3px solid {VERDE_MARCA};">
-              <p style="margin:0; font-family:{FUENTE_PEQUENA}; font-size:11px; font-weight:700; letter-spacing:1px; line-height:1.8;">
-                {kicker}
-              </p>
+            <td style="background-color:{PANEL_CONTEXTO}; padding:18px 32px; border-left:3px solid {VERDE_MARCA}; font-family:{FUENTE_PEQUENA}; font-size:11px; font-weight:700; letter-spacing:1px; line-height:1.6;">
+              {kicker}
             </td>
           </tr>
           <tr>
