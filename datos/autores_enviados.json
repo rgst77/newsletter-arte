@@ -70,5 +70,14 @@
     "siglo": "siglo XV",
     "archivo_html": "salida/15th-century/sculpture/donatello.html",
     "fecha_envio": "2026-08-30T18:34:34.545166"
+  },
+  {
+    "nombre": "Francisco de Zurbarán",
+    "disciplina": "pintura",
+    "corriente": "Spanish Baroque",
+    "periodo": "1598-1664",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/17th-century/painting/francisco_de_zurbarán.html",
+    "fecha_envio": "2026-09-02T01:12:26.451556"
   }
 ]

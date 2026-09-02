@@ -1,0 +1,33 @@
+{
+  "nombre": "Francisco de Zurbarán",
+  "nacionalidad": "Spanish",
+  "disciplina": "pintura",
+  "siglo": "siglo XVII",
+  "corriente": "Spanish Baroque",
+  "periodo": "1598-1664",
+  "biografia": "Francisco de Zurbarán (1598–1664) was one of Spain's most captivating Baroque painters, earning the nickname \"Spanish Caravaggio\" for his dramatic use of light and shadow that made ordinary monks, nuns, and saints leap off the canvas with spiritual intensity. After moving to Seville in 1614 to study his craft, he became the city's leading artistic figure, creating deeply moving religious works for monasteries—places where he sometimes lived and worked alongside his patrons from monastic orders. His genius lay in painting the sacred through the everyday: he rendered spiritual abstraction with such stunning directness and material simplicity that viewers felt the profound faith of his subjects. Beyond religious scenes, Zurbarán also painted mythological subjects for the royal court and created exquisite still-life works, proving his versatility across genres. Though celebrated during his lifetime, his star dimmed in later years, and he spent his final days in Madrid in relative obscurity, leaving behind a legacy of paintings that capture the very soul of Counter-Reformation Spain.",
+  "imagenes": [
+    {
+      "titulo_obra": "San Serapio, por Francisco de Zurbarán.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a7/San_Serapio%2C_por_Francisco_de_Zurbar%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:San_Serapio,_por_Francisco_de_Zurbarán.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Francisco de Zurbarán — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "San Hugo en el refectorio de los cartujos.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2c/San_Hugo_en_el_refectorio_de_los_cartujos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:San_Hugo_en_el_refectorio_de_los_cartujos.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Francisco_de_Zurbarán_024.jpg: Eloquence (bot)\nderivative work: Escarlati (talk) — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Francisco de Zurbarán - Still-life with Lemons, Oranges and Rose - WGA26062.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Francisco_de_Zurbar%C3%A1n_-_Still-life_with_Lemons%2C_Oranges_and_Rose_-_WGA26062.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbarán_-_Still-life_with_Lemons,_Oranges_and_Rose_-_WGA26062.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Francisco de Zurbarán — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-02T01:12:20.052390"
+}
