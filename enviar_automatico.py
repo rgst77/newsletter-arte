@@ -1,22 +1,31 @@
 import logging
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 from contratos.esquemas import SolicitudNewsletter
 from generar_archivo import generar as generar_archivo
 from generar_landing import generar as generar_landing
 from herramientas.catalogo import cargar_enviados, elegir_siguiente_siglo_disciplina
-from herramientas.envio import asunto_para, enviar_a_lista
-from herramientas.suscriptores import obtener_suscriptores
+from herramientas.envio import asunto_para, enviar_email
+from herramientas.suscriptores import actualizar_progreso_suscriptor, obtener_suscriptores
 from newsletter import generar_newsletter
+from plantillas.archivo import cargar_incluidos
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
 DIAS_ENTRE_ENVIOS = 3
+RUTA_PROYECTO = Path(__file__).resolve().parent
+
+# Modelo de goteo: el contenido se genera a su propio ritmo (rotación por
+# siglos, cada 3 días), pero cada suscriptor recibe los issues empezando por
+# el #1, a su propio ritmo de 3 días desde que se apuntó — no todos reciben
+# lo mismo el mismo día. `cargar_incluidos()` da el orden cronológico de
+# generación, que hace de "lista de reproducción" estable para todos.
 
 
-def _toca_enviar_hoy() -> bool:
+def _toca_generar_contenido_hoy() -> bool:
     enviados = cargar_enviados()
     if not enviados:
         return True
@@ -24,35 +33,73 @@ def _toca_enviar_hoy() -> bool:
     return datetime.now() - ultimo >= timedelta(days=DIAS_ENTRE_ENVIOS)
 
 
-def main() -> None:
-    forzado = os.environ.get("FORZAR_ENVIO", "").lower() == "true"
-    if not forzado and not _toca_enviar_hoy():
-        logger.info(f"Todavía no toca enviar (cadencia: cada {DIAS_ENTRE_ENVIOS} días). Saliendo sin hacer nada.")
+def generar_issue_del_dia(forzado: bool) -> None:
+    if not forzado and not _toca_generar_contenido_hoy():
+        logger.info(f"Todavía no toca generar contenido nuevo (cadencia: cada {DIAS_ENTRE_ENVIOS} días).")
         return
-    if forzado:
-        logger.info("Envío forzado manualmente: se ignora la cadencia de 3 días.")
 
     siglo, disciplina = elegir_siguiente_siglo_disciplina()
     logger.info(f"Siguiente en la rotación: {siglo} / {disciplina}")
-
-    resultado, ruta_html = generar_newsletter(SolicitudNewsletter(siglo=siglo, disciplina=disciplina))
+    resultado, _ = generar_newsletter(SolicitudNewsletter(siglo=siglo, disciplina=disciplina))
     logger.info(f"Newsletter generado: {resultado.flashcard.nombre} (fiabilidad: {resultado.fiabilidad})")
 
-    generar_archivo()
-    generar_landing()
+
+def _le_toca_a(suscriptor: dict, forzado: bool) -> bool:
+    ultimo = suscriptor.get("fecha_ultimo_envio")
+    if not ultimo:
+        return True  # nunca ha recibido nada: le toca el #1 ya
+    if forzado:
+        return True
+    return datetime.now(timezone.utc) - datetime.fromisoformat(ultimo) >= timedelta(days=DIAS_ENTRE_ENVIOS)
+
+
+def enviar_pendientes(forzado: bool) -> None:
+    issues = cargar_incluidos()
+    if not issues:
+        logger.info("Todavía no hay ningún issue generado — nada que enviar.")
+        return
 
     suscriptores = obtener_suscriptores()
     if not suscriptores:
-        logger.info("No hay suscriptores todavía — newsletter generado y archivado, pero no se envía nada.")
+        logger.info("No hay suscriptores todavía.")
         return
 
-    asunto = asunto_para(resultado.flashcard.nombre)
-    html = ruta_html.read_text(encoding="utf-8")
-    envios = enviar_a_lista(suscriptores, asunto, html)
-    fallos = [e for e in envios if "error" in e]
-    logger.info(f"Enviado a {len(envios) - len(fallos)}/{len(envios)} suscriptor(es).")
-    for fallo in fallos:
-        logger.warning(f"Fallo al enviar a {fallo['destinatario']}: {fallo['error']}")
+    enviados = al_dia = no_toca = fallos = 0
+    for suscriptor in suscriptores:
+        indice = suscriptor["siguiente_indice"]
+        if indice >= len(issues):
+            al_dia += 1
+            continue
+        if not _le_toca_a(suscriptor, forzado):
+            no_toca += 1
+            continue
+
+        issue = issues[indice]
+        ruta_html = RUTA_PROYECTO / issue["archivo_html"]
+        try:
+            enviar_email(
+                suscriptor["email"], asunto_para(issue["nombre"]), ruta_html.read_text(encoding="utf-8")
+            )
+            actualizar_progreso_suscriptor(suscriptor["email"], indice + 1)
+            enviados += 1
+        except Exception as error:
+            logger.warning(f"Fallo al enviar issue #{indice + 1} a {suscriptor['email']}: {error}")
+            fallos += 1
+
+    logger.info(
+        f"Goteo: {enviados} enviado(s), {al_dia} al día, {no_toca} todavía no les toca, {fallos} fallo(s)."
+    )
+
+
+def main() -> None:
+    forzado = os.environ.get("FORZAR_ENVIO", "").lower() == "true"
+    if forzado:
+        logger.info("Modo forzado: se ignora la cadencia de 3 días tanto para generar como para enviar.")
+
+    generar_issue_del_dia(forzado)
+    generar_archivo()
+    generar_landing()
+    enviar_pendientes(forzado)
 
 
 if __name__ == "__main__":
