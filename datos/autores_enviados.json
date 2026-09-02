@@ -79,5 +79,14 @@
     "siglo": "siglo XVII",
     "archivo_html": "salida/17th-century/painting/francisco_de_zurbarán.html",
     "fecha_envio": "2026-09-02T01:12:26.451556"
+  },
+  {
+    "nombre": "Eugène Delacroix",
+    "disciplina": "pintura",
+    "corriente": "Romanticism",
+    "periodo": "1798-1863",
+    "siglo": "siglo XIX",
+    "archivo_html": "salida/19th-century/painting/eugène_delacroix.html",
+    "fecha_envio": "2026-09-02T01:44:44.107967"
   }
 ]
