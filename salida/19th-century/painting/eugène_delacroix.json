@@ -1,0 +1,33 @@
+{
+  "nombre": "Eugène Delacroix",
+  "nacionalidad": "French",
+  "disciplina": "pintura",
+  "siglo": "siglo XIX",
+  "corriente": "Romanticism",
+  "periodo": "1798-1863",
+  "biografia": "Born near Paris in 1798, Eugène Delacroix became the undisputed leader of French Romanticism and one of the 19th century's most revolutionary painters. He rejected the rigid precision of his rivals, instead channeling the raw energy of Rubens and Venetian masters—favoring vivid color, dramatic movement, and emotional fire over careful outline. A journey to Morocco transformed his vision, filling his work with exotic scenes drawn from history, literature, and nature's sublime violence, all rendered with expressive brushstrokes that would later inspire Impressionists and Symbolists. Over a lifetime of astonishing productivity—creating over 9,000 works—he also mastered lithography and illustrated the great poets Shakespeare, Scott, and Goethe. Delacroix showed the world that painting could be poetry in motion, a passionate dance of color and form that celebrated human feeling over mathematical perfection.",
+  "imagenes": [
+    {
+      "titulo_obra": "William-Adolphe Bouguereau (1825-1905) - Dante And Virgil In Hell (1850).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/70/William-Adolphe_Bouguereau_%281825-1905%29_-_Dante_And_Virgil_In_Hell_%281850%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_Dante_And_Virgil_In_Hell_(1850).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "William-Adolphe Bouguereau — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Scène des massacres de Scio.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/54/Sc%C3%A8ne_des_massacres_de_Scio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Scène_des_massacres_de_Scio.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Eugène Delacroix — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Eugène Delacroix - La liberté guidant le peuple.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Eugène_Delacroix_-_La_liberté_guidant_le_peuple.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Eugène Delacroix — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-02T01:44:37.010988"
+}
