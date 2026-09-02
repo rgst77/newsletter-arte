@@ -2,7 +2,7 @@ import html
 import json
 from pathlib import Path
 
-from plantillas.email import DISCIPLINAS_EN, _romano_a_entero, _siglo_a_ordinal
+from plantillas.email import DISCIPLINAS_EMOJI, DISCIPLINAS_EN, _romano_a_entero, _siglo_a_ordinal
 
 RUTA_PROYECTO = Path(__file__).resolve().parent.parent
 RUTA_ENVIADOS = RUTA_PROYECTO / "datos" / "autores_enviados.json"
@@ -32,19 +32,29 @@ def _siglo_numero(siglo: str) -> int:
 
 
 def agrupar_por_disciplina(incluidos: list[dict]) -> list[tuple[str, list[dict]]]:
-    # Secciones por disciplina (orden alfabético del nombre en inglés), y
-    # dentro de cada una ordenado por siglo — así el archivo se puede recorrer
-    # como una progresión histórica dentro de cada tipo de arte, en vez de
-    # una lista suelta en orden de envío.
+    # Agrupa por la clave interna de disciplina (español) en vez del nombre
+    # mostrado, para poder derivar emoji/slug/etiqueta de forma consistente
+    # en un solo sitio. Orden alfabético por el nombre en inglés, y dentro de
+    # cada grupo ordenado por siglo — recorrible como una progresión
+    # histórica dentro de cada tipo de arte, no una lista suelta.
     grupos: dict[str, list[dict]] = {}
     for registro in incluidos:
-        etiqueta = DISCIPLINAS_EN.get(registro.get("disciplina", ""), registro.get("disciplina", "OTHER").upper())
-        grupos.setdefault(etiqueta, []).append(registro)
+        clave = registro.get("disciplina", "other")
+        grupos.setdefault(clave, []).append(registro)
 
     for entradas in grupos.values():
         entradas.sort(key=lambda r: _siglo_numero(r["siglo"]))
 
-    return sorted(grupos.items())
+    return sorted(grupos.items(), key=lambda par: DISCIPLINAS_EN.get(par[0], par[0].upper()))
+
+
+def disciplina_info(disciplina: str) -> dict:
+    return {
+        "clave": disciplina,
+        "etiqueta": DISCIPLINAS_EN.get(disciplina, disciplina.upper()),
+        "emoji": DISCIPLINAS_EMOJI.get(disciplina, ""),
+        "slug": DISCIPLINAS_EN.get(disciplina, disciplina).lower(),
+    }
 
 
 def tarjeta_html(registro: dict, prefijo_ruta: str = "") -> str:
