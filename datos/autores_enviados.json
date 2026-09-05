@@ -88,5 +88,14 @@
     "siglo": "siglo XIX",
     "archivo_html": "salida/19th-century/painting/eugène_delacroix.html",
     "fecha_envio": "2026-09-02T01:44:44.107967"
+  },
+  {
+    "nombre": "Pablo Picasso",
+    "disciplina": "pintura",
+    "corriente": "Cubism",
+    "periodo": "1901-1973 (active from early 20th century through 1973; Cubism period c. 1907-1917)",
+    "siglo": "siglo XX",
+    "archivo_html": "salida/20th-century/painting/pablo_picasso.html",
+    "fecha_envio": "2026-09-05T02:41:52.778528"
   }
 ]
