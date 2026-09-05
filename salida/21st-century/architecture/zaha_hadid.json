@@ -1,0 +1,33 @@
+{
+  "nombre": "Zaha Hadid",
+  "nacionalidad": "Iraqi-British",
+  "disciplina": "arquitectura",
+  "siglo": "siglo XXI",
+  "corriente": "Deconstructivism and Parametricism",
+  "periodo": "1980-2016",
+  "biografia": "Born in Baghdad in 1950, Zaha Hadid brought a mathematician's mind to architecture, studying at London's prestigious Architectural Association before launching her own practice in 1980. Her 1983 competition-winning design for The Peak in Hong Kong announced a bold new style—deconstructivism—with its sharp angles, fragmentation, and daring forms that challenged conventional architecture. As technology evolved, so did her vision; she became famous as the \"Queen of Curves\" for her flowing, organic designs created through cutting-edge parametric software and innovative engineering. In 2004, she made history as the first woman to win the Pritzker Architecture Prize, and in 2012 was made a Dame for her transformative contributions to the field. Hadid's legacy—from her groundbreaking early concepts to her realized masterpieces—reshaped how architects think about space, form, and the future of building design.",
+  "imagenes": [
+    {
+      "titulo_obra": "2025-04-02 GV RegBas Fuehrung Vitra 038.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d0/2025-04-02_GV_RegBas_Fuehrung_Vitra_038.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:2025-04-02_GV_RegBas_Fuehrung_Vitra_038.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Ahmet Düz, Dreiländer- & Oberrheinfotograf — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "2012 - London Aquatics Centre, Queen Elizabeth Olympic Park, London ( Ank Kumar ) 05.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/b/ba/2012_-_London_Aquatics_Centre%2C_Queen_Elizabeth_Olympic_Park%2C_London_%28_Ank_Kumar_%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:2012_-_London_Aquatics_Centre,_Queen_Elizabeth_Olympic_Park,_London_(_Ank_Kumar_)_05.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Ank Kumar — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Cutlery designed by Zaha Hadid for company WMF, 2007 N.3.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cutlery_designed_by_Zaha_Hadid_for_company_WMF%2C_2007_N.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Cutlery_designed_by_Zaha_Hadid_for_company_WMF,_2007_N.3.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Pittigrilli — CC BY-SA 4.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-05T11:06:10.528427"
+}

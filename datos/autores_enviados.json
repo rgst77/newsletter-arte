@@ -97,5 +97,14 @@
     "siglo": "siglo XX",
     "archivo_html": "salida/20th-century/painting/pablo_picasso.html",
     "fecha_envio": "2026-09-05T02:41:52.778528"
+  },
+  {
+    "nombre": "Zaha Hadid",
+    "disciplina": "arquitectura",
+    "corriente": "Deconstructivism and Parametricism",
+    "periodo": "1980-2016",
+    "siglo": "siglo XXI",
+    "archivo_html": "salida/21st-century/architecture/zaha_hadid.html",
+    "fecha_envio": "2026-09-05T11:06:15.431747"
   }
 ]
