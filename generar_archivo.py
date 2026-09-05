@@ -8,7 +8,7 @@ CABECERA_FUENTES = '<link rel="preconnect" href="https://fonts.googleapis.com">\
 
 
 def _logo(prefijo_ruta: str) -> str:
-    return f"""<a href="{prefijo_ruta}index.html" style="text-decoration:none; font-family:'Helvetica Neue',Arial,sans-serif; font-size:28px; font-weight:900;">
+    return f"""<a href="{prefijo_ruta}index.html" style="text-decoration:none; font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:28px; font-weight:900;">
       <span style="color:#f5f5f5;">curios</span><span style="color:#00cc00;">ART</span><span style="color:#f5f5f5;">y</span>
     </a>"""
 

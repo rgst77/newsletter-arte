@@ -69,10 +69,10 @@ def generar() -> None:
 <body style="margin:0; padding:0; background-color:#0a0a0a;">
   <div style="max-width:760px; margin:0 auto; padding:64px 24px;">
 
-    <span style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:28px; font-weight:900;">
+    <span style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:28px; font-weight:900;">
       <span style="color:#f5f5f5;">curios</span><span style="color:#00cc00;">ART</span><span style="color:#f5f5f5;">y</span>
     </span>
-    <p style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; letter-spacing:2px; color:#6b6b6b; margin:6px 0 48px 0;">ONE ARTIST AT A TIME</p>
+    <p style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:13px; letter-spacing:2px; color:#6b6b6b; margin:6px 0 48px 0;">ONE ARTIST AT A TIME</p>
 
     <h1 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:36px; font-weight:900; line-height:1.25; color:#f5f5f5; margin:0 0 20px 0;">
       Discover art history,<br/>one flashcard at a time.
