@@ -6,13 +6,14 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
-RESEND_API = "https://api.resend.com/emails"
+BREVO_API = "https://api.brevo.com/v3/smtp/email"
 
-# Sin dominio propio verificado en Resend, "onboarding@resend.dev" solo puede
-# mandar al email con el que te diste de alta en Resend — es su forma de
-# evitar abuso. Para mandar a suscriptores externos reales hará falta
-# verificar un dominio propio más adelante.
-REMITENTE_PRUEBA = "curiosARTy <onboarding@resend.dev>"
+# Sin dominio propio verificado, Brevo sustituye el dominio de envío por el
+# suyo compartido por debajo (para cumplir las reglas de Gmail/Yahoo), pero
+# a diferencia de Resend SÍ deja mandar a cualquier destinatario real, no
+# solo al email de la cuenta — por eso lo elegimos.
+REMITENTE_NOMBRE = "curiosARTy"
+REMITENTE_EMAIL = "rodrigo-gst@hotmail.es"
 
 
 def asunto_para(nombre_autor: str) -> str:
@@ -21,13 +22,17 @@ def asunto_para(nombre_autor: str) -> str:
 
 def enviar_email(destinatario: str, asunto: str, html: str) -> dict:
     respuesta = requests.post(
-        RESEND_API,
-        headers={"Authorization": f"Bearer {os.environ['RESEND_API_KEY']}"},
+        BREVO_API,
+        headers={
+            "api-key": os.environ["BREVO_API_KEY"],
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
         json={
-            "from": REMITENTE_PRUEBA,
-            "to": [destinatario],
+            "sender": {"name": REMITENTE_NOMBRE, "email": REMITENTE_EMAIL},
+            "to": [{"email": destinatario}],
             "subject": asunto,
-            "html": html,
+            "htmlContent": html,
         },
         timeout=15,
     )

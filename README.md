@@ -32,7 +32,7 @@ Everything — code, generated issues, and the send history — lives in this pu
 
 ## Stack
 
-Python · Anthropic API (Claude Haiku) · Supabase (subscriber storage, RLS-only-insert) · Resend (delivery) · GitHub Pages (hosting)
+Python · Anthropic API (Claude Haiku) · Supabase (subscriber storage, RLS-only-insert) · Brevo (delivery) · GitHub Pages (hosting)
 
 ## Free by design
 
