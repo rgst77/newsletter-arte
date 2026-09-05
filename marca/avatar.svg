@@ -1,0 +1,10 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="curiosARTy avatar">
+  <title>curiosARTy</title>
+  <rect x="0" y="0" width="512" height="512" fill="#0a0a0a"/>
+  <text x="256" y="330"
+        text-anchor="middle"
+        font-family="Arial Black, Helvetica, sans-serif"
+        font-weight="900"
+        font-size="340"
+        fill="#00cc00">C</text>
+</svg>
