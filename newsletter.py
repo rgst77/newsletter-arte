@@ -32,7 +32,7 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
     notas = investigar(autor, modelo_investigador)
     logger.info(f"Investigación completa: {len(notas.titulos_obras_conocidas)} obras encontradas")
 
-    imagenes = elegir_imagenes(notas.nombre, notas.titulos_obras_conocidas, cantidad=3)
+    imagenes = elegir_imagenes(notas.nombre, autor.disciplina, notas.titulos_obras_conocidas, cantidad=3)
     logger.info(f"Imágenes encontradas: {len(imagenes)}/3")
 
     flashcard = redactar(notas, autor.disciplina, autor.siglo, imagenes, modelo_redactor)

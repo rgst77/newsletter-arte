@@ -57,7 +57,9 @@ def _texto_plano(html: str) -> str:
     return BeautifulSoup(html, "html.parser").get_text().strip()
 
 
-def buscar_en_wikimedia(nombre_autor: str, max_resultados: int = 3) -> list[ImagenObra]:
+def buscar_en_wikimedia(
+    nombre_autor: str, max_resultados: int = 3, verificar_autor: bool = True
+) -> list[ImagenObra]:
     respuesta = requests.get(
         WIKIMEDIA_API,
         params={
@@ -78,6 +80,13 @@ def buscar_en_wikimedia(nombre_autor: str, max_resultados: int = 3) -> list[Imag
     respuesta.raise_for_status()
     paginas = respuesta.json().get("query", {}).get("pages", {})
 
+    # La búsqueda de Commons es por texto libre, no por autor real: un cuadro
+    # de otro pintor con tema o título parecido (ej. otro "Dante") puede
+    # colarse aunque no sea de quien buscamos. Se descarta si el campo
+    # "Artist" real de la imagen no menciona el apellido del autor buscado —
+    # más vale una imagen de menos que una mal atribuida en el newsletter.
+    apellido = nombre_autor.split()[-1].lower()
+
     imagenes = []
     for pagina in paginas.values():
         info = pagina.get("imageinfo")
@@ -88,6 +97,8 @@ def buscar_en_wikimedia(nombre_autor: str, max_resultados: int = 3) -> list[Imag
         autor = metadatos.get("Artist", {}).get("value", "")
         licencia = metadatos.get("LicenseShortName", {}).get("value", "licencia no especificada")
         autor_limpio = _texto_plano(autor) if autor else "autor no especificado"
+        if verificar_autor and autor and apellido not in autor_limpio.lower():
+            continue
         imagenes.append(
             ImagenObra(
                 titulo_obra=titulo.removeprefix("File:"),
