@@ -150,7 +150,7 @@ def _footer() -> str:
         <p style="margin:0; font-family:{FUENTE_PEQUENA}; font-size:11px; letter-spacing:0.5px;">
           <a href="https://github.com/rgst77/newsletter-arte" style="color:{VERDE_MARCA}; text-decoration:none;">Archive on GitHub</a>
           <span style="color:#333333;"> &middot; </span>
-          <a href="#" style="color:{GRIS_TENUE}; text-decoration:none;">Unsubscribe</a>
+          <a href="__UNSUBSCRIBE_URL__" style="color:{GRIS_TENUE}; text-decoration:none;">Unsubscribe</a>
         </p>
       </td>
     </tr>"""

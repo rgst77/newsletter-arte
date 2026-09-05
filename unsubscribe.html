@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unsubscribe — curiosARTy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0; padding:0; background-color:#0a0a0a;">
+  <div style="max-width:480px; margin:0 auto; padding:80px 24px; text-align:center;">
+    <a href="index.html" style="text-decoration:none; font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:24px; font-weight:900;">
+      <span style="color:#f5f5f5;">curios</span><span style="color:#00cc00;">ART</span><span style="color:#f5f5f5;">y</span>
+    </a>
+
+    <h1 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:22px; color:#f5f5f5; margin:32px 0 12px 0;">Unsubscribe</h1>
+    <p id="mensaje" style="font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif; font-size:15px; line-height:1.6; color:#a3a3a3; margin:0 0 28px 0;">
+      Click below to stop receiving curiosARTy.
+    </p>
+
+    <button id="boton" style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; font-weight:700; letter-spacing:1px; color:#0a0a0a; background-color:#00cc00; border:none; padding:14px 28px; cursor:pointer;">
+      CONFIRM UNSUBSCRIBE
+    </button>
+  </div>
+
+  <script>
+    const SUPABASE_URL = 'https://ctfsyrjsgnhlstrjvcog.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_9HcH7z2LhaQs3qQArB2YuA_5oiRxiB-';
+
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+    const mensaje = document.getElementById('mensaje');
+    const boton = document.getElementById('boton');
+
+    // No se hace nada al cargar la página a propósito — algunos clientes de
+    // correo/escáneres de seguridad visitan automáticamente los enlaces de
+    // un email para comprobarlos, sin que el usuario haga clic. Si la baja
+    // se disparara solo con abrir el enlace, eso daría de baja a gente que
+    // nunca lo pidió. Por eso hace falta un clic real en el botón.
+    if (!token) {
+      mensaje.textContent = "This link is missing its unsubscribe code — please use the link from your email.";
+      boton.style.display = 'none';
+    } else {
+      boton.addEventListener('click', async () => {
+        boton.disabled = true;
+        boton.textContent = '...';
+        try {
+          const respuesta = await fetch(`${SUPABASE_URL}/rest/v1/rpc/darse_de_baja`, {
+            method: 'POST',
+            headers: {
+              apikey: SUPABASE_ANON_KEY,
+              Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ p_token: token }),
+          });
+          const borrado = await respuesta.json();
+          if (respuesta.ok && borrado === true) {
+            mensaje.textContent = "You're unsubscribed. Sorry to see you go.";
+            boton.style.display = 'none';
+          } else {
+            mensaje.textContent = "This link has already been used, or isn't valid.";
+            boton.style.display = 'none';
+          }
+        } catch (error) {
+          mensaje.textContent = "Something went wrong. Please try again in a moment.";
+          boton.disabled = false;
+          boton.textContent = 'CONFIRM UNSUBSCRIBE';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

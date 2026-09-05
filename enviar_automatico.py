@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 
 DIAS_ENTRE_ENVIOS = 3
 RUTA_PROYECTO = Path(__file__).resolve().parent
+URL_BAJA_BASE = "https://rgst77.github.io/newsletter-arte/unsubscribe.html?token="
 
 # Modelo de goteo: el contenido se genera a su propio ritmo (rotación por
 # siglos, cada 3 días), pero cada suscriptor recibe los issues empezando por
@@ -76,10 +77,14 @@ def enviar_pendientes(forzado: bool) -> None:
 
         issue = issues[indice]
         ruta_html = RUTA_PROYECTO / issue["archivo_html"]
+        # El HTML guardado es el mismo para todos; el enlace de baja se
+        # inyecta aquí, por destinatario, con su token único — así nadie
+        # puede dar de baja a otro suscriptor sabiendo solo su email.
+        html_personalizado = ruta_html.read_text(encoding="utf-8").replace(
+            "__UNSUBSCRIBE_URL__", URL_BAJA_BASE + suscriptor["token"]
+        )
         try:
-            enviar_email(
-                suscriptor["email"], asunto_para(issue["nombre"]), ruta_html.read_text(encoding="utf-8")
-            )
+            enviar_email(suscriptor["email"], asunto_para(issue["nombre"]), html_personalizado)
             actualizar_progreso_suscriptor(suscriptor["email"], indice + 1)
             enviados += 1
         except Exception as error:

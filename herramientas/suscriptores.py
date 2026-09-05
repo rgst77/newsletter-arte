@@ -21,7 +21,7 @@ def _cabeceras() -> dict:
 def obtener_suscriptores() -> list[dict]:
     respuesta = requests.get(
         f"{os.environ['SUPABASE_URL']}/rest/v1/suscriptores",
-        params={"select": "email,siguiente_indice,fecha_ultimo_envio"},
+        params={"select": "email,siguiente_indice,fecha_ultimo_envio,token"},
         headers=_cabeceras(),
         timeout=15,
     )
