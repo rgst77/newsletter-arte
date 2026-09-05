@@ -34,6 +34,8 @@ Everything — code, generated issues, and the send history — lives in this pu
 
 New content is generated on its own clock (roughly one new artist every 3 days, rotating chronologically through the centuries covered). Subscribers are on a separate clock: everyone starts at issue #1 the moment they sign up and receives the next one every 3 days after that — not whatever happens to be current. Two subscribers who join a year apart both get the full sequence, in order, from the beginning.
 
+It's a finite series, not an endless feed — roughly 700 artists across the 15th to 21st centuries, and counting.
+
 ## Stack
 
 Python · Anthropic API (Claude Haiku) · Supabase (subscriber storage + per-subscriber delivery progress, RLS-only-insert) · Brevo (delivery) · GitHub Pages (hosting)
