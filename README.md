@@ -22,7 +22,7 @@ A pipeline of four agents, each with a single job, handing off structured, valid
 | Agent | Job |
 |---|---|
 | **Investigador** | Picks the next author from the catalog, researches them for real (web search, no hallucinated facts), and extracts verified nationality, movement, period, and the exact titles of known works |
-| **Imágenes** | Searches The Met Open Access and Wikimedia Commons for those exact works — public domain or freely-licensed only, with real author/license attribution captured |
+| **Imágenes** | Searches The Met Open Access and Wikimedia Commons for those exact works, falling back to Smithsonian Open Access for regions the first two under-cover — public domain or freely-licensed only, with real author/license attribution captured |
 | **Redactor** | Turns the raw research into a short, warm flashcard-style biography — never touches a URL, so it can't invent or corrupt one |
 | **Verificador** | Cross-checks the biography against the original research notes and flags any unsupported claim before anything ships |
 
@@ -38,7 +38,7 @@ It's a finite series, not an endless feed — roughly 700 artists across the 15t
 
 ## Stack
 
-Python · Anthropic API (Claude Haiku) · Supabase (subscriber storage + per-subscriber delivery progress, RLS-only-insert) · Brevo (delivery) · GitHub Pages (hosting)
+Python · Anthropic API (Claude Haiku) · Met Open Access / Wikimedia Commons / Smithsonian Open Access (images) · Supabase (subscriber storage + per-subscriber delivery progress, RLS-only-insert) · Brevo (delivery) · GitHub Pages (hosting)
 
 ## Free by design
 

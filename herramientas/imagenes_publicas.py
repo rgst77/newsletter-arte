@@ -1,3 +1,4 @@
+import os
 import time
 
 import requests
@@ -7,6 +8,7 @@ from contratos.esquemas import ImagenObra
 
 MET_BASE = "https://collectionapi.metmuseum.org/public/collection/v1"
 WIKIMEDIA_API = "https://commons.wikimedia.org/w/api.php"
+SMITHSONIAN_API = "https://api.si.edu/openaccess/api/v1.0/search"
 CABECERAS = {"User-Agent": "newsletter-arte-proyecto-aprendizaje/1.0 (uso educativo, sin fines comerciales)"}
 
 
@@ -106,6 +108,78 @@ def buscar_en_wikimedia(
                 url_fuente=f"https://commons.wikimedia.org/wiki/{titulo.replace(' ', '_')}",
                 fuente="Wikimedia Commons",
                 creditos=f"{autor_limpio} — {licencia} (Wikimedia Commons)",
+            )
+        )
+    return imagenes
+
+
+def buscar_en_smithsonian(
+    nombre_autor: str, max_resultados: int = 3, verificar_autor: bool = True
+) -> list[ImagenObra]:
+    # Tercera fuente, de ultimo recurso: Met y Wikimedia estan muy sesgados
+    # hacia arte europeo/norteamericano, y Smithsonian Open Access tiene
+    # museos dedicados a Africa, Asia y pueblos originarios de America que
+    # ayudan a cubrir regiones que las otras dos fuentes dejan vacias.
+    # Sin SMITHSONIAN_API_KEY usa la DEMO_KEY publica de api.data.gov, que
+    # solo permite 10 peticiones/hora - de ahi que solo se use como ultimo
+    # recurso y no en cada busqueda.
+    clave_api = os.environ.get("SMITHSONIAN_API_KEY") or "DEMO_KEY"
+    try:
+        respuesta = requests.get(
+            SMITHSONIAN_API,
+            params={
+                "q": f"{nombre_autor} AND online_media_type:Images",
+                "api_key": clave_api,
+                "rows": 10,
+            },
+            headers=CABECERAS,
+            timeout=10,
+        )
+    except requests.RequestException:
+        return []
+    if respuesta.status_code == 429:
+        return []
+    respuesta.raise_for_status()
+    filas = respuesta.json().get("response", {}).get("rows", [])
+
+    apellido = nombre_autor.split()[-1].lower()
+    imagenes: list[ImagenObra] = []
+    for fila in filas:
+        if len(imagenes) >= max_resultados:
+            break
+        contenido = fila.get("content", {})
+        descriptivo = contenido.get("descriptiveNonRepeating", {})
+        freetext = contenido.get("freetext", {})
+
+        nombres_asociados = " ".join(
+            entrada.get("content", "") for entrada in freetext.get("name", [])
+        ).lower()
+        if verificar_autor and nombres_asociados and apellido not in nombres_asociados:
+            continue
+
+        media = descriptivo.get("online_media", {}).get("media", [])
+        imagen_libre = next(
+            (m for m in media if m.get("type") == "Images" and m.get("usage", {}).get("access") == "CC0"),
+            None,
+        )
+        if not imagen_libre:
+            continue
+
+        url_imagen = next(
+            (r["url"] for r in imagen_libre.get("resources", []) if r.get("label") == "High-resolution JPEG"),
+            imagen_libre.get("content", ""),
+        )
+        if not url_imagen:
+            continue
+
+        credit_line = freetext.get("creditLine", [{}])[0].get("content", "Smithsonian Institution")
+        imagenes.append(
+            ImagenObra(
+                titulo_obra=fila.get("title") or "Sin titulo",
+                url_imagen=url_imagen,
+                url_fuente=descriptivo.get("record_link", ""),
+                fuente="Smithsonian Open Access",
+                creditos=f"Dominio publico (CC0) - {credit_line}",
             )
         )
     return imagenes

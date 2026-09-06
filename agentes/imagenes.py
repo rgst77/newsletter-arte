@@ -1,5 +1,5 @@
 from contratos.esquemas import ImagenObra
-from herramientas.imagenes_publicas import buscar_en_met, buscar_en_wikimedia
+from herramientas.imagenes_publicas import buscar_en_met, buscar_en_smithsonian, buscar_en_wikimedia
 
 
 # En Wikimedia el campo "Artist" solo identifica de forma fiable al creador
@@ -19,6 +19,16 @@ def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool) -> lis
 
     if len(imagenes) < cantidad:
         imagenes += buscar_en_wikimedia(consulta, cantidad - len(imagenes), verificar_autor)
+
+    if len(imagenes) < cantidad:
+        # Ultimo recurso: Smithsonian cubre regiones (Africa, Asia, pueblos
+        # originarios) donde Met y Wikimedia suelen no tener nada. Se deja
+        # para el final porque la DEMO_KEY sin clave propia solo permite
+        # 10 peticiones/hora.
+        try:
+            imagenes += buscar_en_smithsonian(consulta, cantidad - len(imagenes), verificar_autor)
+        except Exception:
+            pass
 
     return imagenes
 
