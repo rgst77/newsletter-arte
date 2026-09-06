@@ -1,20 +1,2006 @@
 [
-  {"nombre": "Auguste Rodin", "disciplina": "escultura", "siglo": "siglo XIX", "corriente_orientativa": "Sculptural Impressionism"},
-  {"nombre": "Camille Claudel", "disciplina": "escultura", "siglo": "siglo XIX", "corriente_orientativa": "Symbolism"},
-  {"nombre": "Antoni Gaudí", "disciplina": "arquitectura", "siglo": "siglo XIX", "corriente_orientativa": "Catalan Modernism"},
-  {"nombre": "Eugène Delacroix", "disciplina": "pintura", "siglo": "siglo XIX", "corriente_orientativa": "Romanticism"},
-  {"nombre": "Charles Baudelaire", "disciplina": "poesía", "siglo": "siglo XIX", "corriente_orientativa": "Symbolism"},
-  {"nombre": "Gustave Eiffel", "disciplina": "arquitectura", "siglo": "siglo XIX", "corriente_orientativa": "Iron architecture"},
-  {"nombre": "Filippo Brunelleschi", "disciplina": "arquitectura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
-  {"nombre": "Donatello", "disciplina": "escultura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
-  {"nombre": "Sandro Botticelli", "disciplina": "pintura", "siglo": "siglo XV", "corriente_orientativa": "Early Renaissance"},
-  {"nombre": "Gian Lorenzo Bernini", "disciplina": "escultura", "siglo": "siglo XVII", "corriente_orientativa": "Baroque"},
-  {"nombre": "Francisco de Zurbarán", "disciplina": "pintura", "siglo": "siglo XVII", "corriente_orientativa": "Spanish Baroque"},
-  {"nombre": "Francisco de Quevedo", "disciplina": "poesía", "siglo": "siglo XVII", "corriente_orientativa": "Baroque / Conceptismo"},
-  {"nombre": "Le Corbusier", "disciplina": "arquitectura", "siglo": "siglo XX", "corriente_orientativa": "Modern Movement"},
-  {"nombre": "Pablo Picasso", "disciplina": "pintura", "siglo": "siglo XX", "corriente_orientativa": "Cubism"},
-  {"nombre": "Federico García Lorca", "disciplina": "poesía", "siglo": "siglo XX", "corriente_orientativa": "Generation of '27"},
-  {"nombre": "Zaha Hadid", "disciplina": "arquitectura", "siglo": "siglo XXI", "corriente_orientativa": "Parametricism / Deconstructivism"},
-  {"nombre": "Renzo Piano", "disciplina": "arquitectura", "siglo": "siglo XXI", "corriente_orientativa": "High-tech architecture"},
-  {"nombre": "Louise Glück", "disciplina": "poesía", "siglo": "siglo XXI", "corriente_orientativa": "Contemporary American poetry"}
+  {
+    "nombre": "Auguste Rodin",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Sculptural Impressionism"
+  },
+  {
+    "nombre": "Camille Claudel",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Symbolism"
+  },
+  {
+    "nombre": "Antoni Gaudí",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Catalan Modernism"
+  },
+  {
+    "nombre": "Eugène Delacroix",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanticism"
+  },
+  {
+    "nombre": "Charles Baudelaire",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Symbolism"
+  },
+  {
+    "nombre": "Gustave Eiffel",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Iron architecture"
+  },
+  {
+    "nombre": "Filippo Brunelleschi",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Donatello",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Sandro Botticelli",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Gian Lorenzo Bernini",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Baroque"
+  },
+  {
+    "nombre": "Francisco de Zurbarán",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque"
+  },
+  {
+    "nombre": "Francisco de Quevedo",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Baroque / Conceptismo"
+  },
+  {
+    "nombre": "Le Corbusier",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modern Movement"
+  },
+  {
+    "nombre": "Pablo Picasso",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cubism"
+  },
+  {
+    "nombre": "Federico García Lorca",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Generation of '27"
+  },
+  {
+    "nombre": "Zaha Hadid",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Parametricism / Deconstructivism"
+  },
+  {
+    "nombre": "Renzo Piano",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "High-tech architecture"
+  },
+  {
+    "nombre": "Louise Glück",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary American poetry"
+  },
+  {
+    "nombre": "Michelino da Besozzo",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Lombard school / International Gothic"
+  },
+  {
+    "nombre": "Sassetta",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Sienese school"
+  },
+  {
+    "nombre": "Matteo di Giovanni",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Sienese school"
+  },
+  {
+    "nombre": "Lluís Dalmau",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Hispano-Flemish"
+  },
+  {
+    "nombre": "Miguel Ximénez",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Aragonese Gothic"
+  },
+  {
+    "nombre": "Antonio del Rincón",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Hispano-Flemish court painting"
+  },
+  {
+    "nombre": "Bartolomé Bermejo",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Hispano-Flemish"
+  },
+  {
+    "nombre": "Lieven van Lathem",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Netherlandish / manuscript illumination"
+  },
+  {
+    "nombre": "Sofonisba Anguissola",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Italian Renaissance / court portraiture"
+  },
+  {
+    "nombre": "Lavinia Fontana",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Bolognese school"
+  },
+  {
+    "nombre": "Pedro Berruguete",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Hispano-Flemish Renaissance"
+  },
+  {
+    "nombre": "Luis de Morales",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Mannerism"
+  },
+  {
+    "nombre": "Joachim Patinir",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Flemish landscape painting"
+  },
+  {
+    "nombre": "Jan Gossaert",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Northern Renaissance / Romanism"
+  },
+  {
+    "nombre": "Maarten van Heemskerck",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Dutch Renaissance"
+  },
+  {
+    "nombre": "Catharina van Hemessen",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Flemish Renaissance"
+  },
+  {
+    "nombre": "Judith Leyster",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age"
+  },
+  {
+    "nombre": "Clara Peeters",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Flemish still life"
+  },
+  {
+    "nombre": "Gerard ter Borch",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age genre painting"
+  },
+  {
+    "nombre": "Willem Claesz Heda",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age still life"
+  },
+  {
+    "nombre": "Elisabetta Sirani",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Bolognese Baroque"
+  },
+  {
+    "nombre": "Josefa de Óbidos",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Portuguese Baroque"
+  },
+  {
+    "nombre": "Juan de Valdés Leal",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque (Seville)"
+  },
+  {
+    "nombre": "Adriaen Coorte",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age still life"
+  },
+  {
+    "nombre": "Rosalba Carriera",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo / pastel portraiture"
+  },
+  {
+    "nombre": "Anna Dorothea Therbusch",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "German Rococo"
+  },
+  {
+    "nombre": "Anton Raphael Mengs",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "early Neoclassicism"
+  },
+  {
+    "nombre": "Francesco Guardi",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Venetian school / vedute"
+  },
+  {
+    "nombre": "Miguel Cabrera",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "New Spain Baroque / casta painting"
+  },
+  {
+    "nombre": "Cristóbal de Villalpando",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "New Spain Baroque"
+  },
+  {
+    "nombre": "Luis Paret y Alcázar",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Spanish Rococo"
+  },
+  {
+    "nombre": "José Campeche",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Puerto Rican Rococo"
+  },
+  {
+    "nombre": "Osman Hamdi Bey",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Ottoman Orientalism"
+  },
+  {
+    "nombre": "Raden Saleh",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanticism (Dutch East Indies)"
+  },
+  {
+    "nombre": "Juan Luna",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Philippine academic Romanticism"
+  },
+  {
+    "nombre": "Marie Bracquemond",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Impressionism"
+  },
+  {
+    "nombre": "Eva Gonzalès",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Impressionism"
+  },
+  {
+    "nombre": "Olga Boznańska",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Polish Impressionism / Symbolism"
+  },
+  {
+    "nombre": "Ivan Shishkin",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Russian Realism / Peredvizhniki"
+  },
+  {
+    "nombre": "Marià Fortuny",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Spanish Orientalism / academic Romanticism"
+  },
+  {
+    "nombre": "Yūzō Saeki",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Japanese Fauvist Expressionism (yōga)"
+  },
+  {
+    "nombre": "Tarsila do Amaral",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Brazilian Modernism / Anthropophagy"
+  },
+  {
+    "nombre": "Amrita Sher-Gil",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Indian modernism"
+  },
+  {
+    "nombre": "Fahrelnissa Zeid",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Turkish abstraction / School of Paris"
+  },
+  {
+    "nombre": "Irma Stern",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "South African Expressionism"
+  },
+  {
+    "nombre": "Ben Enwonwu",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Nigerian modernism"
+  },
+  {
+    "nombre": "Gerard Sekoto",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "South African social realism"
+  },
+  {
+    "nombre": "Hilma af Klint",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "early abstraction / spiritualism"
+  },
+  {
+    "nombre": "Marlene Dumas",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary figurative painting"
+  },
+  {
+    "nombre": "Chris Ofili",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary British painting"
+  },
+  {
+    "nombre": "Jenny Saville",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Young British Artists / figurative"
+  },
+  {
+    "nombre": "Kerry James Marshall",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary African-American figurative painting"
+  },
+  {
+    "nombre": "Julie Mehretu",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary abstraction"
+  },
+  {
+    "nombre": "Njideka Akunyili Crosby",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary collage-painting"
+  },
+  {
+    "nombre": "Firelei Báez",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary diasporic painting"
+  },
+  {
+    "nombre": "Amoako Boafo",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Ghanaian portraiture"
+  },
+  {
+    "nombre": "Bernardo Rossellino",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance (Florentine)"
+  },
+  {
+    "nombre": "Desiderio da Settignano",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance (Florentine)"
+  },
+  {
+    "nombre": "Mino da Fiesole",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance (Florentine)"
+  },
+  {
+    "nombre": "Agostino di Duccio",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Gil de Siloé",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Hispano-Flemish Gothic (Isabelline)"
+  },
+  {
+    "nombre": "Claus Sluter",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Burgundian Gothic realism"
+  },
+  {
+    "nombre": "Niccolò dell'Arca",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance (terracotta)"
+  },
+  {
+    "nombre": "Matteo Civitali",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Alonso Berruguete",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Renaissance / Mannerism"
+  },
+  {
+    "nombre": "Bartolomé Ordóñez",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Renaissance"
+  },
+  {
+    "nombre": "Juan de Juni",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Castilian Renaissance"
+  },
+  {
+    "nombre": "Jean Goujon",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance"
+  },
+  {
+    "nombre": "Germain Pilon",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance / Mannerism"
+  },
+  {
+    "nombre": "Bartolomeo Ammannati",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mannerism"
+  },
+  {
+    "nombre": "Jacopo Sansovino",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "High Renaissance / Mannerism"
+  },
+  {
+    "nombre": "Damián Forment",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Aragonese Renaissance"
+  },
+  {
+    "nombre": "Alessandro Algardi",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Roman Baroque"
+  },
+  {
+    "nombre": "Juan Martínez Montañés",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Sevillian Baroque"
+  },
+  {
+    "nombre": "Gregorio Fernández",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Castilian Baroque"
+  },
+  {
+    "nombre": "Pedro de Mena",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Andalusian Baroque"
+  },
+  {
+    "nombre": "Pierre Puget",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French Baroque"
+  },
+  {
+    "nombre": "Michel Anguier",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French Baroque"
+  },
+  {
+    "nombre": "Grinling Gibbons",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "English Baroque (wood carving)"
+  },
+  {
+    "nombre": "Francesco Mochi",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Early Baroque"
+  },
+  {
+    "nombre": "Luisa Roldán",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque"
+  },
+  {
+    "nombre": "Jean-Baptiste Pigalle",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo / early Neoclassicism"
+  },
+  {
+    "nombre": "Ignaz Günther",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Bavarian Rococo"
+  },
+  {
+    "nombre": "Franz Xaver Messerschmidt",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "late Baroque / proto-Expressionism"
+  },
+  {
+    "nombre": "Francisco Salzillo",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Spanish Baroque"
+  },
+  {
+    "nombre": "Étienne Maurice Falconet",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo / Neoclassicism"
+  },
+  {
+    "nombre": "Georg Raphael Donner",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Austrian Baroque"
+  },
+  {
+    "nombre": "Louis-François Roubiliac",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo (England)"
+  },
+  {
+    "nombre": "Jules Dalou",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "French Naturalism / Realism"
+  },
+  {
+    "nombre": "Vincenzo Gemito",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neapolitan Realism"
+  },
+  {
+    "nombre": "Medardo Rosso",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Sculptural Impressionism"
+  },
+  {
+    "nombre": "Harriet Hosmer",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism (American, Rome)"
+  },
+  {
+    "nombre": "Edmonia Lewis",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "Bertel Thorvaldsen",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "John Gibson",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "Antonin Mercié",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Academic Realism"
+  },
+  {
+    "nombre": "Jacob Epstein",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernist / Vorticism-adjacent"
+  },
+  {
+    "nombre": "Ossip Zadkine",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cubism (School of Paris)"
+  },
+  {
+    "nombre": "Jacques Lipchitz",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cubism"
+  },
+  {
+    "nombre": "Marino Marini",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Figurative Modernism"
+  },
+  {
+    "nombre": "Germaine Richier",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Post-war Figurative Expressionism"
+  },
+  {
+    "nombre": "Naum Gabo",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Constructivism"
+  },
+  {
+    "nombre": "Louise Nevelson",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Abstract Expressionism (assemblage)"
+  },
+  {
+    "nombre": "Isamu Noguchi",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernist / biomorphic abstraction"
+  },
+  {
+    "nombre": "El Anatsui",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary African sculpture (found-material assemblage)"
+  },
+  {
+    "nombre": "Doris Salcedo",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary conceptual / memorial sculpture"
+  },
+  {
+    "nombre": "Antony Gormley",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary figurative / installation"
+  },
+  {
+    "nombre": "Rachel Whiteread",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary conceptual (casting)"
+  },
+  {
+    "nombre": "Cristina Iglesias",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary installation sculpture"
+  },
+  {
+    "nombre": "Yinka Shonibare",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary postcolonial sculpture"
+  },
+  {
+    "nombre": "Wangechi Mutu",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary Afrofuturist sculpture"
+  },
+  {
+    "nombre": "Antonio Filarete",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance / architectural theory"
+  },
+  {
+    "nombre": "Luciano Laurana",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance (Urbino court)"
+  },
+  {
+    "nombre": "Giuliano da Maiano",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Juan Guas",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Isabelline Gothic"
+  },
+  {
+    "nombre": "Enrique Egas",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Isabelline Gothic"
+  },
+  {
+    "nombre": "Mateus Fernandes",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Manueline Gothic"
+  },
+  {
+    "nombre": "Diogo de Boitaca",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Manueline style"
+  },
+  {
+    "nombre": "Diogo de Arruda",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Manueline style"
+  },
+  {
+    "nombre": "Rodrigo Gil de Hontañón",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Plateresque / Renaissance transition"
+  },
+  {
+    "nombre": "Diego de Siloé",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Renaissance"
+  },
+  {
+    "nombre": "Pedro Machuca",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mannerism"
+  },
+  {
+    "nombre": "Andrés de Vandelvira",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Andalusian Renaissance"
+  },
+  {
+    "nombre": "Claudio de Arciniega",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Renaissance (New Spain)"
+  },
+  {
+    "nombre": "Philibert de l'Orme",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance"
+  },
+  {
+    "nombre": "Robert Smythson",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Elizabethan architecture"
+  },
+  {
+    "nombre": "Guarino Guarini",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Italian Baroque"
+  },
+  {
+    "nombre": "Carlo Maderno",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Early Baroque"
+  },
+  {
+    "nombre": "Jacques Lemercier",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French classicism / Baroque"
+  },
+  {
+    "nombre": "Louis Le Vau",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French classicism"
+  },
+  {
+    "nombre": "Jacob van Campen",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Classicism"
+  },
+  {
+    "nombre": "Inigo Jones",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "English Palladianism"
+  },
+  {
+    "nombre": "Ustad Ahmad Lahori",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal architecture"
+  },
+  {
+    "nombre": "Diego Maroto",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Colonial Baroque (Peru)"
+  },
+  {
+    "nombre": "Juan Martínez de Arrona",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Colonial Baroque (Peru)"
+  },
+  {
+    "nombre": "Balthasar Neumann",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "German Late Baroque / Rococo"
+  },
+  {
+    "nombre": "Filippo Juvarra",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Late Baroque"
+  },
+  {
+    "nombre": "Nicholas Hawksmoor",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "English Baroque"
+  },
+  {
+    "nombre": "Domenico Trezzini",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Petrine Baroque"
+  },
+  {
+    "nombre": "James Gibbs",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Georgian / Palladian"
+  },
+  {
+    "nombre": "Pedro de Ribera",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Churrigueresque"
+  },
+  {
+    "nombre": "Ventura Rodríguez",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Baroque to Neoclassicism"
+  },
+  {
+    "nombre": "Aleijadinho",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Colonial Baroque (Minas Gerais)"
+  },
+  {
+    "nombre": "Karl Friedrich Schinkel",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism / Gothic Revival"
+  },
+  {
+    "nombre": "Eugène Viollet-le-Duc",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Gothic Revival / restoration"
+  },
+  {
+    "nombre": "Henry Hobson Richardson",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Richardsonian Romanesque"
+  },
+  {
+    "nombre": "Francisco Eduardo Tresguerras",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassicism (Mexico)"
+  },
+  {
+    "nombre": "Rafael Guastavino",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Catalan tile vaulting"
+  },
+  {
+    "nombre": "Ödön Lechner",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hungarian Art Nouveau"
+  },
+  {
+    "nombre": "Lluís Domènech i Montaner",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Catalan Modernisme"
+  },
+  {
+    "nombre": "Josiah Conder",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Meiji-era Western architecture (Japan)"
+  },
+  {
+    "nombre": "Josep Puig i Cadafalch",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Catalan Modernisme"
+  },
+  {
+    "nombre": "Eileen Gray",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernism"
+  },
+  {
+    "nombre": "Carlos Raúl Villanueva",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Latin American Modernism"
+  },
+  {
+    "nombre": "Lina Bo Bardi",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Brazilian Modernism"
+  },
+  {
+    "nombre": "Eladio Dieste",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Structural brick vaulting"
+  },
+  {
+    "nombre": "Clorindo Testa",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Brutalism (Argentina)"
+  },
+  {
+    "nombre": "Geoffrey Bawa",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Tropical Modernism"
+  },
+  {
+    "nombre": "Hassan Fathy",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Vernacular / appropriate technology"
+  },
+  {
+    "nombre": "Charles Correa",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernism adapted to climate (India)"
+  },
+  {
+    "nombre": "Wang Shu",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary regionalism (China)"
+  },
+  {
+    "nombre": "Alejandro Aravena",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Social/incremental housing (Chile)"
+  },
+  {
+    "nombre": "Marina Tabassum",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary regionalism (Bangladesh)"
+  },
+  {
+    "nombre": "Yasmeen Lari",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Humanitarian / barefoot architecture"
+  },
+  {
+    "nombre": "Anna Heringer",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Vernacular / earth-and-bamboo construction"
+  },
+  {
+    "nombre": "Carme Pinós",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary Spanish architecture"
+  },
+  {
+    "nombre": "Diébédo Francis Kéré",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Community-based sustainable architecture"
+  },
+  {
+    "nombre": "Ausiàs March",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Valencian/Catalan Golden Age courtly poetry"
+  },
+  {
+    "nombre": "Juan de Mena",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Castilian courtly allegorical poetry"
+  },
+  {
+    "nombre": "Christine de Pizan",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "early French humanist/proto-feminist poetry"
+  },
+  {
+    "nombre": "Charles d'Orléans",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "late medieval French courtly poetry"
+  },
+  {
+    "nombre": "Alain Chartier",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "French courtly love debate poetry"
+  },
+  {
+    "nombre": "Angelo Poliziano",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Italian Renaissance humanism"
+  },
+  {
+    "nombre": "William Dunbar",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Scottish makar tradition"
+  },
+  {
+    "nombre": "John Lydgate",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Chaucerian medieval poetry"
+  },
+  {
+    "nombre": "Joachim du Bellay",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance Pléiade"
+  },
+  {
+    "nombre": "Louise Labé",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance Lyon school"
+  },
+  {
+    "nombre": "Fray Luis de León",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Renaissance mysticism (Salamanca School)"
+  },
+  {
+    "nombre": "San Juan de la Cruz",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish mystic poetry"
+  },
+  {
+    "nombre": "Vittoria Colonna",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Italian Renaissance Petrarchism"
+  },
+  {
+    "nombre": "Fuzuli",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Ottoman/Azerbaijani classical Divan poetry"
+  },
+  {
+    "nombre": "Mirabai",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Bhakti devotional poetry"
+  },
+  {
+    "nombre": "Torquato Tasso",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Italian Renaissance epic poetry"
+  },
+  {
+    "nombre": "Anne Bradstreet",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Puritan colonial American poetry"
+  },
+  {
+    "nombre": "Andrew Marvell",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "metaphysical poetry"
+  },
+  {
+    "nombre": "George Herbert",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "metaphysical/devotional poetry"
+  },
+  {
+    "nombre": "Katherine Philips",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Restoration coterie poetry"
+  },
+  {
+    "nombre": "Aphra Behn",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Restoration-era poetry"
+  },
+  {
+    "nombre": "Joost van den Vondel",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age poetry"
+  },
+  {
+    "nombre": "Constantijn Huygens",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age poetry"
+  },
+  {
+    "nombre": "Paul Fleming",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "German Baroque poetry"
+  },
+  {
+    "nombre": "Phillis Wheatley",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "early African-American Neoclassical poetry"
+  },
+  {
+    "nombre": "Thomas Gray",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "English graveyard/pre-Romantic poetry"
+  },
+  {
+    "nombre": "William Cowper",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "pre-Romantic English poetry"
+  },
+  {
+    "nombre": "Anna Laetitia Barbauld",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Enlightenment/pre-Romantic poetry"
+  },
+  {
+    "nombre": "Charlotte Smith",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Sensibility sonnet revival"
+  },
+  {
+    "nombre": "Giuseppe Parini",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Italian Enlightenment/Neoclassicism"
+  },
+  {
+    "nombre": "Friedrich Gottlieb Klopstock",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "German Enlightenment/Empfindsamkeit"
+  },
+  {
+    "nombre": "Juan Meléndez Valdés",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Spanish Enlightenment/Neoclassicism"
+  },
+  {
+    "nombre": "Rosalía de Castro",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Galician Rexurdimento Romanticism"
+  },
+  {
+    "nombre": "Gustavo Adolfo Bécquer",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Spanish post-Romanticism"
+  },
+  {
+    "nombre": "Adam Mickiewicz",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Polish Romanticism"
+  },
+  {
+    "nombre": "Sándor Petőfi",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hungarian Romanticism"
+  },
+  {
+    "nombre": "Mikhail Lermontov",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Russian Romanticism"
+  },
+  {
+    "nombre": "Christina Rossetti",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Pre-Raphaelite Victorian poetry"
+  },
+  {
+    "nombre": "Gertrudis Gómez de Avellaneda",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Spanish-Cuban Romanticism"
+  },
+  {
+    "nombre": "Manuel Gutiérrez Nájera",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Latin American Modernismo"
+  },
+  {
+    "nombre": "Miguel Hernández",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Generation of '27/'36 Spanish poetry"
+  },
+  {
+    "nombre": "Alfonsina Storni",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Latin American modernist/feminist poetry"
+  },
+  {
+    "nombre": "Nazim Hikmet",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Turkish modernist social-realist poetry"
+  },
+  {
+    "nombre": "Forugh Farrokhzad",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Persian modernist poetry"
+  },
+  {
+    "nombre": "Faiz Ahmed Faiz",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Urdu progressive movement poetry"
+  },
+  {
+    "nombre": "Léopold Sédar Senghor",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Négritude movement"
+  },
+  {
+    "nombre": "Aimé Césaire",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Négritude/surrealism"
+  },
+  {
+    "nombre": "Attila József",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Hungarian modernist/proletarian poetry"
+  },
+  {
+    "nombre": "Joy Harjo",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Native American poetry"
+  },
+  {
+    "nombre": "Natalie Diaz",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Indigenous American poetry"
+  },
+  {
+    "nombre": "Kim Hyesoon",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Korean avant-garde poetry"
+  },
+  {
+    "nombre": "Jericho Brown",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary African American poetry"
+  },
+  {
+    "nombre": "Warsan Shire",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary diaspora spoken-word poetry"
+  },
+  {
+    "nombre": "Kae Tempest",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary British spoken-word poetry"
+  },
+  {
+    "nombre": "Valzhyna Mort",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Belarusian-American poetry"
+  },
+  {
+    "nombre": "Raymond Antrobus",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary British Deaf/Caribbean diaspora poetry"
+  },
+  {
+    "nombre": "Jan van Eyck",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Netherlandish"
+  },
+  {
+    "nombre": "Piero della Francesca",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Fra Angelico",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Rogier van der Weyden",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Netherlandish"
+  },
+  {
+    "nombre": "Hans Memling",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Netherlandish"
+  },
+  {
+    "nombre": "Lorenzo Ghiberti",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Luca della Robbia",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Andrea del Verrocchio",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Leon Battista Alberti",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "Michelozzo",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Early Renaissance"
+  },
+  {
+    "nombre": "François Villon",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Medieval French poetry"
+  },
+  {
+    "nombre": "Íñigo López de Mendoza",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Spanish pre-Renaissance"
+  },
+  {
+    "nombre": "Jorge Manrique",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Spanish pre-Renaissance"
+  },
+  {
+    "nombre": "Titian",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Venetian Renaissance"
+  },
+  {
+    "nombre": "Raphael",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "High Renaissance"
+  },
+  {
+    "nombre": "Michelangelo",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "High Renaissance"
+  },
+  {
+    "nombre": "Hieronymus Bosch",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Early Netherlandish / proto-Surrealist"
+  },
+  {
+    "nombre": "Albrecht Dürer",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Northern Renaissance"
+  },
+  {
+    "nombre": "El Greco",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Mannerism"
+  },
+  {
+    "nombre": "Pieter Bruegel the Elder",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Northern Renaissance"
+  },
+  {
+    "nombre": "Benvenuto Cellini",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mannerism"
+  },
+  {
+    "nombre": "Giambologna",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mannerism"
+  },
+  {
+    "nombre": "Andrea Palladio",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Renaissance classicism"
+  },
+  {
+    "nombre": "Giacomo della Porta",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Late Renaissance"
+  },
+  {
+    "nombre": "Garcilaso de la Vega",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Spanish Renaissance"
+  },
+  {
+    "nombre": "Luís de Camões",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Portuguese Renaissance"
+  },
+  {
+    "nombre": "Pierre de Ronsard",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "French Renaissance (Pléiade)"
+  },
+  {
+    "nombre": "Rembrandt",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age"
+  },
+  {
+    "nombre": "Johannes Vermeer",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Dutch Golden Age"
+  },
+  {
+    "nombre": "Diego Velázquez",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque"
+  },
+  {
+    "nombre": "Peter Paul Rubens",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Flemish Baroque"
+  },
+  {
+    "nombre": "Caravaggio",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Italian Baroque"
+  },
+  {
+    "nombre": "Nicolas Poussin",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French Classicism"
+  },
+  {
+    "nombre": "Artemisia Gentileschi",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Italian Baroque"
+  },
+  {
+    "nombre": "Alonso Cano",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque"
+  },
+  {
+    "nombre": "François Girardon",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "French Baroque classicism"
+  },
+  {
+    "nombre": "Christopher Wren",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "English Baroque"
+  },
+  {
+    "nombre": "Francesco Borromini",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Italian Baroque"
+  },
+  {
+    "nombre": "John Milton",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "English epic poetry"
+  },
+  {
+    "nombre": "Luis de Góngora",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Culteranismo"
+  },
+  {
+    "nombre": "John Donne",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Metaphysical poetry"
+  },
+  {
+    "nombre": "Sor Juana Inés de la Cruz",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Spanish Baroque (New Spain)"
+  },
+  {
+    "nombre": "Francisco Goya",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Spanish Romanticism / proto-Modern"
+  },
+  {
+    "nombre": "Jean-Honoré Fragonard",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo"
+  },
+  {
+    "nombre": "Jacques-Louis David",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "Thomas Gainsborough",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "British portraiture"
+  },
+  {
+    "nombre": "Jean-Antoine Watteau",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Rococo"
+  },
+  {
+    "nombre": "Jean-Antoine Houdon",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "Antonio Canova",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "Étienne-Louis Boullée",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Visionary Neoclassicism"
+  },
+  {
+    "nombre": "Robert Adam",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Neoclassicism"
+  },
+  {
+    "nombre": "William Blake",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Pre-Romanticism"
+  },
+  {
+    "nombre": "Johann Wolfgang von Goethe",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Weimar Classicism"
+  },
+  {
+    "nombre": "Alexander Pope",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Augustan poetry"
+  },
+  {
+    "nombre": "Claude Monet",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Impressionism"
+  },
+  {
+    "nombre": "Vincent van Gogh",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Post-Impressionism"
+  },
+  {
+    "nombre": "Édouard Manet",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Realism / early Impressionism"
+  },
+  {
+    "nombre": "Pierre-Auguste Renoir",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Impressionism"
+  },
+  {
+    "nombre": "Paul Cézanne",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Post-Impressionism"
+  },
+  {
+    "nombre": "Caspar David Friedrich",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "German Romanticism"
+  },
+  {
+    "nombre": "J.M.W. Turner",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "British Romanticism"
+  },
+  {
+    "nombre": "Gustave Courbet",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Realism"
+  },
+  {
+    "nombre": "Mary Cassatt",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Impressionism"
+  },
+  {
+    "nombre": "Auguste Bartholdi",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Beaux-Arts sculpture"
+  },
+  {
+    "nombre": "Jean-Baptiste Carpeaux",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanticism / Beaux-Arts"
+  },
+  {
+    "nombre": "Charles Garnier",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Beaux-Arts"
+  },
+  {
+    "nombre": "Joseph Paxton",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Iron and glass architecture"
+  },
+  {
+    "nombre": "Walt Whitman",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "American free verse"
+  },
+  {
+    "nombre": "Emily Dickinson",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "American poetry"
+  },
+  {
+    "nombre": "Arthur Rimbaud",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Symbolism"
+  },
+  {
+    "nombre": "Rubén Darío",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Modernismo"
+  },
+  {
+    "nombre": "Henri Matisse",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Fauvism"
+  },
+  {
+    "nombre": "Salvador Dalí",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Surrealism"
+  },
+  {
+    "nombre": "Frida Kahlo",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Mexican Surrealism / Symbolism"
+  },
+  {
+    "nombre": "Wassily Kandinsky",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Abstract art"
+  },
+  {
+    "nombre": "Georgia O'Keeffe",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "American Modernism"
+  },
+  {
+    "nombre": "René Magritte",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Surrealism"
+  },
+  {
+    "nombre": "Diego Rivera",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Mexican Muralism"
+  },
+  {
+    "nombre": "Henry Moore",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modern British sculpture"
+  },
+  {
+    "nombre": "Constantin Brâncuși",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernist abstraction"
+  },
+  {
+    "nombre": "Alberto Giacometti",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Existentialist Modernism"
+  },
+  {
+    "nombre": "Frank Lloyd Wright",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Organic architecture"
+  },
+  {
+    "nombre": "Ludwig Mies van der Rohe",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernism / International Style"
+  },
+  {
+    "nombre": "Oscar Niemeyer",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Brazilian Modernism"
+  },
+  {
+    "nombre": "Pablo Neruda",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Latin American poetry"
+  },
+  {
+    "nombre": "T.S. Eliot",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernist poetry"
+  },
+  {
+    "nombre": "Octavio Paz",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Mexican Modernism"
+  },
+  {
+    "nombre": "Gabriela Mistral",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Latin American poetry"
+  },
+  {
+    "nombre": "David Hockney",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary British painting"
+  },
+  {
+    "nombre": "Kehinde Wiley",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary portraiture"
+  },
+  {
+    "nombre": "Anish Kapoor",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary sculpture"
+  },
+  {
+    "nombre": "Frank Gehry",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Deconstructivism"
+  },
+  {
+    "nombre": "Bjarke Ingels",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Contemporary sustainable architecture"
+  }
 ]
