@@ -1446,6 +1446,816 @@
     "corriente_orientativa": "contemporary British Deaf/Caribbean diaspora poetry"
   },
   {
+    "nombre": "Giyorgis of Segla",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Ge'ez hymnody and theology, Ethiopian Orthodox monastic tradition"
+  },
+  {
+    "nombre": "Usman dan Fodio",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Fulani Islamic scholar-poet, founder of the Sokoto Caliphate"
+  },
+  {
+    "nombre": "Sayyid Abdallah bin Ali bin Nasir",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "classical Swahili poetry, author of Al-Inkishafi"
+  },
+  {
+    "nombre": "Nana Asma'u",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Fulani/Hausa scholar-poet, Sokoto Caliphate"
+  },
+  {
+    "nombre": "Muyaka bin Haji al-Ghassaniy",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "first Swahili secular poet known by name"
+  },
+  {
+    "nombre": "Aina Onabolu",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of Nigerian modernist portraiture"
+  },
+  {
+    "nombre": "Skunder Boghossian",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Ethiopian modernism"
+  },
+  {
+    "nombre": "Iba N'Diaye",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Senegalese modernism"
+  },
+  {
+    "nombre": "Ibrahim El-Salahi",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Khartoum School, Hurufiyya movement"
+  },
+  {
+    "nombre": "Olowe of Ise",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Yoruba master carver to kings, oju-ona style"
+  },
+  {
+    "nombre": "Nicholas Mukomberanwa",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Zimbabwean Shona stone sculpture movement"
+  },
+  {
+    "nombre": "Ismaila Traoré",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Sudano-Sahelian earthen architecture, Great Mosque of Djenné mason"
+  },
+  {
+    "nombre": "Christopher Okigbo",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Nigerian modernist poetry"
+  },
+  {
+    "nombre": "Kofi Awoonor",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Ewe oral-tradition-influenced Ghanaian poetry"
+  },
+  {
+    "nombre": "Okot p'Bitek",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Acholi oral-tradition Ugandan poetry"
+  },
+  {
+    "nombre": "David Adjaye",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Ghanaian-British contemporary architecture"
+  },
+  {
+    "nombre": "Titilope Sonuga",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Nigerian-Canadian spoken-word poetry"
+  },
+  {
+    "nombre": "An Gyeon",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Joseon court painter, earliest known Korean landscape painting"
+  },
+  {
+    "nombre": "Wen Zhengming",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Ming dynasty painter-calligrapher-poet, Wu School"
+  },
+  {
+    "nombre": "Tang Yin",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Ming dynasty painter-calligrapher-poet, Four Masters of Ming painting"
+  },
+  {
+    "nombre": "Dong Qichang",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "late Ming literati painter, calligrapher and art theorist"
+  },
+  {
+    "nombre": "Bada Shanren",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "early Qing Individualist painter, former Ming prince"
+  },
+  {
+    "nombre": "Kim Hong-do",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Joseon royal court genre painter"
+  },
+  {
+    "nombre": "Jeong Seon",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Joseon true-view landscape painter"
+  },
+  {
+    "nombre": "Hồ Xuân Hương",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Vietnamese poet, subversive Nôm verse"
+  },
+  {
+    "nombre": "Qi Baishi",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "modern Chinese ink painter"
+  },
+  {
+    "nombre": "Xu Beihong",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Chinese modernist painter, Western academic technique fused with ink"
+  },
+  {
+    "nombre": "Wu Guanzhong",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "modern Chinese painter blending Western and Chinese traditions"
+  },
+  {
+    "nombre": "Liang Sicheng",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Chinese architecture"
+  },
+  {
+    "nombre": "Lin Huiyin",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "first female architect in modern China"
+  },
+  {
+    "nombre": "I. M. Pei",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Chinese-American modernist architect"
+  },
+  {
+    "nombre": "Yun Dong-ju",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Korean lyric poet of the anti-colonial resistance"
+  },
+  {
+    "nombre": "Han Yong-un",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Korean Buddhist monk-poet and independence leader"
+  },
+  {
+    "nombre": "Thawan Duchanee",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Thai National Artist, expressionist Buddhist-themed painting"
+  },
+  {
+    "nombre": "Affandi",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Indonesian expressionist painter"
+  },
+  {
+    "nombre": "Chairil Anwar",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Indonesia's foremost modern poet"
+  },
+  {
+    "nombre": "Fernando Amorsolo",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "first National Artist of the Philippines"
+  },
+  {
+    "nombre": "Vann Nath",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cambodian painter, S-21 genocide survivor and witness-artist"
+  },
+  {
+    "nombre": "Ai Weiwei",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Chinese contemporary conceptual artist/sculptor"
+  },
+  {
+    "nombre": "Nyoman Nuarta",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Indonesian monumental sculptor"
+  },
+  {
+    "nombre": "Nur ad-Din Abd al-Rahman Jami",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "last great classical Persian poet, Sufi mysticism, Timurid Herat"
+  },
+  {
+    "nombre": "Alisher Navoi",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Chagatai/Turkic poet-statesman, Timurid Herat"
+  },
+  {
+    "nombre": "Kamal ud-Din Behzad",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Timurid Herat miniaturist, head of the royal atelier"
+  },
+  {
+    "nombre": "Qavam al-Din Shirazi",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Timurid court architect, Gawhar Shad mosque complexes"
+  },
+  {
+    "nombre": "Mir Musavvir",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Safavid Tabriz-school miniaturist"
+  },
+  {
+    "nombre": "Mirza Ali",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Safavid Tabriz-school miniaturist"
+  },
+  {
+    "nombre": "Mir Sayyid Ali",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Safavid-turned-Mughal miniaturist, directed the Hamzanama"
+  },
+  {
+    "nombre": "Reza Abbasi",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "last great master of the Persian miniature, Isfahan school"
+  },
+  {
+    "nombre": "Saib Tabrizi",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "founder of the Isfahan style of Persian ghazal poetry"
+  },
+  {
+    "nombre": "Baha al-Din al-Amili",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "principal planner of Safavid Isfahan"
+  },
+  {
+    "nombre": "Ali Akbar Isfahani",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "lead architect of the Shah Mosque, Isfahan"
+  },
+  {
+    "nombre": "Mirza Baba",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Qajar court painter to Fath-Ali Shah"
+  },
+  {
+    "nombre": "Mihr 'Ali",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Qajar court portraitist"
+  },
+  {
+    "nombre": "Kamal-ol-Molk",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Qajar court painter, pioneer of European naturalism in Persian painting"
+  },
+  {
+    "nombre": "Ustad Ali Maryam",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Qajar-era architect in Kashan"
+  },
+  {
+    "nombre": "Qustaki al-Himsi",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Syrian Nahda-era poet and literary reformer"
+  },
+  {
+    "nombre": "Adam Henein",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Egyptian modernist sculptor, restored the Great Sphinx"
+  },
+  {
+    "nombre": "Mahmoud Mokhtar",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Egyptian sculpture"
+  },
+  {
+    "nombre": "Parviz Tanavoli",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Iranian sculpture, Saqqakhaneh movement"
+  },
+  {
+    "nombre": "Mahmoud Said",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Egyptian Pioneers generation painter, Alexandria"
+  },
+  {
+    "nombre": "Hossein Zenderoudi",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of the Saqqakhaneh neo-traditionalist movement"
+  },
+  {
+    "nombre": "Sohrab Sepehri",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Iranian modernist poet, New Poetry movement"
+  },
+  {
+    "nombre": "Baya",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Algerian self-taught painter, praised by Picasso and Breton"
+  },
+  {
+    "nombre": "Mohammed Khadda",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Algerian abstract sign painter, calligraphic abstraction"
+  },
+  {
+    "nombre": "Sliman Mansour",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Palestinian painter"
+  },
+  {
+    "nombre": "Ahmed Shawqi",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Egyptian Prince of Poets"
+  },
+  {
+    "nombre": "Khalil Gibran",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Lebanese-American Mahjar poet, author of The Prophet"
+  },
+  {
+    "nombre": "Nizar Qabbani",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Syria's national poet"
+  },
+  {
+    "nombre": "Mahmoud Darwish",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Palestinian national poet"
+  },
+  {
+    "nombre": "Abdellatif Laabi",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Moroccan poet, founder of Souffles journal"
+  },
+  {
+    "nombre": "Etel Adnan",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Lebanese-American poet and painter"
+  },
+  {
+    "nombre": "Houshang Seyhoun",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Iranian architecture"
+  },
+  {
+    "nombre": "Kamran Diba",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Iranian architect, Tehran Museum of Contemporary Art"
+  },
+  {
+    "nombre": "Ramses Wissa Wassef",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Egyptian architect, Aga Khan Award 1983"
+  },
+  {
+    "nombre": "Elie Azagury",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "first Moroccan modernist architect"
+  },
+  {
+    "nombre": "Leila Araghian",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Iranian architect, Tabiat Bridge, Aga Khan Award 2016"
+  },
+  {
+    "nombre": "Bernard Khoury",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Lebanese architect, post-war Beirut architecture"
+  },
+  {
+    "nombre": "Mosab Abu Toha",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Palestinian (Gaza) poet, Pulitzer Prize 2025"
+  },
+  {
+    "nombre": "Monir Shahroudy Farmanfarmaian",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Iranian mirror-mosaic sculptural artist"
+  },
+  {
+    "nombre": "Dionisius",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Moscow school icon painting, follower of Rublev"
+  },
+  {
+    "nombre": "Angelos Akotantos",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Cretan School icon painting, Greece"
+  },
+  {
+    "nombre": "Nikola Firentinac",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Renaissance sculpture/architecture, Croatia"
+  },
+  {
+    "nombre": "Michael Damaskinos",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "post-Byzantine Cretan School painting, Greece"
+  },
+  {
+    "nombre": "Vitsentzos Kornaros",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Cretan Renaissance poetry (Erotokritos), Greece"
+  },
+  {
+    "nombre": "Karel Škréta",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Czech Baroque painting"
+  },
+  {
+    "nombre": "Nicodemus Tessin the Elder",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Swedish Baroque architecture"
+  },
+  {
+    "nombre": "Nicodemus Tessin the Younger",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Swedish Baroque/Rococo architecture"
+  },
+  {
+    "nombre": "Fedot Shubin",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Russian Neoclassical/Baroque sculpture"
+  },
+  {
+    "nombre": "Vladimir Borovikovsky",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "leading Russian portrait painter"
+  },
+  {
+    "nombre": "Đura Jakšić",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Serbian Romanticism, poet-painter"
+  },
+  {
+    "nombre": "Vlaho Bukovac",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Croatian Academic/Symbolist painting"
+  },
+  {
+    "nombre": "Þórarinn B. Þorláksson",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "founding father of Icelandic landscape painting"
+  },
+  {
+    "nombre": "Carl Milles",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Swedish modernist sculpture, monumental fountains"
+  },
+  {
+    "nombre": "Vasko Popa",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Serbian/Yugoslav modernist poetry"
+  },
+  {
+    "nombre": "Olafur Eliasson",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Danish-Icelandic contemporary installation/sculpture art"
+  },
+  {
+    "nombre": "Miguel de Santiago",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Quito School, Baroque religious painting, Ecuador"
+  },
+  {
+    "nombre": "Isabel de Santiago",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Quito School painter, Ecuador"
+  },
+  {
+    "nombre": "Bernardo de Legarda",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Quito School Baroque polychrome sculpture, Ecuador"
+  },
+  {
+    "nombre": "Melchor Pérez de Holguín",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Potosí School Baroque painting, Bolivia"
+  },
+  {
+    "nombre": "Vicente Escobar",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "academic portraiture, Cuba"
+  },
+  {
+    "nombre": "Andrés Bello",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Neoclassical/early Romantic poetry, Venezuela"
+  },
+  {
+    "nombre": "José Martí",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Modernismo, Cuba"
+  },
+  {
+    "nombre": "José Asunción Silva",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Symbolism/Modernismo, Colombia"
+  },
+  {
+    "nombre": "Martín Tovar y Tovar",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "academic historical/portrait painting, Venezuela"
+  },
+  {
+    "nombre": "Cristóbal Rojas",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanticism/academic painting, Venezuela"
+  },
+  {
+    "nombre": "Prilidiano Pueyrredón",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "costumbrismo, first major Argentine painter"
+  },
+  {
+    "nombre": "Carlos Morel",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "costumbrista lithography, Argentina"
+  },
+  {
+    "nombre": "Liliʻuokalani",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hawaiian monarch, composer-poet"
+  },
+  {
+    "nombre": "Joaquín Torres García",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Constructivism, Uruguay"
+  },
+  {
+    "nombre": "Delmira Agustini",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernismo, Uruguay"
+  },
+  {
+    "nombre": "Armando Reverón",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Symbolism/proto-Arte Povera, Venezuela"
+  },
+  {
+    "nombre": "Jesús Rafael Soto",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Kinetic/Op Art, Venezuela"
+  },
+  {
+    "nombre": "Gego",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "kinetic wire sculpture, Venezuela"
+  },
+  {
+    "nombre": "Marisol Escobar",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Pop Art/New Realism, Venezuela"
+  },
+  {
+    "nombre": "Wifredo Lam",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Afro-Cuban Surrealism/Modernism, Cuba"
+  },
+  {
+    "nombre": "Amelia Peláez",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cuban avant-garde modernism"
+  },
+  {
+    "nombre": "Nicolás Guillén",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Afro-Cuban poesía negra, Cuba"
+  },
+  {
+    "nombre": "Xul Solar",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Argentine avant-garde/Surrealism"
+  },
+  {
+    "nombre": "Antonio Berni",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Nuevo Realismo/social realism, Argentina"
+  },
+  {
+    "nombre": "Rogelio Yrurtia",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Realist sculpture, Argentina"
+  },
+  {
+    "nombre": "Jorge Luis Borges",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "modernist poetry and prose, Argentina"
+  },
+  {
+    "nombre": "Roberto Matta",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Surrealism, Chile"
+  },
+  {
+    "nombre": "Rebeca Matte",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "academic/realist sculpture, Chile"
+  },
+  {
+    "nombre": "Vicente Huidobro",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Creacionismo (founder), Chile"
+  },
+  {
+    "nombre": "Nicanor Parra",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Antipoetry, Chile"
+  },
+  {
+    "nombre": "Débora Arango",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Expressionism/political-feminist art, Colombia"
+  },
+  {
+    "nombre": "León de Greiff",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernismo/avant-garde, Colombia"
+  },
+  {
+    "nombre": "Rogelio Salmona",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Colombian modernist brick architecture"
+  },
+  {
+    "nombre": "Albert Namatjira",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Hermannsburg School watercolor landscape, Aboriginal Australian"
+  },
+  {
+    "nombre": "Emily Kame Kngwarreye",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "contemporary Aboriginal Australian painting"
+  },
+  {
+    "nombre": "Ralph Hotere",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori modernist abstraction"
+  },
+  {
+    "nombre": "Cliff Whiting",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "contemporary Māori carving and art"
+  },
+  {
+    "nombre": "Oodgeroo Noonuccal",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Aboriginal protest poetry"
+  },
+  {
+    "nombre": "Shane Cotton",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Māori painting, biculturalism/identity"
+  },
+  {
+    "nombre": "Albert Wendt",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Samoan/Pacific literature"
+  },
+  {
     "nombre": "Jan van Eyck",
     "disciplina": "pintura",
     "siglo": "siglo XV",
