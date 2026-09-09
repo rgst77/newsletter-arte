@@ -1,0 +1,33 @@
+{
+  "nombre": "Filippo Brunelleschi",
+  "nacionalidad": "Italian",
+  "disciplina": "arquitectura",
+  "siglo": "siglo XV",
+  "corriente": "Early Renaissance",
+  "periodo": "1377-1446",
+  "biografia": "Filippo Brunelleschi (1377–1446) was a Florentine architect and engineer who fundamentally transformed how buildings were designed and understood during the Early Renaissance. Originally trained as a goldsmith and sculptor, he turned to architecture after losing a prestigious 1401 competition for the Florence Baptistry doors—a setback that proved oddly fortunate, unleashing his creative genius. Brunelleschi revolutionized architecture by blending his deep knowledge of Florence's Romanesque heritage with classical Greek and Roman principles, creating a mathematical, proportional style that became the blueprint for Renaissance building. His masterpiece, the ingenious double-shell dome of Florence Cathedral (completed 1436), remains one of history's greatest engineering feats, while his other Florence works—from the intimate Pazzi Chapel to the harmonious Santo Spirito—showcase his gift for geometric order and elegant classical beauty. Beyond bricks and mortar, he even pioneered linear perspective in art itself, earning the distinction of receiving the Western world's first patent in 1421.",
+  "imagenes": [
+    {
+      "titulo_obra": "Filippo Brunelleschi, cutaway of the Dome of Florence Cathedral (Santa Maria del Fiore).JPG",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/52/Filippo_Brunelleschi%2C_cutaway_of_the_Dome_of_Florence_Cathedral_%28Santa_Maria_del_Fiore%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Filippo_Brunelleschi,_cutaway_of_the_Dome_of_Florence_Cathedral_(Santa_Maria_del_Fiore).JPG",
+      "fuente": "Wikimedia Commons",
+      "creditos": "autor no especificado — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Florence, Piazza SS Annunziata with Ospedale degli Innocenti (1419-39) and part of SS Annunziata (1601).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Florence%2C_Piazza_SS_Annunziata_with_Ospedale_degli_Innocenti_%281419-39%29_and_part_of_SS_Annunziata_%281601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Florence,_Piazza_SS_Annunziata_with_Ospedale_degli_Innocenti_(1419-39)_and_part_of_SS_Annunziata_(1601).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "MenkinAlRire — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "The Nativity",
+      "url_imagen": "https://images.metmuseum.org/CRDImages/rl/original/DT709.jpg",
+      "url_fuente": "https://www.metmuseum.org/art/collection/search/459007",
+      "fuente": "The Met Open Access",
+      "creditos": "Dominio público — The Metropolitan Museum of Art"
+    }
+  ],
+  "generado_en": "2026-09-09T02:49:11.932708"
+}

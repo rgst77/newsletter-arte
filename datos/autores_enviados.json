@@ -106,5 +106,14 @@
     "siglo": "siglo XXI",
     "archivo_html": "salida/21st-century/architecture/zaha_hadid.html",
     "fecha_envio": "2026-09-05T11:06:15.431747"
+  },
+  {
+    "nombre": "Filippo Brunelleschi",
+    "disciplina": "arquitectura",
+    "corriente": "Early Renaissance",
+    "periodo": "1377-1446",
+    "siglo": "siglo XV",
+    "archivo_html": "salida/15th-century/architecture/filippo_brunelleschi.html",
+    "fecha_envio": "2026-09-09T02:49:18.393447"
   }
 ]
