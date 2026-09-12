@@ -2256,6 +2256,438 @@
     "corriente_orientativa": "Samoan/Pacific literature"
   },
   {
+    "nombre": "Nguyễn An",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Vietnamese-born architect-engineer, directed construction of the Ming Forbidden City"
+  },
+  {
+    "nombre": "Narisara Nuwattiwong",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Siamese royal polymath-architect, Wat Benchamabophit"
+  },
+  {
+    "nombre": "Félix Roxas y Arroyo, Sr.",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "first professionally trained Filipino architect, Neoclassicism"
+  },
+  {
+    "nombre": "Sithu U Tin",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Burmese architect, syncretic pyatthat/Art Deco style"
+  },
+  {
+    "nombre": "Vann Molyvann",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cambodian pioneer of New Khmer Architecture"
+  },
+  {
+    "nombre": "Friedrich Silaban",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Indonesian modernist, Istiqlal Mosque Jakarta"
+  },
+  {
+    "nombre": "Ngô Viết Thụ",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Vietnamese, first Asian Grand Prix de Rome winner"
+  },
+  {
+    "nombre": "Juan M. Arellano",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Filipino Art Deco/Neoclassical architect"
+  },
+  {
+    "nombre": "Juan F. Nakpil",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Filipino Father of Philippine Architecture"
+  },
+  {
+    "nombre": "Pablo S. Antonio",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Filipino modernist/Art Deco, National Artist"
+  },
+  {
+    "nombre": "Tham Sayasithsena",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Lao self-taught architect, Patuxai monument"
+  },
+  {
+    "nombre": "Hijjas Kasturi",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of Malaysian architecture"
+  },
+  {
+    "nombre": "William Barak",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Wurundjeri (Australia), carbon/ochre/watercolour drawings of ceremonial life"
+  },
+  {
+    "nombre": "Tommy McRae",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Kwatkwat (Australia), narrative pen-and-ink drawings"
+  },
+  {
+    "nombre": "David Kalākaua",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hawaiian king and composer-poet, Nā Lani ʻEhā"
+  },
+  {
+    "nombre": "Leleiohoku II",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hawaiian prince and mele composer, Nā Lani ʻEhā"
+  },
+  {
+    "nombre": "Likelike",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Hawaiian princess and mele composer, Nā Lani ʻEhā"
+  },
+  {
+    "nombre": "Hone Tuwhare",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori, first widely celebrated Māori poet in English"
+  },
+  {
+    "nombre": "John Scott",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori-Pākehā (Te Arawa), Futuna Chapel"
+  },
+  {
+    "nombre": "Arnold Manaaki Wilson",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori, pioneer of contemporary Māori sculpture"
+  },
+  {
+    "nombre": "Rover Thomas",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Wangkajunga/Kukatja (Australia), East Kimberley ochre painting"
+  },
+  {
+    "nombre": "Herb Kāne",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Hawaiian Renaissance painter, historical/mythological scenes"
+  },
+  {
+    "nombre": "Robyn Kahukiwa",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori feminist figurative painting"
+  },
+  {
+    "nombre": "Lin Onus",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Yorta Yorta (Australia), Western/Aboriginal fusion"
+  },
+  {
+    "nombre": "Filipe Tohi",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Tongan (active in NZ), lalava-inspired sculpture"
+  },
+  {
+    "nombre": "Michael Parekōwhai",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Māori, internationally renowned contemporary sculptor"
+  },
+  {
+    "nombre": "John Pule",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Niuean-New Zealand painter, hiapo-inspired painting"
+  },
+  {
+    "nombre": "Kabir",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "mystic bhakti-Sufi poet-saint, North India"
+  },
+  {
+    "nombre": "Guru Nanak",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "founder of Sikhism, devotional verse, Punjab"
+  },
+  {
+    "nombre": "Narsinh Mehta",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Gujarati bhakti poet-saint"
+  },
+  {
+    "nombre": "Vidyapati",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Maithili court poet"
+  },
+  {
+    "nombre": "Basawan",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mughal court miniaturist under Akbar, Akbarnama illustrations"
+  },
+  {
+    "nombre": "Daswanth",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "innovative Mughal miniaturist, Akbar's atelier"
+  },
+  {
+    "nombre": "Manohar",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Mughal court painter, son of Basawan"
+  },
+  {
+    "nombre": "Abd al-Samad",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "founding master of the Mughal painting workshop"
+  },
+  {
+    "nombre": "Tulsidas",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "bhakti poet in Awadhi, author of the Ramcharitmanas"
+  },
+  {
+    "nombre": "Mir Muhammad Aliwal Khan",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "architect of Sher Shah Suri's mausoleum, Sasaram"
+  },
+  {
+    "nombre": "Bichitr",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal court painter under Jahangir and Shah Jahan"
+  },
+  {
+    "nombre": "Govardhan",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal court painter, rich colorist"
+  },
+  {
+    "nombre": "Abu'l Hasan",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal court painter, \"Nadir al-Zaman\" under Jahangir"
+  },
+  {
+    "nombre": "Payag",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal painter, chiaroscuro landscapes under Shah Jahan"
+  },
+  {
+    "nombre": "Abdul Rahim Khan-i-Khanan",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Mughal courtier-poet, Hindustani dohas"
+  },
+  {
+    "nombre": "Tukaram",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Marathi sant-poet, devotional abhangas"
+  },
+  {
+    "nombre": "Nainsukh",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Pahari miniature painter, Jasrota/Guler school"
+  },
+  {
+    "nombre": "Manaku",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Pahari painter, Guler school"
+  },
+  {
+    "nombre": "Nihal Chand",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "chief painter of the Kishangarh court, Bani Thani style"
+  },
+  {
+    "nombre": "Bulleh Shah",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Punjabi Sufi poet, kafi tradition"
+  },
+  {
+    "nombre": "Waris Shah",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Punjabi Sufi poet, author of Heer Ranjha"
+  },
+  {
+    "nombre": "Jai Singh II",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "patron-astronomer-architect of the Jantar Mantar observatories"
+  },
+  {
+    "nombre": "Raja Ravi Varma",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "academic realist painter blending European technique with Hindu mythology"
+  },
+  {
+    "nombre": "Raj Man Singh Chitrakar",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Newar court painter, introduced Western perspective to Nepali painting"
+  },
+  {
+    "nombre": "Mirza Ghalib",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "classical Urdu and Persian poet"
+  },
+  {
+    "nombre": "Michael Madhusudan Dutt",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "pioneering Bengali poet, blank-verse epic"
+  },
+  {
+    "nombre": "Altaf Hussain Hali",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Urdu poet, Aligarh reform movement"
+  },
+  {
+    "nombre": "Bankim Chandra Chattopadhyay",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Bengali poet-novelist, author of Vande Mataram"
+  },
+  {
+    "nombre": "Ramkinkar Baij",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of Indian modernist sculpture, Santiniketan"
+  },
+  {
+    "nombre": "Novera Ahmed",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "first modernist sculptor of Bangladesh"
+  },
+  {
+    "nombre": "Devi Prasad Roy Chowdhury",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Indian sculptor, Triumph of Labour"
+  },
+  {
+    "nombre": "David Paynter",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Sri Lankan painter, murals blending Western technique with local idiom"
+  },
+  {
+    "nombre": "Zainul Abedin",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founding father of Bangladeshi art"
+  },
+  {
+    "nombre": "Sadequain",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Pakistani painter-calligrapher"
+  },
+  {
+    "nombre": "Allama Iqbal",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Urdu/Persian philosopher-poet"
+  },
+  {
+    "nombre": "Laxmi Prasad Devkota",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Nepal's Mahakavi, modern Nepali poetry"
+  },
+  {
+    "nombre": "Muzharul Islam",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of Bengali architectural modernism"
+  },
+  {
+    "nombre": "Minnette de Silva",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of Sri Lankan modernist architecture"
+  },
+  {
+    "nombre": "Subodh Gupta",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Indian sculptor, stainless-steel assemblages"
+  },
+  {
+    "nombre": "Latika Katt",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Indian sculptor, stone/bronze figuration"
+  },
+  {
+    "nombre": "Hamiduzzaman Khan",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Bangladeshi sculptor, Liberation War themes"
+  },
+  {
+    "nombre": "M.F. Husain",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "major Indian modernist painter"
+  },
+  {
+    "nombre": "Vikram Seth",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Indian English-language poet and novelist"
+  },
+  {
+    "nombre": "Arundhathi Subramaniam",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Indian poet"
+  },
+  {
+    "nombre": "B.V. Doshi",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Indian modernist architect, Pritzker Prize 2018"
+  },
+  {
     "nombre": "Jan van Eyck",
     "disciplina": "pintura",
     "siglo": "siglo XV",
