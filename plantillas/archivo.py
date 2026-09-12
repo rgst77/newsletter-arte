@@ -48,6 +48,21 @@ def agrupar_por_disciplina(incluidos: list[dict]) -> list[tuple[str, list[dict]]
     return sorted(grupos.items(), key=lambda par: DISCIPLINAS_EN.get(par[0], par[0].upper()))
 
 
+def agrupar_por_siglo(entradas: list[dict]) -> list[tuple[str, list[dict]]]:
+    # `entradas` ya viene ordenada por siglo (agrupar_por_disciplina la deja
+    # así) — aquí solo se parte en bloques consecutivos del mismo siglo, para
+    # poder renderizar una cabecera de sección por cada uno en vez de una
+    # lista plana donde el siglo es solo una etiqueta pequeña por tarjeta.
+    grupos: list[tuple[str, list[dict]]] = []
+    for entrada in entradas:
+        siglo = entrada["siglo"]
+        if grupos and grupos[-1][0] == siglo:
+            grupos[-1][1].append(entrada)
+        else:
+            grupos.append((siglo, [entrada]))
+    return grupos
+
+
 def disciplina_info(disciplina: str) -> dict:
     return {
         "clave": disciplina,

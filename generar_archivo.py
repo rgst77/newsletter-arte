@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from plantillas.archivo import agrupar_por_disciplina, cargar_incluidos, disciplina_info, tarjeta_html
+from plantillas.archivo import agrupar_por_disciplina, agrupar_por_siglo, cargar_incluidos, disciplina_info, tarjeta_html
+from plantillas.email import _siglo_a_ordinal
 
 RUTA_ARCHIVO = Path(__file__).resolve().parent / "archivo"
 
@@ -54,20 +55,31 @@ def generar() -> None:
     RUTA_ARCHIVO.mkdir(exist_ok=True)
     (RUTA_ARCHIVO / "index.html").write_text(_pagina("Archive", "../", cuerpo_indice), encoding="utf-8")
 
-    # Una página por disciplina, con sus issues ordenados por siglo.
+    # Una página por disciplina, con sus issues agrupados en secciones por
+    # siglo (no una lista plana) — así se puede saltar directamente a una
+    # época sin desplazarse por todo, algo que importa cada vez más a medida
+    # que el catálogo crece hacia los ~700 autores previstos.
     for disciplina, entradas in grupos:
         info = disciplina_info(disciplina)
-        tarjetas = "".join(tarjeta_html(r, prefijo_ruta="../../") for r in entradas)
+        secciones = []
+        for indice, (siglo, entradas_siglo) in enumerate(agrupar_por_siglo(entradas)):
+            tarjetas_siglo = "".join(tarjeta_html(r, prefijo_ruta="../../") for r in entradas_siglo)
+            borde_superior = "" if indice == 0 else "border-top:1px solid #222222; padding-top:32px;"
+            secciones.append(f"""
+    <h2 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:18px; font-weight:900; color:#00cc00; letter-spacing:1px; margin:{'0' if indice == 0 else '40px'} 0 20px 0; {borde_superior}">
+      {_siglo_a_ordinal(siglo)} CENTURY
+    </h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:24px;">
+      {tarjetas_siglo}
+    </div>""")
         cuerpo_disciplina = f"""
     <p style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; letter-spacing:2px; color:#6b6b6b; margin:6px 0 8px 0;">
       <a href="../index.html" style="color:#6b6b6b; text-decoration:none;">ARCHIVE</a> / {info['etiqueta']}
     </p>
-    <h1 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:32px; font-weight:900; color:#f5f5f5; margin:0 0 32px 0;">
+    <h1 style="font-family:'Orbitron','Helvetica Neue',Arial,sans-serif; font-size:32px; font-weight:900; color:#f5f5f5; margin:0 0 8px 0;">
       {info['emoji']} {info['etiqueta']}
     </h1>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:24px;">
-      {tarjetas}
-    </div>"""
+    {''.join(secciones)}"""
         carpeta_disciplina = RUTA_ARCHIVO / info["slug"]
         carpeta_disciplina.mkdir(exist_ok=True)
         (carpeta_disciplina / "index.html").write_text(
