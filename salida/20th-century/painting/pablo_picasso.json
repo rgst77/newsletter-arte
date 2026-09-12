@@ -8,25 +8,25 @@
   "biografia": "Pablo Picasso was born in Málaga, Spain in 1881 and spent most of his long, prolific career in Paris, becoming one of the most influential artists of the 20th century. Over nearly eight decades, he fearlessly reinvented his style again and again—from the melancholy blues of his early period to the geometric breakthroughs of African-inspired work that set the stage for something revolutionary. Around 1907, he co-founded Cubism with Georges Braque, fundamentally changing how artists could represent the world by showing multiple perspectives at once, a breakthrough that lasted until roughly 1917. Beyond painting, Picasso was a restless creative force who mastered sculpture, printmaking, ceramics, and stage design, ultimately creating over 20,000 artworks that challenged everything people thought art could be.",
   "imagenes": [
     {
-      "titulo_obra": "Pablo Picasso's Guernica.jpg",
-      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pablo_Picasso%27s_Guernica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pablo_Picasso's_Guernica.jpg",
+      "titulo_obra": "Pablo Picasso, Paris, 1904 (photograph by Ricard Canals)",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pablo_Picasso%2C_1904%2C_Paris%2C_photograph_by_Ricard_Canals_i_Llamb%C3%AD.jpg",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pablo_Picasso,_1904,_Paris,_photograph_by_Ricard_Canals_i_Llamb%C3%AD.jpg",
       "fuente": "Wikimedia Commons",
-      "creditos": "Pedro Belleza — CC BY 2.0 (Wikimedia Commons)"
+      "creditos": "Photograph by Ricard Canals i Llambí, 1904 — Public domain (Wikimedia Commons)"
     },
     {
-      "titulo_obra": "L'exposition \"Heinz Berggruen\" (Musée de l'Orangerie, Paris).png",
-      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/0/09/L%27exposition_%22Heinz_Berggruen%22_%28Mus%C3%A9e_de_l%27Orangerie%2C_Paris%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "url_fuente": "https://commons.wikimedia.org/wiki/File:L'exposition_\"Heinz_Berggruen\"_(Musée_de_l'Orangerie,_Paris).png",
+      "titulo_obra": "Pablo Picasso in his Montmartre studio, 1908",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/99/Pablo_Picasso_in_his_Montmartre_studio%2C_1908.jpg",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pablo_Picasso_in_his_Montmartre_studio,_1908.jpg",
       "fuente": "Wikimedia Commons",
-      "creditos": "Jean-Pierre Dalbéra — CC BY 2.0 (Wikimedia Commons)"
+      "creditos": "Photographer unknown, 1908 — Public domain (Wikimedia Commons)"
     },
     {
-      "titulo_obra": "Mona lisa the old guitarist o lbfgs i content h 720 m vgg19 cw 100000.0 sw 30000.0 tv 1.0.jpg",
-      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mona_lisa_the_old_guitarist_o_lbfgs_i_content_h_720_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "url_fuente": "https://commons.wikimedia.org/wiki/File:Mona_lisa_the_old_guitarist_o_lbfgs_i_content_h_720_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0.jpg",
+      "titulo_obra": "Portrait de Picasso, 1908",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Portrait_de_Picasso%2C_1908.jpg",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Portrait_de_Picasso,_1908.jpg",
       "fuente": "Wikimedia Commons",
-      "creditos": "Pjfinlay — CC0 (Wikimedia Commons)"
+      "creditos": "Photographer unknown, 1908 — Public domain (Wikimedia Commons)"
     }
   ],
   "generado_en": "2026-09-05T02:41:47.626358"
