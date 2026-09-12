@@ -9,16 +9,18 @@ from herramientas.imagenes_publicas import buscar_en_met, buscar_en_smithsonian,
 DISCIPLINAS_CON_AUTOR_VERIFICABLE = {"pintura", "escultura"}
 
 
-def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool) -> list[ImagenObra]:
+def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool, autor_real: str) -> list[ImagenObra]:
     try:
-        imagenes = buscar_en_met(consulta, cantidad)
+        imagenes = buscar_en_met(consulta, cantidad, autor_real=autor_real)
     except Exception:
         # La API del Met tiene un límite de peticiones no documentado y puede
         # devolver 403 de forma intermitente: nunca debe tumbar el pipeline.
         imagenes = []
 
     if len(imagenes) < cantidad:
-        imagenes += buscar_en_wikimedia(consulta, cantidad - len(imagenes), verificar_autor)
+        imagenes += buscar_en_wikimedia(
+            consulta, cantidad - len(imagenes), verificar_autor, autor_real=autor_real
+        )
 
     if len(imagenes) < cantidad:
         # Ultimo recurso: Smithsonian cubre regiones (Africa, Asia, pueblos
@@ -26,7 +28,9 @@ def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool) -> lis
         # para el final porque la DEMO_KEY sin clave propia solo permite
         # 10 peticiones/hora.
         try:
-            imagenes += buscar_en_smithsonian(consulta, cantidad - len(imagenes), verificar_autor)
+            imagenes += buscar_en_smithsonian(
+                consulta, cantidad - len(imagenes), verificar_autor, autor_real=autor_real
+            )
         except Exception:
             pass
 
@@ -49,7 +53,7 @@ def elegir_imagenes(
                 vistas.add(imagen.url_imagen)
 
     for titulo in (titulos_obras or [])[:cantidad]:
-        encontradas = _buscar_generico(f"{nombre_autor} {titulo}", 1, verificar_autor)
+        encontradas = _buscar_generico(f"{nombre_autor} {titulo}", 1, verificar_autor, autor_real=nombre_autor)
         for imagen in encontradas:
             if imagen.url_imagen not in vistas:
                 imagenes.append(imagen)
@@ -60,7 +64,7 @@ def elegir_imagenes(
 
     faltan = cantidad - len(imagenes)
     if faltan > 0:
-        _agregar(_buscar_generico(nombre_autor, faltan + len(vistas), verificar_autor))
+        _agregar(_buscar_generico(nombre_autor, faltan + len(vistas), verificar_autor, autor_real=nombre_autor))
     if len(imagenes) >= cantidad:
         return imagenes[:cantidad]
 
@@ -75,20 +79,28 @@ def elegir_imagenes(
         # reproducciones antiguas correctas cuyo campo "Artist" no cita el
         # nombre exacto, sin reabrir el fallo original de aceptar cualquier
         # foto con licencia libre aunque la obra en sí no lo sea.
-        for titulo in (titulos_obras or [])[:cantidad]:
+        # Se prueban TODOS los títulos conocidos (no solo los 3 primeros como
+        # en el nivel 1) — encontrar un sello o reproducción libre de una
+        # obra en concreto es cuestión de suerte, así que cuantos más títulos
+        # se prueben, más opciones reales de conseguir una imagen genuina.
+        for titulo in titulos_obras or []:
             if len(imagenes) >= cantidad:
                 break
-            try:
-                _agregar(
-                    buscar_en_wikimedia(
-                        f"{nombre_autor} {titulo}",
-                        cantidad - len(imagenes),
-                        verificar_autor=False,
-                        requerir_dominio_publico=True,
+            for consulta in (f"{nombre_autor} {titulo}", f"{nombre_autor} {titulo} stamp"):
+                if len(imagenes) >= cantidad:
+                    break
+                try:
+                    _agregar(
+                        buscar_en_wikimedia(
+                            consulta,
+                            cantidad - len(imagenes),
+                            verificar_autor=False,
+                            requerir_dominio_publico=True,
+                            autor_real=nombre_autor,
+                        )
                     )
-                )
-            except Exception:
-                pass
+                except Exception:
+                    pass
 
         # Nivel 3: último recurso — foto de la propia persona en vez de su
         # obra. Aquí sí basta con la licencia normal del fotógrafo, porque no

@@ -8,18 +8,18 @@
   "biografia": "Pablo Picasso was born in Málaga, Spain in 1881 and spent most of his long, prolific career in Paris, becoming one of the most influential artists of the 20th century. Over nearly eight decades, he fearlessly reinvented his style again and again—from the melancholy blues of his early period to the geometric breakthroughs of African-inspired work that set the stage for something revolutionary. Around 1907, he co-founded Cubism with Georges Braque, fundamentally changing how artists could represent the world by showing multiple perspectives at once, a breakthrough that lasted until roughly 1917. Beyond painting, Picasso was a restless creative force who mastered sculpture, printmaking, ceramics, and stage design, ultimately creating over 20,000 artworks that challenged everything people thought art could be.",
   "imagenes": [
     {
-      "titulo_obra": "Pablo Picasso, Paris, 1904 (photograph by Ricard Canals)",
-      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pablo_Picasso%2C_1904%2C_Paris%2C_photograph_by_Ricard_Canals_i_Llamb%C3%AD.jpg",
-      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pablo_Picasso,_1904,_Paris,_photograph_by_Ricard_Canals_i_Llamb%C3%AD.jpg",
+      "titulo_obra": "Three Musicians (1921)",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/df/Stamp_of_Albania_-_2000_-_Colnect_186683_-_Three_Musicians_1921_oil_painting_by_Pablo_Picasso.jpeg",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Stamp_of_Albania_-_2000_-_Colnect_186683_-_Three_Musicians_1921_oil_painting_by_Pablo_Picasso.jpeg",
       "fuente": "Wikimedia Commons",
-      "creditos": "Photograph by Ricard Canals i Llambí, 1904 — Public domain (Wikimedia Commons)"
+      "creditos": "Depicted on a 2000 Albanian postage stamp (government work, public domain) — original painting remains under copyright"
     },
     {
-      "titulo_obra": "Pablo Picasso in his Montmartre studio, 1908",
-      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/99/Pablo_Picasso_in_his_Montmartre_studio%2C_1908.jpg",
-      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pablo_Picasso_in_his_Montmartre_studio,_1908.jpg",
+      "titulo_obra": "Self-Portrait (1906)",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Stamp_of_Albania_-_2000_-_Colnect_186686_-_Self_Portrait_1906_by_Pablo_Picasso.jpeg",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Stamp_of_Albania_-_2000_-_Colnect_186686_-_Self_Portrait_1906_by_Pablo_Picasso.jpeg",
       "fuente": "Wikimedia Commons",
-      "creditos": "Photographer unknown, 1908 — Public domain (Wikimedia Commons)"
+      "creditos": "Depicted on a 2000 Albanian postage stamp (government work, public domain) — original painting remains under copyright"
     },
     {
       "titulo_obra": "Portrait de Picasso, 1908",

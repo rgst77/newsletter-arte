@@ -12,19 +12,24 @@ SMITHSONIAN_API = "https://api.si.edu/openaccess/api/v1.0/search"
 CABECERAS = {"User-Agent": "newsletter-arte-proyecto-aprendizaje/1.0 (uso educativo, sin fines comerciales)"}
 
 
-def buscar_en_met(nombre_autor: str, max_resultados: int = 3) -> list[ImagenObra]:
+def buscar_en_met(consulta: str, max_resultados: int = 3, autor_real: str | None = None) -> list[ImagenObra]:
     # Nota: "artistOrCulture=true" del Met devuelve 0 resultados con nombres de
     # varias palabras (bug confirmado de su API) — se filtra por autor a mano abajo.
     busqueda = requests.get(
         f"{MET_BASE}/search",
-        params={"q": nombre_autor, "hasImages": "true"},
+        params={"q": consulta, "hasImages": "true"},
         headers=CABECERAS,
         timeout=10,
     )
     busqueda.raise_for_status()
     ids = busqueda.json().get("objectIDs") or []
 
-    apellido = nombre_autor.split()[-1].lower()
+    # OJO: el apellido tiene que salir del nombre real del autor, no de
+    # `consulta` — cuando esta lleva pegado el título de una obra (ej.
+    # "Pablo Picasso Three Musicians") la última palabra sería "musicians",
+    # no "picasso", y la comprobación de autor de más abajo dejaría de servir
+    # para nada (bug real, encontrado al probar el nivel de sellos postales).
+    apellido = (autor_real or consulta).split()[-1].lower()
     imagenes: list[ImagenObra] = []
     for object_id in ids[:25]:
         if len(imagenes) >= max_resultados:
@@ -60,17 +65,18 @@ def _texto_plano(html: str) -> str:
 
 
 def buscar_en_wikimedia(
-    nombre_autor: str,
+    consulta: str,
     max_resultados: int = 3,
     verificar_autor: bool = True,
     requerir_dominio_publico: bool = False,
+    autor_real: str | None = None,
 ) -> list[ImagenObra]:
     respuesta = requests.get(
         WIKIMEDIA_API,
         params={
             "action": "query",
             "generator": "search",
-            "gsrsearch": nombre_autor,
+            "gsrsearch": consulta,
             "gsrnamespace": 6,
             "gsrlimit": max_resultados,
             "prop": "imageinfo",
@@ -90,7 +96,11 @@ def buscar_en_wikimedia(
     # colarse aunque no sea de quien buscamos. Se descarta si el campo
     # "Artist" real de la imagen no menciona el apellido del autor buscado —
     # más vale una imagen de menos que una mal atribuida en el newsletter.
-    apellido = nombre_autor.split()[-1].lower()
+    # El apellido sale del nombre real del autor, NUNCA de `consulta` — esta
+    # puede llevar pegado el título de una obra, y su última palabra casi
+    # nunca es el apellido (bug real que encontramos: "Three Musicians" daba
+    # apellido="musicians", dejando pasar un cuadro de Velázquez).
+    apellido = (autor_real or consulta).split()[-1].lower()
 
     imagenes = []
     for pagina in paginas.values():
@@ -110,15 +120,31 @@ def buscar_en_wikimedia(
             # solo el FOTÓGRAFO liberó los derechos de su fotografía (ej. una
             # foto del Guernica donada por su fotógrafo a la Library of
             # Congress): eso no dice nada sobre si el cuadro en sí es libre,
-            # y fue exactamente el fallo real de Picasso. La única señal que
-            # sí afirma que la OBRA (no la foto) es de dominio público son
-            # las categorías "PD-Art"/"PD-old"/"author died more than X years
-            # ago" que Commons aplica cuando la obra representada es libre.
+            # y fue exactamente el fallo real de Picasso. Las señales que sí
+            # afirman que la OBRA (no la foto) es libre son las categorías
+            # "PD-Art"/"PD-old"/"author died more than X years ago" — o, para
+            # obras con copyright vigente, un sello postal: muchos países
+            # emiten sellos con cuadros famosos y los tratan como obra del
+            # gobierno (dominio público por ley de ese país), un fundamento
+            # legal totalmente distinto al de la fotografía de un particular.
             categorias = metadatos.get("Categories", {}).get("value", "").lower()
-            if not any(
-                marca in categorias
-                for marca in ("pd-art", "pd-old", "author died more than")
-            ):
+            es_obra_pd = any(
+                marca in categorias for marca in ("pd-art", "pd-old", "author died more than")
+            )
+            es_sello_postal_pd = "stamp" in categorias and licencia == "Public domain"
+            if not (es_obra_pd or es_sello_postal_pd):
+                continue
+            # Al relajar la verificación de autor se pierde la única
+            # comprobación de que la obra sea realmente de quien buscamos —
+            # y la búsqueda de Commons es por texto libre, así que un cuadro
+            # de OTRO autor con título parecido puede colar aquí igual de
+            # fácil que antes (ej. buscar "Picasso Three Musicians" trajo un
+            # "Three Musicians" real pero de Velázquez). Como el campo
+            # "Artist" no sirve aquí (para sellos suele ser la oficina
+            # postal, no el pintor), se exige en su lugar que el apellido
+            # aparezca en el título o las categorías del archivo.
+            objectname = metadatos.get("ObjectName", {}).get("value", "").lower()
+            if apellido not in f"{titulo.lower()} {categorias} {objectname}":
                 continue
         imagenes.append(
             ImagenObra(
@@ -133,7 +159,7 @@ def buscar_en_wikimedia(
 
 
 def buscar_en_smithsonian(
-    nombre_autor: str, max_resultados: int = 3, verificar_autor: bool = True
+    consulta: str, max_resultados: int = 3, verificar_autor: bool = True, autor_real: str | None = None
 ) -> list[ImagenObra]:
     # Tercera fuente, de ultimo recurso: Met y Wikimedia estan muy sesgados
     # hacia arte europeo/norteamericano, y Smithsonian Open Access tiene
@@ -147,7 +173,7 @@ def buscar_en_smithsonian(
         respuesta = requests.get(
             SMITHSONIAN_API,
             params={
-                "q": f"{nombre_autor} AND online_media_type:Images",
+                "q": f"{consulta} AND online_media_type:Images",
                 "api_key": clave_api,
                 "rows": 10,
             },
@@ -161,7 +187,9 @@ def buscar_en_smithsonian(
     respuesta.raise_for_status()
     filas = respuesta.json().get("response", {}).get("rows", [])
 
-    apellido = nombre_autor.split()[-1].lower()
+    # Igual que en Met/Wikimedia: el apellido sale del autor real, no de
+    # `consulta` (que puede llevar el título de una obra pegado detrás).
+    apellido = (autor_real or consulta).split()[-1].lower()
     imagenes: list[ImagenObra] = []
     for fila in filas:
         if len(imagenes) >= max_resultados:
