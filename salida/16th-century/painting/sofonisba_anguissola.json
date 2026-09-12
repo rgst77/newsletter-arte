@@ -1,0 +1,33 @@
+{
+  "nombre": "Sofonisba Anguissola",
+  "nacionalidad": "Italian",
+  "disciplina": "pintura",
+  "siglo": "siglo XVI",
+  "corriente": "Mannerism (Late Renaissance)",
+  "periodo": "c. 1545-1625",
+  "biografia": "Sofonisba Anguissola was a trailblazing Italian Renaissance painter born around 1532 into a noble Cremona family, where her father's enlightened approach gave her—and her sister Elena—something rare for women of her time: formal training in the arts under the Mannerist master Bernardino Campi. Her talent caught fire early, and by 1559 her reputation for creating sophisticated, lifelike portraits had reached across Europe, earning her an invitation to the Spanish court as a lady-in-waiting to Queen Elisabeth of Valois. At the court, Sofonisba became more than a courtier; she tutored the queen in drawing and painting, created stunning royal portraits, and even painted a work for Pope Pius IV, cementing her place as the first female artist of the Renaissance to achieve international fame during her lifetime. Her elegant, refined style—full of delicate charm and intellectual depth—became her signature, and she cleverly used self-portraits to promote her own artistic legacy. Living to the remarkable age of 93 and remaining influential throughout her life, Sofonisba proved that talent and determination could overcome the barriers of her era.",
+  "imagenes": [
+    {
+      "titulo_obra": "Portrait of a Man",
+      "url_imagen": "https://images.metmuseum.org/CRDImages/ep/original/EP483.jpg",
+      "url_fuente": "https://www.metmuseum.org/art/collection/search/436749",
+      "fuente": "The Met Open Access",
+      "creditos": "Dominio público — The Metropolitan Museum of Art"
+    },
+    {
+      "titulo_obra": "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Sofonisba Anguissola — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "The Chess Game (Sofonisba Anguissola) 1555 (4096x3236px).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3c/The_Chess_Game_%28Sofonisba_Anguissola%29_1555_%284096x3236px%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:The_Chess_Game_(Sofonisba_Anguissola)_1555_(4096x3236px).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Sofonisba Anguissola — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-12T02:53:14.153474"
+}

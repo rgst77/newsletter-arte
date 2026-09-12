@@ -115,5 +115,14 @@
     "siglo": "siglo XV",
     "archivo_html": "salida/15th-century/architecture/filippo_brunelleschi.html",
     "fecha_envio": "2026-09-09T02:49:18.393447"
+  },
+  {
+    "nombre": "Sofonisba Anguissola",
+    "disciplina": "pintura",
+    "corriente": "Mannerism (Late Renaissance)",
+    "periodo": "c. 1545-1625",
+    "siglo": "siglo XVI",
+    "archivo_html": "salida/16th-century/painting/sofonisba_anguissola.html",
+    "fecha_envio": "2026-09-12T02:53:19.928392"
   }
 ]
