@@ -3108,6 +3108,234 @@
     "corriente_orientativa": "Baroque court painting, Gdańsk/Polish-Lithuanian Commonwealth"
   },
   {
+    "nombre": "Kilian Ignaz Dientzenhofer",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Bohemian Baroque architecture"
+  },
+  {
+    "nombre": "Petr Brandl",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Czech late Baroque painting"
+  },
+  {
+    "nombre": "Jens Juel",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Danish Rococo/Neoclassical portraiture"
+  },
+  {
+    "nombre": "Nicolai Abildgaard",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Danish Neoclassicism, history painting"
+  },
+  {
+    "nombre": "Nicolai Eigtved",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Danish Rococo architecture, Amalienborg"
+  },
+  {
+    "nombre": "Johan Herman Wessel",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Dano-Norwegian Enlightenment satire"
+  },
+  {
+    "nombre": "Ivan Hryhorovych-Barsky",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Ukrainian Cossack Baroque"
+  },
+  {
+    "nombre": "Dmytro Levytsky",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Ukrainian-Russian portraiture"
+  },
+  {
+    "nombre": "Johann Christoph Glaubitz",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Vilnian Baroque architecture"
+  },
+  {
+    "nombre": "Christoph Haberland",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Riga Classicism"
+  },
+  {
+    "nombre": "Taras Shevchenko",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Ukrainian Romantic national poet"
+  },
+  {
+    "nombre": "Mykola Pymonenko",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Ukrainian Peredvizhniki realism"
+  },
+  {
+    "nombre": "Napoleon Orda",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romantic topographic watercolors, Belarus"
+  },
+  {
+    "nombre": "Josef Václav Myslbek",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Czech National Revival sculpture"
+  },
+  {
+    "nombre": "Josef Zítek",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Czech Neo-Renaissance architecture"
+  },
+  {
+    "nombre": "Nicolae Grigorescu",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanian Impressionism/Realism"
+  },
+  {
+    "nombre": "Mihai Eminescu",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Romanian Romanticism, national poet"
+  },
+  {
+    "nombre": "Hristo Botev",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Bulgarian revolutionary Romanticism"
+  },
+  {
+    "nombre": "France Prešeren",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Slovenian Romanticism, national poet"
+  },
+  {
+    "nombre": "Johan Ludvig Runeberg",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Finnish national Romanticism"
+  },
+  {
+    "nombre": "Marc Chagall",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Modernism/avant-garde, born in Vitebsk, Belarus"
+  },
+  {
+    "nombre": "Yanka Kupala",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Belarusian national poet"
+  },
+  {
+    "nombre": "Ľudovít Fulla",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Slovak modernism"
+  },
+  {
+    "nombre": "Mak Dizdar",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Bosnian modernist poetry"
+  },
+  {
+    "nombre": "Kočo Racin",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of modern Macedonian poetry"
+  },
+  {
+    "nombre": "Migjeni",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Albanian modernist poetry"
+  },
+  {
+    "nombre": "Konrad Mägi",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Estonian modernism"
+  },
+  {
+    "nombre": "Gustav Vigeland",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Norwegian public sculpture, Vigeland Park"
+  },
+  {
+    "nombre": "Arne Jacobsen",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Danish functionalism/modernism"
+  },
+  {
+    "nombre": "Alvar Aalto",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Finnish modernism"
+  },
+  {
+    "nombre": "Christo",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "environmental/wrapped installation art, Bulgaria"
+  },
+  {
+    "nombre": "Serhiy Zhadan",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Ukrainian war-era poetry"
+  },
+  {
+    "nombre": "Eva Jiřičná",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Czech-British architecture"
+  },
+  {
+    "nombre": "Ana Blandiana",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Romanian poetry"
+  },
+  {
+    "nombre": "Tomaž Šalamun",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Slovenian poetry"
+  },
+  {
+    "nombre": "Doris Kareva",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Estonian poetry"
+  },
+  {
+    "nombre": "Knuts Skujenieks",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Latvian poetry"
+  },
+  {
+    "nombre": "Tomas Venclova",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "contemporary Lithuanian poetry, exile literature"
+  },
+  {
     "nombre": "Jan van Eyck",
     "disciplina": "pintura",
     "siglo": "siglo XV",
