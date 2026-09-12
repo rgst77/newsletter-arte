@@ -2688,6 +2688,426 @@
     "corriente_orientativa": "Indian modernist architect, Pritzker Prize 2018"
   },
   {
+    "nombre": "Akati Akpele Kendo",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Fon/Dahomey royal blacksmith-sculptor, iron Gou statue for King Glele"
+  },
+  {
+    "nombre": "Bernard Binlin Dadié",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Ivorian anticolonial poet, Négritude-adjacent"
+  },
+  {
+    "nombre": "Joseph-Francis Sumégné",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Cameroonian recycled-metal monumental sculpture"
+  },
+  {
+    "nombre": "José Craveirinha",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Mozambican anticolonial poet, Prémio Camões 1991"
+  },
+  {
+    "nombre": "Malangatana Ngwenya",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Mozambican modernist painter"
+  },
+  {
+    "nombre": "Pancho Guedes",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "modernist architect, defined Maputo's built identity"
+  },
+  {
+    "nombre": "George Lilanga",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Makonde-tradition sculptor/painter, Tanzania"
+  },
+  {
+    "nombre": "Henry Tayali",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Zambia's most celebrated painter/printmaker"
+  },
+  {
+    "nombre": "Agostinho Neto",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "anticolonial Angolan poet, first president"
+  },
+  {
+    "nombre": "Bodys Isek Kingelez",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "utopian city maquettes, DR Congo, MoMA retrospective"
+  },
+  {
+    "nombre": "Pierre Fakhoury",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "architect of the Basilica of Yamoussoukro, Côte d'Ivoire"
+  },
+  {
+    "nombre": "Mimar Sinan",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "chief Ottoman imperial architect, Süleymaniye and Selimiye mosques"
+  },
+  {
+    "nombre": "Khushal Khan Khattak",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Pashtun warrior-poet, father of Pashto political poetry"
+  },
+  {
+    "nombre": "Rahman Baba",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Pashto Sufi mystic poet, Peshawar region"
+  },
+  {
+    "nombre": "Nedim",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Ottoman Tulip Era lyric poet, populist Divan style"
+  },
+  {
+    "nombre": "Şeyh Gâlib",
+    "disciplina": "poesía",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "last great classical Ottoman Divan poet"
+  },
+  {
+    "nombre": "Şeker Ahmed Pasha",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Ottoman academic painter, studied under Gérôme in Paris"
+  },
+  {
+    "nombre": "Halil Pasha",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Ottoman Impressionist painter"
+  },
+  {
+    "nombre": "Ivan Aivazovsky",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Armenian Romantic marine painter"
+  },
+  {
+    "nombre": "Vazha-Pshavela",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "pinnacle of 19th-century Georgian poetic realism"
+  },
+  {
+    "nombre": "Ilia Chavchavadze",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "leader of the Georgian national literary revival"
+  },
+  {
+    "nombre": "Abai Qunanbaiuly",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "founder of written Kazakh literature"
+  },
+  {
+    "nombre": "Shakir Hassan Al Said",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Iraqi painter/theorist, founder of One Dimension Group"
+  },
+  {
+    "nombre": "Jewad Selim",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Iraq's leading modern sculptor, Freedom Monument Baghdad"
+  },
+  {
+    "nombre": "Mohammed Ghani Hikmat",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "sheikh of sculptors, Baghdad public monuments"
+  },
+  {
+    "nombre": "Rifat Chadirji",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Iraqi architecture"
+  },
+  {
+    "nombre": "Mohamed Makiya",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of modern Iraqi/Islamic architecture"
+  },
+  {
+    "nombre": "Yahia Turki",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of Tunisian painting, École de Tunis"
+  },
+  {
+    "nombre": "Abu al-Qasim al-Shabbi",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Tunisia's national poet"
+  },
+  {
+    "nombre": "Ahmed Rafiq al-Mahdawi",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Libyan nationalist Poet of the Homeland"
+  },
+  {
+    "nombre": "Mustafa Wahbi al-Tal",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Jordan's most prominent modern poet"
+  },
+  {
+    "nombre": "Rasem Badran",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "contemporary Jordanian-Palestinian architect, Aga Khan laureate"
+  },
+  {
+    "nombre": "Samad Vurgun",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Soviet-Azerbaijani poet and dramatist"
+  },
+  {
+    "nombre": "Bahruz Kangarli",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "first academically trained Azerbaijani painter"
+  },
+  {
+    "nombre": "Sattar Bahlulzade",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of Azerbaijani Impressionist landscape painting"
+  },
+  {
+    "nombre": "Martiros Saryan",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of the modern Armenian national painting school"
+  },
+  {
+    "nombre": "Yervand Kochar",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of Painting in Space, major Armenian sculptor"
+  },
+  {
+    "nombre": "Alexander Tamanian",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "architect of modern Yerevan's master plan"
+  },
+  {
+    "nombre": "Niko Pirosmani",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "self-taught Georgian primitivist painter"
+  },
+  {
+    "nombre": "Lado Gudiashvili",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Georgian modernist painter"
+  },
+  {
+    "nombre": "Simon Kldiashvili",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading figure of Georgian Art Nouveau in Tbilisi"
+  },
+  {
+    "nombre": "Abilkhan Kasteev",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of the Kazakh national school of painting"
+  },
+  {
+    "nombre": "Sadriddin Ayni",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "father of modern Tajik literature and national poet"
+  },
+  {
+    "nombre": "Abdul Ghafoor Breshna",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading Afghan painter and composer"
+  },
+  {
+    "nombre": "Mimar Kemaleddin",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leader of Turkey's First National Architecture movement"
+  },
+  {
+    "nombre": "Mehmed Akif Ersoy",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "author of the Turkish National Anthem"
+  },
+  {
+    "nombre": "Yahya Kemal Beyatlı",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "leading modern Turkish poet bridging Divan and Republican eras"
+  },
+  {
+    "nombre": "Quirio Cataño",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "colonial religious sculpture, Kingdom of Guatemala, Cristo Negro de Esquipulas"
+  },
+  {
+    "nombre": "Alonso Rodríguez",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "first architect credited for the Catedral Primada de América, Santo Domingo"
+  },
+  {
+    "nombre": "Michel-Jean Cazabon",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Trinidad's first internationally recognized painter"
+  },
+  {
+    "nombre": "Salomé Ureña",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Dominican Republic's national poet, Romanticism"
+  },
+  {
+    "nombre": "Carlos Mérida",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Guatemala/Mexico, fusion of pre-Columbian motifs with avant-garde"
+  },
+  {
+    "nombre": "Jaime Colson",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Dominican Republic, cubism/surrealism"
+  },
+  {
+    "nombre": "Philomé Obin",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Haiti, founder of the Cap-Haïtien school"
+  },
+  {
+    "nombre": "Francisco Zúñiga",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Costa Rica/Mexico, monumental indigenist figures"
+  },
+  {
+    "nombre": "Edna Manley",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Jamaica, mother of Jamaican art"
+  },
+  {
+    "nombre": "Rafael Carmoega",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Puerto Rico, first Puerto Rican State Architect"
+  },
+  {
+    "nombre": "Pedro Adolfo de Castro",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Puerto Rico, co-designer of the Capitol"
+  },
+  {
+    "nombre": "Ernesto Cardenal",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Nicaragua, exteriorismo, liberation theology poetry"
+  },
+  {
+    "nombre": "Claude McKay",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Jamaica, Harlem Renaissance, Jamaican Creole verse"
+  },
+  {
+    "nombre": "Rosa Chávez",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Guatemala, Maya K'iche'-Kaqchikel poet"
+  },
+  {
+    "nombre": "Wit Stwosz",
+    "disciplina": "escultura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Gothic-Renaissance transition, St. Mary's Altarpiece, Kraków"
+  },
+  {
+    "nombre": "Mikołaj Haberschrack",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Late Gothic panel painting, Kraków/Lviv"
+  },
+  {
+    "nombre": "Janus Pannonius",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Latin Renaissance humanist poetry, Kingdom of Hungary"
+  },
+  {
+    "nombre": "Bálint Balassi",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Hungarian Renaissance lyric poetry"
+  },
+  {
+    "nombre": "Master Paul of Levoča",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Late Gothic altar carving, Kingdom of Hungary"
+  },
+  {
+    "nombre": "Master MS",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Late Gothic/early Renaissance panel painting"
+  },
+  {
+    "nombre": "Paweł z Krosno",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Latin humanist poetry, Ukrainian-Polish Renaissance"
+  },
+  {
+    "nombre": "Claus Berg",
+    "disciplina": "escultura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "Renaissance woodcarving, Odense Cathedral altarpiece"
+  },
+  {
+    "nombre": "Daniel Schultz",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Baroque court painting, Gdańsk/Polish-Lithuanian Commonwealth"
+  },
+  {
     "nombre": "Jan van Eyck",
     "disciplina": "pintura",
     "siglo": "siglo XV",
