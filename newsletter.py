@@ -1,4 +1,6 @@
+import json
 import logging
+from datetime import datetime
 from pathlib import Path
 
 from agentes.imagenes import elegir_imagenes
@@ -14,26 +16,62 @@ from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal, renderizar_html
 logger = logging.getLogger(__name__)
 
 RUTA_SALIDA = Path(__file__).resolve().parent / "salida"
+RUTA_OMITIDOS = Path(__file__).resolve().parent / "datos" / "autores_sin_imagen.json"
+
+
+def _registrar_omitido(nombre: str, disciplina: str, siglo: str) -> None:
+    # No se marca como "enviado" (para no perderlo del catálogo para siempre),
+    # pero sin dejar constancia en algún sitio se perdería igual: quedaría
+    # pendiente en el catálogo pero nadie sabría por qué el pipeline lo salta
+    # una y otra vez. Este archivo es esa constancia — para revisarlo a mano
+    # más adelante (ej. buscarle una foto suya en vez de su obra).
+    omitidos = json.loads(RUTA_OMITIDOS.read_text(encoding="utf-8")) if RUTA_OMITIDOS.exists() else []
+    omitidos.append(
+        {
+            "nombre": nombre,
+            "disciplina": disciplina,
+            "siglo": siglo,
+            "motivo": "sin imágenes libres encontradas (ni de la obra ni de la persona)",
+            "fecha": datetime.now().isoformat(),
+        }
+    )
+    RUTA_OMITIDOS.parent.mkdir(exist_ok=True)
+    RUTA_OMITIDOS.write_text(json.dumps(omitidos, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def generar_newsletter(solicitud: SolicitudNewsletter):
-    autor = elegir_autor_pendiente(solicitud.siglo, solicitud.disciplina)
+    intentados: set[str] = set()
+    autor = elegir_autor_pendiente(solicitud.siglo, solicitud.disciplina, excluir=intentados)
     if autor is None:
         raise RuntimeError(
             f"No quedan autores pendientes en el catálogo para "
             f"{solicitud.siglo} / {solicitud.disciplina}"
         )
-    logger.info(f"Autor elegido: {autor.nombre}")
 
     modelo_investigador = AnthropicAdapter(etiqueta="investigador")
     modelo_redactor = AnthropicAdapter(etiqueta="redactor")
     modelo_verificador = AnthropicAdapter(etiqueta="verificador")
 
-    notas = investigar(autor, modelo_investigador)
-    logger.info(f"Investigación completa: {len(notas.titulos_obras_conocidas)} obras encontradas")
+    while True:
+        logger.info(f"Autor elegido: {autor.nombre}")
+        notas = investigar(autor, modelo_investigador)
+        logger.info(f"Investigación completa: {len(notas.titulos_obras_conocidas)} obras encontradas")
 
-    imagenes = elegir_imagenes(notas.nombre, autor.disciplina, notas.titulos_obras_conocidas, cantidad=3)
-    logger.info(f"Imágenes encontradas: {len(imagenes)}/3")
+        imagenes = elegir_imagenes(notas.nombre, autor.disciplina, notas.titulos_obras_conocidas, cantidad=3)
+        logger.info(f"Imágenes encontradas: {len(imagenes)}/3")
+
+        if imagenes:
+            break
+
+        logger.warning(f"Sin imágenes libres para {autor.nombre} — se omite y se prueba el siguiente")
+        _registrar_omitido(autor.nombre, autor.disciplina, autor.siglo)
+        intentados.add(autor.nombre)
+        autor = elegir_autor_pendiente(solicitud.siglo, solicitud.disciplina, excluir=intentados)
+        if autor is None:
+            raise RuntimeError(
+                f"Ningún autor pendiente en {solicitud.siglo} / {solicitud.disciplina} "
+                f"tiene imágenes libres disponibles — revisa datos/autores_sin_imagen.json"
+            )
 
     flashcard = redactar(notas, autor.disciplina, autor.siglo, imagenes, modelo_redactor)
     resultado = verificar(flashcard, notas, modelo_verificador)

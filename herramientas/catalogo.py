@@ -27,8 +27,10 @@ def cargar_enviados() -> list[RegistroEnvio]:
         return [RegistroEnvio(**item) for item in json.load(f)]
 
 
-def elegir_autor_pendiente(siglo: str, disciplina: str = "cualquiera") -> AutorCatalogo | None:
-    nombres_enviados = {r.nombre for r in cargar_enviados()}
+def elegir_autor_pendiente(
+    siglo: str, disciplina: str = "cualquiera", excluir: set[str] | None = None
+) -> AutorCatalogo | None:
+    nombres_enviados = {r.nombre for r in cargar_enviados()} | (excluir or set())
     candidatos = [
         autor
         for autor in cargar_catalogo()

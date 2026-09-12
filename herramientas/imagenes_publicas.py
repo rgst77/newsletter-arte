@@ -60,7 +60,10 @@ def _texto_plano(html: str) -> str:
 
 
 def buscar_en_wikimedia(
-    nombre_autor: str, max_resultados: int = 3, verificar_autor: bool = True
+    nombre_autor: str,
+    max_resultados: int = 3,
+    verificar_autor: bool = True,
+    requerir_dominio_publico: bool = False,
 ) -> list[ImagenObra]:
     respuesta = requests.get(
         WIKIMEDIA_API,
@@ -101,6 +104,22 @@ def buscar_en_wikimedia(
         autor_limpio = _texto_plano(autor) if autor else "autor no especificado"
         if verificar_autor and autor and apellido not in autor_limpio.lower():
             continue
+        if requerir_dominio_publico:
+            # OJO: "LicenseShortName: Public domain" NO basta — esa etiqueta
+            # también aparece en fotos de obras con copyright vigente donde
+            # solo el FOTÓGRAFO liberó los derechos de su fotografía (ej. una
+            # foto del Guernica donada por su fotógrafo a la Library of
+            # Congress): eso no dice nada sobre si el cuadro en sí es libre,
+            # y fue exactamente el fallo real de Picasso. La única señal que
+            # sí afirma que la OBRA (no la foto) es de dominio público son
+            # las categorías "PD-Art"/"PD-old"/"author died more than X years
+            # ago" que Commons aplica cuando la obra representada es libre.
+            categorias = metadatos.get("Categories", {}).get("value", "").lower()
+            if not any(
+                marca in categorias
+                for marca in ("pd-art", "pd-old", "author died more than")
+            ):
+                continue
         imagenes.append(
             ImagenObra(
                 titulo_obra=titulo.removeprefix("File:"),
