@@ -3892,5 +3892,299 @@
     "disciplina": "arquitectura",
     "siglo": "siglo XXI",
     "corriente_orientativa": "Contemporary sustainable architecture"
+  },
+  {
+    "nombre": "Mutuaga",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Massim master carver, Milne Bay, PNG"
+  },
+  {
+    "nombre": "Paratene Matchitt",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori (Te Whānau-ā-Apanui/Ngāti Porou), sculptor-painter"
+  },
+  {
+    "nombre": "Selwyn Muru",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Māori (Te Aupōuri, Ngāti Kurī), painter-sculptor-broadcaster"
+  },
+  {
+    "nombre": "John Kasaipwalova",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Trobriand Islands, PNG, anticolonial literature pioneer"
+  },
+  {
+    "nombre": "Aloi Pilioko",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Wallis and Futuna, active in Vanuatu, muralist and painter"
+  },
+  {
+    "nombre": "Selina Tusitala Marsh",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Samoa/Tuvalu/NZ, first Commonwealth Poet Laureate"
+  },
+  {
+    "nombre": "Tusiata Avia",
+    "disciplina": "poesía",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Samoa/New Zealand, contemporary poet"
+  },
+  {
+    "nombre": "Zeami Motokiyo",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "founder and theorist of Noh theatre, Muromachi Japan"
+  },
+  {
+    "nombre": "Sesshū Tōyō",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Zen ink-wash landscape master, Muromachi Japan"
+  },
+  {
+    "nombre": "Shen Zhou",
+    "disciplina": "pintura",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "founder of the Wu School of literati painting, Ming China"
+  },
+  {
+    "nombre": "Kanō Eitoku",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "monumental decorative screen painting, Momoyama Japan"
+  },
+  {
+    "nombre": "Qiu Ying",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "gongbi technique, Four Masters of Ming painting"
+  },
+  {
+    "nombre": "Xu Wei",
+    "disciplina": "pintura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "expressive literati bird-and-flower painting, Ming China"
+  },
+  {
+    "nombre": "Sen no Rikyū",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "designed the minimalist wabi-sabi tea house, Japan"
+  },
+  {
+    "nombre": "Matsuo Bashō",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "master of haiku, Edo-period Japan"
+  },
+  {
+    "nombre": "Tawaraya Sōtatsu",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "founder of the Rinpa school, Edo Japan"
+  },
+  {
+    "nombre": "Shitao",
+    "disciplina": "pintura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "individualist landscape painter, early Qing China"
+  },
+  {
+    "nombre": "Hidari Jingorō",
+    "disciplina": "escultura",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "legendary sculptor-carpenter, sleeping cat carving at Nikkō"
+  },
+  {
+    "nombre": "Mokujiki Shōnin",
+    "disciplina": "escultura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "itinerant monk-sculptor, over 1,000 wooden Buddhist statues"
+  },
+  {
+    "nombre": "Zheng Xie",
+    "disciplina": "pintura",
+    "siglo": "siglo XVIII",
+    "corriente_orientativa": "Eight Eccentrics of Yangzhou, bamboo and orchids, Qing China"
+  },
+  {
+    "nombre": "Katsushika Hokusai",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "ukiyo-e, The Great Wave, Edo Japan"
+  },
+  {
+    "nombre": "Utagawa Hiroshige",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "ukiyo-e landscape, Edo Japan"
+  },
+  {
+    "nombre": "Jang Seung-eop",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "one of the Three Wons of late Joseon painting, Korea"
+  },
+  {
+    "nombre": "Dulduityn Danzanravjaa",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Gobi lama-poet and playwright, Mongolia"
+  },
+  {
+    "nombre": "Huang Tu-shui",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of modern sculpture in Taiwan"
+  },
+  {
+    "nombre": "Kim Swoo-geun",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of Korean architectural modernism"
+  },
+  {
+    "nombre": "Tanikawa Shuntarō",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "most widely-read modern Japanese poet"
+  },
+  {
+    "nombre": "Dashdorjiin Natsagdorj",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of modern Mongolian literature"
+  },
+  {
+    "nombre": "Wang Da-hong",
+    "disciplina": "arquitectura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "pioneer of modernist architecture in Taiwan"
+  },
+  {
+    "nombre": "Nguyễn Trãi",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Confucian statesman-poet of the Lam Sơn uprising"
+  },
+  {
+    "nombre": "Sunan Kalijaga",
+    "disciplina": "poesía",
+    "siglo": "siglo XV",
+    "corriente_orientativa": "Javanese Wali Songo saint, suluk devotional verse"
+  },
+  {
+    "nombre": "Hamzah Fansuri",
+    "disciplina": "poesía",
+    "siglo": "siglo XVI",
+    "corriente_orientativa": "first Malay Sufi poet, pioneer of the syair verse form"
+  },
+  {
+    "nombre": "Đào Duy Từ",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Nguyễn-lord strategist-poet"
+  },
+  {
+    "nombre": "Sultan Agung of Mataram",
+    "disciplina": "poesía",
+    "siglo": "siglo XVII",
+    "corriente_orientativa": "Javanese king-poet, Serat Sastra Gendhing"
+  },
+  {
+    "nombre": "Cao Bá Quát",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Nguyễn-era rebel poet"
+  },
+  {
+    "nombre": "Raja Ali Haji",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Bugis-Malay poet and historian, Gurindam Dua Belas"
+  },
+  {
+    "nombre": "Damián Domingo",
+    "disciplina": "pintura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "father of Filipino painting"
+  },
+  {
+    "nombre": "Isabelo Tampinco",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Filipino woodcarver-sculptor"
+  },
+  {
+    "nombre": "Ronggowarsito",
+    "disciplina": "poesía",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "last great Javanese court poet"
+  },
+  {
+    "nombre": "I Gusti Nyoman Lempad",
+    "disciplina": "escultura",
+    "siglo": "siglo XIX",
+    "corriente_orientativa": "Balinese temple sculptor, architect and draughtsman"
+  },
+  {
+    "nombre": "Bùi Xuân Phái",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "painter of Phố Phái, Hanoi Old Quarter streetscapes"
+  },
+  {
+    "nombre": "Amir Hamzah",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Poedjangga Baroe-era Indonesian poet"
+  },
+  {
+    "nombre": "Guillermo Tolentino",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "sculptor of the UP Oblation and Bonifacio Monument"
+  },
+  {
+    "nombre": "Vicente Manansala",
+    "disciplina": "pintura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Filipino transparent cubism painter"
+  },
+  {
+    "nombre": "Silpa Bhirasri",
+    "disciplina": "escultura",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "founder of Silpakorn University, father of modern Thai art"
+  },
+  {
+    "nombre": "Usman Awang",
+    "disciplina": "poesía",
+    "siglo": "siglo XX",
+    "corriente_orientativa": "Malaysian National Laureate"
+  },
+  {
+    "nombre": "Napoleon Abueva",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "father of modern Philippine sculpture"
+  },
+  {
+    "nombre": "Pacita Abad",
+    "disciplina": "pintura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Filipino-American trapunto/abstract painter"
+  },
+  {
+    "nombre": "Sopheap Pich",
+    "disciplina": "escultura",
+    "siglo": "siglo XXI",
+    "corriente_orientativa": "Cambodia's leading contemporary sculptor"
   }
 ]
