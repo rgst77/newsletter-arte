@@ -124,5 +124,14 @@
     "siglo": "siglo XVI",
     "archivo_html": "salida/16th-century/painting/sofonisba_anguissola.html",
     "fecha_envio": "2026-09-12T02:53:19.928392"
+  },
+  {
+    "nombre": "Judith Leyster",
+    "disciplina": "pintura",
+    "corriente": "Dutch Golden Age",
+    "periodo": "1629-1660",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/17th-century/painting/judith_leyster.html",
+    "fecha_envio": "2026-09-15T03:08:19.051905"
   }
 ]

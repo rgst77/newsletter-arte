@@ -1,0 +1,33 @@
+{
+  "nombre": "Judith Leyster",
+  "nacionalidad": "Dutch",
+  "disciplina": "pintura",
+  "siglo": "siglo XVII",
+  "corriente": "Dutch Golden Age",
+  "periodo": "1629-1660",
+  "biografia": "Judith Leyster (1609–1660) was one of the most talented painters of the Dutch Golden Age, born in Haarlem to a family that moved in artistic and merchant circles. By age twenty, she was already signing her works, and by 1633 she became one of the first women admitted to the prestigious Haarlem Guild of St. Luke—a remarkable achievement that led to her taking on three male apprentices. She painted lively scenes of everyday life, especially musicians and drinkers, along with portraits and still lifes, earning respect from her contemporaries. Sadly, her remarkable legacy was nearly erased after her death, with most of her paintings falsely attributed to Frans Hals or her husband Jan Miense Molenaer, until her distinctive signature was finally recognized again in 1893 on a painting in the Louvre.",
+  "imagenes": [
+    {
+      "titulo_obra": "Judith Leyster - Man Offering Money to a Young Woman - 564 - Mauritshuis.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/0/07/Judith_Leyster_-_Man_Offering_Money_to_a_Young_Woman_-_564_-_Mauritshuis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Judith_Leyster_-_Man_Offering_Money_to_a_Young_Woman_-_564_-_Mauritshuis.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Judith Leyster — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Judith Leyster - Serenade - WGA12960.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/27/Judith_Leyster_-_Serenade_-_WGA12960.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Judith_Leyster_-_Serenade_-_WGA12960.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Judith Leyster — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Judith Leyster - Jolly Toper - WGA12957.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Judith_Leyster_-_Jolly_Toper_-_WGA12957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Judith_Leyster_-_Jolly_Toper_-_WGA12957.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Judith Leyster — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-15T03:08:15.193204"
+}
