@@ -1,0 +1,33 @@
+{
+  "nombre": "Rosalba Carriera",
+  "nacionalidad": "Italian",
+  "disciplina": "pintura",
+  "siglo": "siglo XVIII",
+  "corriente": "Rococo",
+  "periodo": "1700–1750 (active career); lived 1675–1757",
+  "biografia": "Born in Venice in 1675 to a clerk father and lacemaker mother, Rosalba Carriera became one of the most celebrated artists of her time—a remarkable achievement for any woman in the 18th century. She started her career creating delicate miniature portraits on ivory and snuffbox lids, but her true revolution came when she elevated pastel from a preparatory sketch medium to a serious fine art form. With her graceful, intimate Rococo style, Carriera won international fame and acclaim, becoming accepted into Rome's prestigious Accademia di San Luca in 1704 and influencing European aristocracy during travels to France. She spent most of her life in Venice, a cosmopolitan hub that fueled her commercial success and artistic innovation. By the time she died in 1757, Carriera had become the first artist to achieve world renown primarily defined by her mastery of pastel portraiture—a legacy that still shines today.",
+  "imagenes": [
+    {
+      "titulo_obra": "Gustavus Hamilton (1710–1746), Second Viscount Boyne, in Masquerade Costume",
+      "url_imagen": "https://images.metmuseum.org/CRDImages/ep/original/DP161652.jpg",
+      "url_fuente": "https://www.metmuseum.org/art/collection/search/438544",
+      "fuente": "The Met Open Access",
+      "creditos": "Dominio público — The Metropolitan Museum of Art"
+    },
+    {
+      "titulo_obra": "Rosalba Carriera 002.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Rosalba_Carriera_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Rosalba_Carriera_002.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Rosalba Carriera — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Portrait of a Woman",
+      "url_imagen": "https://ids.si.edu/ids/download?id=CHSDM-6B416FE613DE2-000001.jpg",
+      "url_fuente": "https://collection.cooperhewitt.org/view/objects/asitem/id/58366",
+      "fuente": "Smithsonian Open Access",
+      "creditos": "Dominio publico (CC0) - Bequest of Erskine Hewitt"
+    }
+  ],
+  "generado_en": "2026-09-19T02:54:12.521883"
+}

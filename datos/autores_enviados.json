@@ -133,5 +133,14 @@
     "siglo": "siglo XVII",
     "archivo_html": "salida/17th-century/painting/judith_leyster.html",
     "fecha_envio": "2026-09-15T03:08:19.051905"
+  },
+  {
+    "nombre": "Rosalba Carriera",
+    "disciplina": "pintura",
+    "corriente": "Rococo",
+    "periodo": "1700–1750 (active career); lived 1675–1757",
+    "siglo": "siglo XVIII",
+    "archivo_html": "salida/18th-century/painting/rosalba_carriera.html",
+    "fecha_envio": "2026-09-19T02:54:15.673415"
   }
 ]
