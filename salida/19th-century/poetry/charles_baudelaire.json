@@ -1,0 +1,33 @@
+{
+  "nombre": "Charles Baudelaire",
+  "nacionalidad": "French",
+  "disciplina": "poesía",
+  "siglo": "siglo XIX",
+  "corriente": "Symbolism",
+  "periodo": "1841-1867",
+  "biografia": "Charles Baudelaire was a restless French poet and art critic who turned a turbulent life into groundbreaking literature during the 19th century. Born into comfort but drawn to bohemia, he experimented with exotic travels, opium, and luxury—experiences that flooded his imagination with mysterious imagery and sensory intensity. His masterpiece, Les Fleurs du Mal (1857), revolutionized poetry by weaving symbolic language and unexpected beauty from dark, forbidden themes, making it one of the most influential collections in European literature. Though he lived only 46 years and struggled with poverty and illness, Baudelaire's genius for finding correspondence between senses and deeper truths laid the foundation for the entire Symbolist movement that would reshape modern art after his death. He reminds us that sometimes the most transformative creators are the ones brave enough to explore life's shadows.",
+  "imagenes": [
+    {
+      "titulo_obra": "Baudelaire - Les Fleurs du mal 1861.djvu",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Baudelaire_-_Les_Fleurs_du_mal_1861.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Baudelaire_-_Les_Fleurs_du_mal_1861.djvu",
+      "fuente": "Wikimedia Commons",
+      "creditos": "s:fr:Auteur:Charles Baudelaire — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "La Fizelière-Decaux - Charles Baudelaire, 1868.djvu",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/91/La_Fizeli%C3%A8re-Decaux_-_Charles_Baudelaire%2C_1868.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:La_Fizelière-Decaux_-_Charles_Baudelaire,_1868.djvu",
+      "fuente": "Wikimedia Commons",
+      "creditos": "s:fr:Auteur:Albert de La Fizelière, 1819-1878 ; Decaux, Georges, 1845- — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Nadar - Charles Baudelaire intime, 1911.djvu",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/58/Nadar_-_Charles_Baudelaire_intime%2C_1911.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Nadar_-_Charles_Baudelaire_intime,_1911.djvu",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Nadar — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-22T03:03:34.677415"
+}
