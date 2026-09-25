@@ -1,0 +1,33 @@
+{
+  "nombre": "Federico García Lorca",
+  "nacionalidad": "Spanish",
+  "disciplina": "poesía",
+  "siglo": "siglo XX",
+  "corriente": "Generation of '27",
+  "periodo": "1898-1936 (active 1918-1936)",
+  "biografia": "Federico García Lorca was a Spanish poet and playwright born in 1898 in Granada, where he was steeped in the rich traditions of flamenco, Gypsy folklore, and Andalusian culture. Moving to Madrid in 1919, he became a driving force of the Generation of '27, brilliantly fusing Spain's traditional cultural heritage with cutting-edge European modernist movements like surrealism and futurism. His poetry collections and especially his theatrical masterpieces—Blood Wedding, Yerma, and The House of Bernarda Alba—explored the tragic human struggles of love, desire, and social constraint with stunning innovation and emotional depth. A transformative journey to New York in 1929-1930 further expanded his artistic vision and social consciousness. Tragically, Lorca was assassinated in 1936 at the outbreak of the Spanish Civil War, likely because of his socialist beliefs and his identity, leaving behind a legacy as one of the twentieth century's most important Spanish writers.",
+  "imagenes": [
+    {
+      "titulo_obra": "Primer romancero gitano 1924-1927 Lorca.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Primer_romancero_gitano_1924-1927_Lorca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Primer_romancero_gitano_1924-1927_Lorca.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "http://catalogo.bne.es/uhtbin/cgisirsi/0/x/0/05?searchdata1=Mimo0000902795 — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Poema doble del lago Edem.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Poema_doble_del_lago_Edem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Poema_doble_del_lago_Edem.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Federico García Lorca — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Bodas de Sangre(191).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Bodas_de_Sangre%28191%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Bodas_de_Sangre(191).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "martinbayo — CC BY-SA 3.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-25T03:10:48.004829"
+}

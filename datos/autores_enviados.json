@@ -151,5 +151,14 @@
     "siglo": "siglo XIX",
     "archivo_html": "salida/19th-century/poetry/charles_baudelaire.html",
     "fecha_envio": "2026-09-22T03:03:39.280324"
+  },
+  {
+    "nombre": "Federico García Lorca",
+    "disciplina": "poesía",
+    "corriente": "Generation of '27",
+    "periodo": "1898-1936 (active 1918-1936)",
+    "siglo": "siglo XX",
+    "archivo_html": "salida/20th-century/poetry/federico_garcía_lorca.html",
+    "fecha_envio": "2026-09-25T03:10:53.679565"
   }
 ]
