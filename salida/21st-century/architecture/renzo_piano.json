@@ -1,0 +1,33 @@
+{
+  "nombre": "Renzo Piano",
+  "nacionalidad": "Italian",
+  "disciplina": "arquitectura",
+  "siglo": "siglo XXI",
+  "corriente": "High-tech architecture",
+  "periodo": "1964–present",
+  "biografia": "Born in Genoa in 1937, Renzo Piano is a visionary architect who transformed how we think about buildings by merging cutting-edge engineering with elegant, human-centered design. After studying at Milan Polytechnic and apprenticing under legends like Louis Kahn, he founded his Building Workshop in 1980 and became a pioneer of high-tech architecture—a movement that boldly exposes a building's infrastructure as part of its beauty. His masterpiece, the Centre Georges Pompidou in Paris (created with Richard Rogers), shocked the world by turning the building \"inside-out,\" making pipes, ducts, and steel beams into visual art. From museums to cultural centers across the globe, Piano's work shows that technology and craft aren't enemies—they're partners in creating spaces that respect both innovation and human needs. In 1998, he won the prestigious Pritzker Prize for his rare ability to blend art, architecture, and engineering into something unforgettable.",
+  "imagenes": [
+    {
+      "titulo_obra": "La piazza devant le centre Georges Pompidou (Paris) (7195537716).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c9/La_piazza_devant_le_centre_Georges_Pompidou_%28Paris%29_%287195537716%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:La_piazza_devant_le_centre_Georges_Pompidou_(Paris)_(7195537716).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Jean-Pierre Dalbéra from Paris, France — CC BY 2.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "London - Millennium Bridge - View ESE towards Shard London Bridge (310m) 2012 by Renzo Piano.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/3/36/London_-_Millennium_Bridge_-_View_ESE_towards_Shard_London_Bridge_%28310m%29_2012_by_Renzo_Piano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:London_-_Millennium_Bridge_-_View_ESE_towards_Shard_London_Bridge_(310m)_2012_by_Renzo_Piano.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Txllxt TxllxT — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Renzo Piano, portrait.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Renzo_Piano%2C_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Renzo_Piano,_portrait.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Cirone-Musi (Festival della Scienza, Genova)Color and edits by the uploader. — CC BY-SA 2.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-09-28T03:19:48.939167"
+}

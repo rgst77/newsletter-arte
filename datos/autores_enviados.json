@@ -160,5 +160,14 @@
     "siglo": "siglo XX",
     "archivo_html": "salida/20th-century/poetry/federico_garcía_lorca.html",
     "fecha_envio": "2026-09-25T03:10:53.679565"
+  },
+  {
+    "nombre": "Renzo Piano",
+    "disciplina": "arquitectura",
+    "corriente": "High-tech architecture",
+    "periodo": "1964–present",
+    "siglo": "siglo XXI",
+    "archivo_html": "salida/21st-century/architecture/renzo_piano.html",
+    "fecha_envio": "2026-09-28T03:19:53.467946"
   }
 ]
