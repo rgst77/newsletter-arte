@@ -108,6 +108,13 @@ def buscar_en_wikimedia(
         if not info:
             continue
         titulo = pagina.get("title", "")
+        # El namespace "File" de Commons no son solo imágenes: también aloja
+        # escaneos de libros (.djvu, .pdf), audio, vídeo... Nada de eso se ve
+        # como <img> en un email. Caso real: para poetas (sin "obra visual"
+        # propia) la búsqueda encontró ediciones escaneadas de sus libros en
+        # vez de retratos, y el issue de Baudelaire salió sin ninguna imagen.
+        if not titulo.lower().endswith((".jpg", ".jpeg", ".png", ".gif", ".webp")):
+            continue
         metadatos = info[0].get("extmetadata", {})
         autor = metadatos.get("Artist", {}).get("value", "")
         licencia = metadatos.get("LicenseShortName", {}).get("value", "licencia no especificada")
