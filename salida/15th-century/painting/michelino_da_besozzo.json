@@ -1,0 +1,33 @@
+{
+  "nombre": "Michelino da Besozzo",
+  "nacionalidad": "Italian",
+  "disciplina": "pintura",
+  "siglo": "siglo XV",
+  "corriente": "Lombard School",
+  "periodo": "c. 1370 – c. 1455",
+  "biografia": "Michelino da Besozzo was a celebrated Italian painter and illuminator who dominated the Milan art scene during the fifteenth century, working for the powerful Visconti family as one of the era's most sought-after artists. Moving between Pavia, Venice, and Milan throughout his life, he brought the elegant, flowing lines of International Gothic to monumental commissions—from cathedral windows to frescoes in princely castles—and even encountered the renowned Gentile da Fabriano during his time in northern Italy. Though few of his works survive today, he stands as a master of the Lombard School, bridging the graceful traditions of the late medieval period rather than chasing the new Renaissance classicism gaining ground elsewhere. His influence extended even to his family: his son Leonardo followed in his footsteps as a manuscript illuminator, continuing their artistic legacy.",
+  "imagenes": [
+    {
+      "titulo_obra": "The Marriage of the Virgin",
+      "url_imagen": "https://images.metmuseum.org/CRDImages/ep/original/DP134149.jpg",
+      "url_fuente": "https://www.metmuseum.org/art/collection/search/437083",
+      "fuente": "The Met Open Access",
+      "creditos": "Dominio público — The Metropolitan Museum of Art"
+    },
+    {
+      "titulo_obra": "Michelino Da Besozzo - Eulogy for Giangaleazzo Visconti - WGA15591.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Michelino_Da_Besozzo_-_Eulogy_for_Giangaleazzo_Visconti_-_WGA15591.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Michelino_Da_Besozzo_-_Eulogy_for_Giangaleazzo_Visconti_-_WGA15591.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Michelino Molinari da Besozzo — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "A Gazelle in Profile, Moving Toward the Right",
+      "url_imagen": "https://images.metmuseum.org/CRDImages/rl/original/DP220572.jpg",
+      "url_fuente": "https://www.metmuseum.org/art/collection/search/459413",
+      "fuente": "The Met Open Access",
+      "creditos": "Dominio público — The Metropolitan Museum of Art"
+    }
+  ],
+  "generado_en": "2026-10-01T03:51:23.356111"
+}

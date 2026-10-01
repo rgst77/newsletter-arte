@@ -169,5 +169,14 @@
     "siglo": "siglo XXI",
     "archivo_html": "salida/21st-century/architecture/renzo_piano.html",
     "fecha_envio": "2026-09-28T03:19:53.467946"
+  },
+  {
+    "nombre": "Michelino da Besozzo",
+    "disciplina": "pintura",
+    "corriente": "Lombard School",
+    "periodo": "c. 1370 – c. 1455",
+    "siglo": "siglo XV",
+    "archivo_html": "salida/15th-century/painting/michelino_da_besozzo.html",
+    "fecha_envio": "2026-10-01T03:51:27.095374"
   }
 ]
