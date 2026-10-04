@@ -178,5 +178,14 @@
     "siglo": "siglo XV",
     "archivo_html": "salida/15th-century/painting/michelino_da_besozzo.html",
     "fecha_envio": "2026-10-01T03:51:27.095374"
+  },
+  {
+    "nombre": "Lavinia Fontana",
+    "disciplina": "pintura",
+    "corriente": "Mannerism",
+    "periodo": "1552-1614",
+    "siglo": "siglo XVI",
+    "archivo_html": "salida/16th-century/painting/lavinia_fontana.html",
+    "fecha_envio": "2026-10-04T04:02:45.808457"
   }
 ]

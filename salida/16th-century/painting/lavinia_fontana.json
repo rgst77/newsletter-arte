@@ -1,0 +1,33 @@
+{
+  "nombre": "Lavinia Fontana",
+  "nacionalidad": "Italian",
+  "disciplina": "pintura",
+  "siglo": "siglo XVI",
+  "corriente": "Mannerism",
+  "periodo": "1552-1614",
+  "biografia": "Lavinia Fontana (1552–1614) was a trailblazing Italian painter who became the first female career artist in Western Europe, earning her living through commissions rather than working within the constraints of convents or courts. Trained by her father in Bologna, she spent two decades as the portraitist of choice for noblewomen and university-connected figures before her talent caught the eye of Spanish royalty and eventually the Pope himself. Her luminous portraits—rendered with exquisite attention to jewelry, fabrics, and decorative detail—made her a sought-after artist across Italy and Spain, and she became the first woman admitted to Rome's prestigious Accademia di San Luca. Beyond portraiture, she pioneered new ground by painting nudes and working with live models, breaking barriers that few women artists would cross for centuries to come. Today, her works remain treasured not only as masterpieces of Renaissance art, but as authentic visual records of the fashions and elegance of her era.",
+  "imagenes": [
+    {
+      "titulo_obra": "Lavinia Fontana - Self-Portrait at the Spinet - WGA07985.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/8/83/Lavinia_Fontana_-_Self-Portrait_at_the_Spinet_-_WGA07985.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Lavinia_Fontana_-_Self-Portrait_at_the_Spinet_-_WGA07985.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Lavinia Fontana — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Bianca degli Utili Maselli and six of her children, by Lavinia Fontana.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bianca_degli_Utili_Maselli_and_six_of_her_children%2C_by_Lavinia_Fontana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Bianca_degli_Utili_Maselli_and_six_of_her_children,_by_Lavinia_Fontana.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Lavinia Fontana — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Lavinia Fontana - Autoritratto (ca. 1577-85).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Lavinia_Fontana_-_Autoritratto_%28ca._1577-85%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Lavinia_Fontana_-_Autoritratto_(ca._1577-85).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Attributed to Lavinia Fontana / Formerly attributed to Benvenuto Tisi — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-04T04:02:40.690648"
+}
