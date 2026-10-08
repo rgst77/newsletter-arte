@@ -187,5 +187,14 @@
     "siglo": "siglo XVI",
     "archivo_html": "salida/16th-century/painting/lavinia_fontana.html",
     "fecha_envio": "2026-10-04T04:02:45.808457"
+  },
+  {
+    "nombre": "Clara Peeters",
+    "disciplina": "pintura",
+    "corriente": "Flemish Baroque",
+    "periodo": "1607-1676 (active period; baptized 1594, died after 1657)",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/17th-century/painting/clara_peeters.html",
+    "fecha_envio": "2026-10-08T04:14:03.682614"
   }
 ]

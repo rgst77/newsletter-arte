@@ -1,0 +1,33 @@
+{
+  "nombre": "Clara Peeters",
+  "nacionalidad": "Flemish (from Antwerp, Spanish Netherlands)",
+  "disciplina": "pintura",
+  "siglo": "siglo XVII",
+  "corriente": "Flemish Baroque",
+  "periodo": "1607-1676 (active period; baptized 1594, died after 1657)",
+  "biografia": "Born in Antwerp in 1594, Clara Peeters became one of Europe's most accomplished painters at a time when women were largely locked out of artistic training and guilds—a remarkable achievement that made her the best-known female Flemish artist of the early seventeenth century. Working across the Spanish Netherlands and the Dutch Republic, she pioneered the art of still-life painting, specializing in intimate \"breakfast pieces\" and \"banquet pieces\" that showcased exquisite food, luxury objects, and gleaming reflections on glass and metal with breathtaking precision. Her meticulous brushwork and sophisticated eye for texture and arrangement had such an influence that she shaped the entire future of still-life painting in Europe. Though details about her personal life remain tantalizingly sparse, we know she married in 1639, and her earliest signed work from 1607 reveals a fully formed talent—hinting at formal training from masters like Osias Beert. Clara Peeters is a quiet revolution in paint: proof that even in an era that resisted women's voices, some found ways not just to paint, but to paint so brilliantly they changed everything.",
+  "imagenes": [
+    {
+      "titulo_obra": "Clara Peeters Stillleben.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/76/Clara_Peeters_Stillleben.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Clara_Peeters_Stillleben.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Clara Peeters — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Clara Peeters - Mesa (Prado) 01.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Clara_Peeters_-_Mesa_%28Prado%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Clara_Peeters_-_Mesa_(Prado)_01.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Clara Peeters — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Mesa (Clara Peeters).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/11/Mesa_%28Clara_Peeters%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Mesa_(Clara_Peeters).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Clara Peeters — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-08T04:13:59.113082"
+}
