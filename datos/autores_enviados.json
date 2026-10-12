@@ -196,5 +196,14 @@
     "siglo": "siglo XVII",
     "archivo_html": "salida/17th-century/painting/clara_peeters.html",
     "fecha_envio": "2026-10-08T04:14:03.682614"
+  },
+  {
+    "nombre": "Anna Dorothea Therbusch",
+    "disciplina": "pintura",
+    "corriente": "Rococo",
+    "periodo": "1721-1782",
+    "siglo": "siglo XVIII",
+    "archivo_html": "salida/18th-century/painting/anna_dorothea_therbusch.html",
+    "fecha_envio": "2026-10-12T04:03:56.822482"
   }
 ]

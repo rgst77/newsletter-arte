@@ -1,0 +1,33 @@
+{
+  "nombre": "Anna Dorothea Therbusch",
+  "nacionalidad": "Prussian",
+  "disciplina": "pintura",
+  "siglo": "siglo XVIII",
+  "corriente": "Rococo",
+  "periodo": "1721-1782",
+  "biografia": "Born in Berlin in 1721 to a celebrated family of painters, Anna Dorothea Therbusch was recognized as a prodigy from her teens, training in her father's workshop and studying masterpieces in the royal collections. She painted everything—elegant portraits, mythological scenes, and genre paintings—mastering the graceful Rococo style that defined her era. After stepping away from art to support her husband's restaurant business, she made a bold comeback around 1760, traveling to Stuttgart and eventually Paris, where she became one of the rare women artists honored by the prestigious French Royal Academy. Over her lifetime, she earned recognition from courts and academies across Europe, creating more than 200 works despite the steep barriers women faced in the art world. Her legacy proves that talent and determination could break through even the most rigid barriers of the 18th century.",
+  "imagenes": [
+    {
+      "titulo_obra": "Self-portrait by Anna Dorothea Therbusch-Lisiewska.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Self-portrait_by_Anna_Dorothea_Therbusch-Lisiewska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Self-portrait_by_Anna_Dorothea_Therbusch-Lisiewska.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anna Dorothea Therbusch — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Anna Dorothea Therbusch - 1761.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Anna_Dorothea_Therbusch_-_1761.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Anna_Dorothea_Therbusch_-_1761.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anna Dorothea Therbusch — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Anna Dorothea Therbusch - Qm45Moy4No.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/0/06/Anna_Dorothea_Therbusch_-_Qm45Moy4No.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Anna_Dorothea_Therbusch_-_Qm45Moy4No.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anna Dorothea Therbusch — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-12T04:03:51.630575"
+}
