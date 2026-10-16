@@ -1,0 +1,33 @@
+{
+  "nombre": "Gustave Eiffel",
+  "nacionalidad": "French",
+  "disciplina": "arquitectura",
+  "siglo": "siglo XIX",
+  "corriente": "Iron Architecture",
+  "periodo": "1855-1923 (active career from graduation through 1923; major engineering projects 1858-1889)",
+  "biografia": "Gustave Eiffel was a French civil engineer who transformed the world with iron—literally. Born in Dijon in 1832, he graduated from prestigious engineering school in 1855 and quickly made his mark by designing and building some of the 19th century's most daring bridges, including the Garabit Viaduct, which became the tallest bridge on earth when it was completed in 1884. But his name became immortal in 1889 when his revolutionary iron lattice tower rose above the Paris Universal Exposition, proving that soaring height and delicate beauty could be achieved through innovative engineering. Beyond the iconic tower, Eiffel's genius shaped an entire era—from railways crisscrossing France to the hidden iron skeleton inside New York's Statue of Liberty—ushering in a new age of light, airy structures that seemed to defy gravity. Even after stepping back from engineering, this visionary continued pushing boundaries through research in meteorology and aerodynamics, leaving an indelible mark on modern architecture.",
+  "imagenes": [
+    {
+      "titulo_obra": "Gustave Eiffel Garabit.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/3/39/Gustave_Eiffel_Garabit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Gustave_Eiffel_Garabit.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Giacomo Coppi — CC0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Tour Eiffel Wikimedia Commons.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Benh LIEU SONG — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Buste Gustave Eiffel - 20150801 14h57 (10618).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Buste_Gustave_Eiffel_-_20150801_14h57_%2810618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Buste_Gustave_Eiffel_-_20150801_14h57_(10618).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image.\n\n\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract. — CC BY-SA 4.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-16T02:55:11.925493"
+}

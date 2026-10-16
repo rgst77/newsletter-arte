@@ -205,5 +205,14 @@
     "siglo": "siglo XVIII",
     "archivo_html": "salida/18th-century/painting/anna_dorothea_therbusch.html",
     "fecha_envio": "2026-10-12T04:03:56.822482"
+  },
+  {
+    "nombre": "Gustave Eiffel",
+    "disciplina": "arquitectura",
+    "corriente": "Iron Architecture",
+    "periodo": "1855-1923 (active career from graduation through 1923; major engineering projects 1858-1889)",
+    "siglo": "siglo XIX",
+    "archivo_html": "salida/19th-century/architecture/gustave_eiffel.html",
+    "fecha_envio": "2026-10-16T02:55:16.328945"
   }
 ]
