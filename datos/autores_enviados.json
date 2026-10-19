@@ -214,5 +214,14 @@
     "siglo": "siglo XIX",
     "archivo_html": "salida/19th-century/architecture/gustave_eiffel.html",
     "fecha_envio": "2026-10-16T02:55:16.328945"
+  },
+  {
+    "nombre": "Yūzō Saeki",
+    "disciplina": "pintura",
+    "corriente": "Fauvist Expressionism (yōga)",
+    "periodo": "1898-1928 (active 1918-1928)",
+    "siglo": "siglo XX",
+    "archivo_html": "salida/20th-century/painting/yūzō_saeki.html",
+    "fecha_envio": "2026-10-19T03:01:09.478872"
   }
 ]
