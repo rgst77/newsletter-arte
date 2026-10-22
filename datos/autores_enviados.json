@@ -223,5 +223,14 @@
     "siglo": "siglo XX",
     "archivo_html": "salida/20th-century/painting/yūzō_saeki.html",
     "fecha_envio": "2026-10-19T03:01:09.478872"
+  },
+  {
+    "nombre": "Louise Glück",
+    "disciplina": "poesía",
+    "corriente": "Contemporary American poetry",
+    "periodo": "1968–2023",
+    "siglo": "siglo XXI",
+    "archivo_html": "salida/21st-century/poetry/louise_glück.html",
+    "fecha_envio": "2026-10-22T03:04:01.796837"
   }
 ]

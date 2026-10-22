@@ -1,0 +1,33 @@
+{
+  "nombre": "Louise Glück",
+  "nacionalidad": "American",
+  "disciplina": "poesía",
+  "siglo": "siglo XXI",
+  "corriente": "Contemporary American poetry",
+  "periodo": "1968–2023",
+  "biografia": "Louise Glück was a New York-born poet whose clear, piercing voice made her one of America's most celebrated contemporary writers. Drawing on classical mythology, nature, and her own life, she crafted intensely personal yet universal poems about trauma, longing, and the complexities of human connection—all written with stunning technical precision and everyday language that feels both intimate and inevitable. Her remarkable career included teaching at Yale and Stanford, serving as U.S. Poet Laureate, and winning the Nobel Prize in Literature in 2020, when the Swedish Academy recognized her ability to transform individual experience into something that speaks to us all. Until her passing in 2023, Glück reminded us that poetry doesn't need ornament to move the heart—it needs honesty, clarity, and the courage to look unflinchingly at life.",
+  "imagenes": [
+    {
+      "titulo_obra": "Wild iris (2564383422).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Wild_iris_%282564383422%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Wild_iris_(2564383422).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Malcolm Manners from Lakeland FL, USA — CC BY 2.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Meadowlands Lyndhurst.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/6/64/Meadowlands_Lyndhurst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Meadowlands_Lyndhurst.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Photograph by Eric Koppel. User:EKoppel — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Louise Glück circa 1977.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Louise_Gl%C3%BCck_circa_1977.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Louise_Glück_circa_1977.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Gerard Malanga — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-22T03:03:57.381318"
+}
