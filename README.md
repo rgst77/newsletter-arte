@@ -15,6 +15,24 @@
 
 Every few days, **curiosARTy** researches one real sculptor, architect, painter, or poet, fact-checks its own work, and illustrates it with public-domain and freely-licensed images. No stock content, no filler — one artist, done properly, then archived publicly forever.
 
+<p align="center">
+  <img src="marca/issue-example.png" alt="A real curiosARTy issue: Eugène Delacroix, illustrated with his Basket of Flowers from The Met's public-domain collection" width="420" />
+</p>
+
+<p align="center"><sub>A real issue, as subscribers receive it. <a href="https://rgst77.github.io/newsletter-arte/salida/19th-century/painting/eug%C3%A8ne_delacroix.html">See it in full</a>.</sub></p>
+
+## A marketing-automation project in disguise
+
+The subject is art, but the machinery is the same as a lifecycle email program:
+
+| Marketing-automation concept | How curiosARTy does it |
+|---|---|
+| Lead capture | A sign-up form on the landing page writes straight to Supabase |
+| Journey / drip | Every subscriber starts at issue #1 and moves forward on their own 3-day clock |
+| Content production | The agent pipeline researches, illustrates and fact-checks each issue |
+| Deliverability & privacy | One send per recipient, so no one sees other addresses, and a personal unsubscribe link |
+| Automation | A daily scheduled job decides what to generate and who gets what, then logs every send to the repo |
+
 ## How it's built
 
 A pipeline of four agents, each with a single job, handing off structured, validated data instead of sharing one messy conversation:
