@@ -232,5 +232,14 @@
     "siglo": "siglo XXI",
     "archivo_html": "salida/21st-century/poetry/louise_glück.html",
     "fecha_envio": "2026-10-22T03:04:01.796837"
+  },
+  {
+    "nombre": "Sassetta",
+    "disciplina": "pintura",
+    "corriente": "Sienese School",
+    "periodo": "c. 1392-1450 (active by 1427)",
+    "siglo": "siglo XV",
+    "archivo_html": "salida/15th-century/painting/sassetta.html",
+    "fecha_envio": "2026-10-26T02:56:49.860364"
   }
 ]

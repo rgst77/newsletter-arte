@@ -1,0 +1,33 @@
+{
+  "nombre": "Sassetta",
+  "nacionalidad": "Italian",
+  "disciplina": "pintura",
+  "siglo": "siglo XV",
+  "corriente": "Sienese School",
+  "periodo": "c. 1392-1450 (active by 1427)",
+  "biografia": "Sassetta (c. 1392–1450) was Siena's most celebrated Renaissance painter, born Stefano di Giovanni di Consolo into a city steeped in its own artistic traditions. Rather than simply repeating the Gothic past, he brilliantly merged Siena's delicate, decorative style with the fresh naturalism flowing in from Florence—learning from masters like Masaccio and Gentile da Fabriano to bring figures to life through light and believable space. His masterpiece, a double-sided altarpiece for San Francesco in Borgo San Sepolcro (1437–1444), showcased his gift for storytelling across eight luminous panels of Saint Francis's life. Sassetta's refined technique and innovative spirit made him the bridge that carried Siena from the Middle Ages into the Renaissance, though his life ended tragically in 1450 when pneumonia claimed him while he was painting an Assumption fresco on the city walls.",
+  "imagenes": [
+    {
+      "titulo_obra": "1. Saint Francis and the Poor Knight, and Francis's Vision. 1437-44 London NG.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7f/1._Saint_Francis_and_the_Poor_Knight%2C_and_Francis%27s_Vision._1437-44_London_NG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:1._Saint_Francis_and_the_Poor_Knight,_and_Francis's_Vision._1437-44_London_NG.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Sassetta — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Sassetta, Pope innocent III Accords Recognition to the Franciscan Order.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Sassetta%2C_Pope_innocent_III_Accords_Recognition_to_the_Franciscan_Order.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Sassetta,_Pope_innocent_III_Accords_Recognition_to_the_Franciscan_Order.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Sassetta — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Sassetta, stimmate di san francesco.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sassetta%2C_stimmate_di_san_francesco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Sassetta,_stimmate_di_san_francesco.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Sassetta — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-26T02:56:45.370930"
+}
