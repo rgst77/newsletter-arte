@@ -1,0 +1,33 @@
+{
+  "nombre": "Pedro Berruguete",
+  "nacionalidad": "Spanish",
+  "disciplina": "pintura",
+  "siglo": "siglo XVI",
+  "corriente": "Hispano-Flemish Renaissance",
+  "periodo": "c. 1450 - 1504",
+  "biografia": "Pedro Berruguete (c. 1450–1504) was a Spanish painter who helped bring the Renaissance to Spain, blending the detailed techniques of Flemish masters with the harmonious compositions he learned in Italy. Born in Castile, he spent a formative period at the court of an Italian duke in Urbino, where he soaked up the revolutionary ideas reshaping European art. When he returned to Spain in the 1480s, he became renowned for his powerful religious paintings and his stunning depictions of the Spanish Inquisition, creating altarpieces that inspired generations. Beyond his own remarkable career, Berruguete's legacy lived on through his son Alonso, who became one of Spain's greatest sculptors—proof that artistic genius ran in the family.",
+  "imagenes": [
+    {
+      "titulo_obra": "Pedro Berruguete Saint Dominic Presiding over an Auto-da-fe 1495.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/4/45/Pedro_Berruguete_Saint_Dominic_Presiding_over_an_Auto-da-fe_1495.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pedro_Berruguete_Saint_Dominic_Presiding_over_an_Auto-da-fe_1495.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Pedro Berruguete — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Los Pretendientes de la Virgen.JPG",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/50/Los_Pretendientes_de_la_Virgen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Los_Pretendientes_de_la_Virgen.JPG",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Pedro Berruguete — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Pedro Berruguete - The Tomb of Saint Peter Martyr - WGA2091.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pedro_Berruguete_-_The_Tomb_of_Saint_Peter_Martyr_-_WGA2091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Pedro_Berruguete_-_The_Tomb_of_Saint_Peter_Martyr_-_WGA2091.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Pedro Berruguete — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-10-29T04:06:58.821108"
+}

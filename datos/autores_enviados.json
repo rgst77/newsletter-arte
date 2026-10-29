@@ -241,5 +241,14 @@
     "siglo": "siglo XV",
     "archivo_html": "salida/15th-century/painting/sassetta.html",
     "fecha_envio": "2026-10-26T02:56:49.860364"
+  },
+  {
+    "nombre": "Pedro Berruguete",
+    "disciplina": "pintura",
+    "corriente": "Hispano-Flemish Renaissance",
+    "periodo": "c. 1450 - 1504",
+    "siglo": "siglo XVI",
+    "archivo_html": "salida/16th-century/painting/pedro_berruguete.html",
+    "fecha_envio": "2026-10-29T04:07:04.554090"
   }
 ]
