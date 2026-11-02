@@ -1,0 +1,33 @@
+{
+  "nombre": "Gerard ter Borch",
+  "nacionalidad": "Dutch",
+  "disciplina": "pintura",
+  "siglo": "siglo XVII",
+  "corriente": "Dutch Golden Age",
+  "periodo": "1617-1681",
+  "biografia": "Gerard ter Borch (1617–1681) was a Dutch master who transformed how artists saw everyday life, turning intimate domestic moments into windows onto the private world of wealthy families. Born in Zwolle and trained by his father and leading Amsterdam painters, he traveled across Europe—even earning a knighthood from Philip IV of Spain—before settling in his native Netherlands. What made ter Borch truly revolutionary was his ability to capture the quiet psychology of reading, writing, and conversation with such tenderness and meticulous detail that viewers felt like they were witnessing something real and deeply human. He became particularly famous for painting luxurious textures—especially the shimmer and folds of silk fabrics—with an almost magical precision. Though only about eighty paintings survive, his influence rippled through the Dutch Golden Age, shaping how Vermeer and other giants of the period approached their craft.",
+  "imagenes": [
+    {
+      "titulo_obra": "Gerard ter Borch - Woman Writing a Letter - 797 - Mauritshuis.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/0/06/Gerard_ter_Borch_-_Woman_Writing_a_Letter_-_797_-_Mauritshuis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_-_Woman_Writing_a_Letter_-_797_-_Mauritshuis.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Gerard ter Borch — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Gerard Terborch - A Lady Reading a Letter.JPG",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gerard_Terborch_-_A_Lady_Reading_a_Letter.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Gerard_Terborch_-_A_Lady_Reading_a_Letter.JPG",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Gerard ter Borch — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Gerard ter Borch - Interieur met drie figuren die met elkaar in gesprek zijn; bekend als 'De vaderlijke vermaning' - Google Art Project.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gerard_ter_Borch_-_Interieur_met_drie_figuren_die_met_elkaar_in_gesprek_zijn%3B_bekend_als_%27De_vaderlijke_vermaning%27_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_-_Interieur_met_drie_figuren_die_met_elkaar_in_gesprek_zijn;_bekend_als_'De_vaderlijke_vermaning'_-_Google_Art_Project.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Gerard ter Borch — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-11-02T04:05:07.949697"
+}

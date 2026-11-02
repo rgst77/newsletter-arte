@@ -250,5 +250,14 @@
     "siglo": "siglo XVI",
     "archivo_html": "salida/16th-century/painting/pedro_berruguete.html",
     "fecha_envio": "2026-10-29T04:07:04.554090"
+  },
+  {
+    "nombre": "Gerard ter Borch",
+    "disciplina": "pintura",
+    "corriente": "Dutch Golden Age",
+    "periodo": "1617-1681",
+    "siglo": "siglo XVII",
+    "archivo_html": "salida/17th-century/painting/gerard_ter_borch.html",
+    "fecha_envio": "2026-11-02T04:05:13.075143"
   }
 ]
