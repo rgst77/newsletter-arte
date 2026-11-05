@@ -259,5 +259,14 @@
     "siglo": "siglo XVII",
     "archivo_html": "salida/17th-century/painting/gerard_ter_borch.html",
     "fecha_envio": "2026-11-02T04:05:13.075143"
+  },
+  {
+    "nombre": "Anton Raphael Mengs",
+    "disciplina": "pintura",
+    "corriente": "Early Neoclassicism",
+    "periodo": "1728-1779",
+    "siglo": "siglo XVIII",
+    "archivo_html": "salida/18th-century/painting/anton_raphael_mengs.html",
+    "fecha_envio": "2026-11-05T04:53:05.590198"
   }
 ]

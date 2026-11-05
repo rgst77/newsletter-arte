@@ -1,0 +1,33 @@
+{
+  "nombre": "Anton Raphael Mengs",
+  "nacionalidad": "German",
+  "disciplina": "pintura",
+  "siglo": "siglo XVIII",
+  "corriente": "Early Neoclassicism",
+  "periodo": "1728-1779",
+  "biografia": "Born in Bohemia in 1728 to a painter father, Anton Raphael Mengs was a child prodigy who trained in Rome and rose to become one of Europe's most celebrated artists of his age—so influential that he earned the nickname \"German Raphael.\" His close friendship with the influential archaeologist Johann Joachim Winckelmann profoundly shaped his artistic vision, and his spectacular ceiling fresco at Sant' Eusebio in Rome became a masterpiece that bridged the gap between Baroque splendor and Neoclassical restraint. As a passionate advocate for classical ideals of beauty, form, and symmetry, Mengs didn't just create stunning paintings—he shaped the future of art itself through his theoretical writings and his tireless support for formal arts education and academies across Europe. Though his ten years as court painter in Madrid left him restless, his legacy endured through countless pupils who carried his refined vision into prominent positions across the continent.",
+  "imagenes": [
+    {
+      "titulo_obra": "Sant'Eusebio, Anton Raphael Mengs.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sant%27Eusebio%2C_Anton_Raphael_Mengs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Sant'Eusebio,_Anton_Raphael_Mengs.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anton Raphael Mengs — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Anton Raphael Mengs - Parnassus (FondazioneTorlonia).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/7/73/Anton_Raphael_Mengs_-_Parnassus_%28FondazioneTorlonia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Anton_Raphael_Mengs_-_Parnassus_(FondazioneTorlonia).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anton Raphael Mengs — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Anton Raphael Mengs - The Dream of St. Joseph - Google Art Project.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Anton_Raphael_Mengs_-_The_Dream_of_St._Joseph_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Anton_Raphael_Mengs_-_The_Dream_of_St._Joseph_-_Google_Art_Project.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Anton Raphael Mengs — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-11-05T04:53:01.844871"
+}
