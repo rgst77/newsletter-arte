@@ -268,5 +268,14 @@
     "siglo": "siglo XVIII",
     "archivo_html": "salida/18th-century/painting/anton_raphael_mengs.html",
     "fecha_envio": "2026-11-05T04:53:05.590198"
+  },
+  {
+    "nombre": "Osman Hamdi Bey",
+    "disciplina": "pintura",
+    "corriente": "Orientalism",
+    "periodo": "1842-1910",
+    "siglo": "siglo XIX",
+    "archivo_html": "salida/19th-century/painting/osman_hamdi_bey.html",
+    "fecha_envio": "2026-11-09T04:22:31.424355"
   }
 ]

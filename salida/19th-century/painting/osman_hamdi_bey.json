@@ -1,0 +1,33 @@
+{
+  "nombre": "Osman Hamdi Bey",
+  "nacionalidad": "Ottoman",
+  "disciplina": "pintura",
+  "siglo": "siglo XIX",
+  "corriente": "Orientalism",
+  "periodo": "1842-1910",
+  "biografia": "Born in Constantinople in 1842 to a prominent Ottoman family, Osman Hamdi Bey was meant for law but discovered his true passion for painting while studying in Paris, where he trained under celebrated French Orientalist masters. He returned to Istanbul as a rare kind of artist—an Orientalist painter who actually came from the Orient—and pursued a fascinating double life as both a celebrated painter and Ottoman administrator, eventually founding Turkey's first archaeology museum and academy of fine arts. What made Hamdi Bey's work revolutionary was his refusal to exoticize or sensationalize the people he painted; instead of the sultry fantasies of Western Orientalists, he depicted Ottoman women in quiet dignity—reading, making music, going about their daily lives—rendered with meticulous attention to authentic clothing, architecture, and cultural detail. His paintings bridged two worlds perfectly: they satisfied Western appetite for Oriental imagery while preserving the dignity and authenticity of the culture he portrayed. In essence, Hamdi Bey was both insider and outsider, and that unique position made him one of the most important artistic voices of the Orientalist movement.",
+  "imagenes": [
+    {
+      "titulo_obra": "Osman Hamdi Bey - The Tortoise Trainer - Google Art Project.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Osman_Hamdi_Bey_-_The_Tortoise_Trainer_-_Google_Art_Project.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Osman Hamdi Bey — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Osman Hamdi Bey 002.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Osman_Hamdi_Bey_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Osman_Hamdi_Bey_002.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Osman Hamdi Bey — Public domain (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Osman Hamdi Bey - Two Musician Girls - Google Art Project.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/Osman_Hamdi_Bey_-_Two_Musician_Girls_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Osman_Hamdi_Bey_-_Two_Musician_Girls_-_Google_Art_Project.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Osman Hamdi Bey — Public domain (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-11-09T04:22:26.331085"
+}
