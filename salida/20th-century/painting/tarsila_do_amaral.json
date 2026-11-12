@@ -1,0 +1,26 @@
+{
+  "nombre": "Tarsila do Amaral",
+  "nacionalidad": "Brazilian",
+  "disciplina": "pintura",
+  "siglo": "siglo XX",
+  "corriente": "Brazilian Modernism and Anthropophagic Movement",
+  "periodo": "1920-1973 (active modernist painter 1920s-1930s)",
+  "biografia": "Tarsila do Amaral (1886–1973) was a Brazilian painter who became one of Latin America's most influential modernist artists, born into a wealthy coffee plantation family that gave her the freedom to pursue her artistic dreams. After studying Cubism in Paris and absorbing European avant-garde techniques, she did something revolutionary: she brought it all home and transformed it into something uniquely Brazilian. Co-founding the Anthropophagic movement alongside poet Oswald de Andrade, Tarsila pioneered a bold new idea—that Brazilian artists should \"cannibalize\" European influences, digesting and reinventing them into a distinctly Brazilian visual language. Her work across multiple periods, from the Pau-Brasil phase to social realism, gave modern Brazil its own visual identity and proved that modernism didn't have to copy Europe; it could become something entirely new. She remains a towering figure in Brazilian art, showing how cultural pride and artistic innovation can dance together beautifully.",
+  "imagenes": [
+    {
+      "titulo_obra": "Tarsila do Amaral - Retrato de Joaquim do Amaral Camargo, Acervo do Museu Paulista da USP.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Tarsila_do_Amaral_-_Retrato_de_Joaquim_do_Amaral_Camargo%2C_Acervo_do_Museu_Paulista_da_USP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Tarsila_do_Amaral_-_Retrato_de_Joaquim_do_Amaral_Camargo,_Acervo_do_Museu_Paulista_da_USP.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Tarsila do Amaral — CC BY-SA 4.0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Tarsila do Amaral - Retrato de Marechal Arouche, Acervo do Museu Paulista da USP.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/4/43/Tarsila_do_Amaral_-_Retrato_de_Marechal_Arouche%2C_Acervo_do_Museu_Paulista_da_USP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Tarsila_do_Amaral_-_Retrato_de_Marechal_Arouche,_Acervo_do_Museu_Paulista_da_USP.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Tarsila do Amaral — CC BY-SA 4.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-11-12T05:32:42.624882"
+}

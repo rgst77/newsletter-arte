@@ -277,5 +277,14 @@
     "siglo": "siglo XIX",
     "archivo_html": "salida/19th-century/painting/osman_hamdi_bey.html",
     "fecha_envio": "2026-11-09T04:22:31.424355"
+  },
+  {
+    "nombre": "Tarsila do Amaral",
+    "disciplina": "pintura",
+    "corriente": "Brazilian Modernism and Anthropophagic Movement",
+    "periodo": "1920-1973 (active modernist painter 1920s-1930s)",
+    "siglo": "siglo XX",
+    "archivo_html": "salida/20th-century/painting/tarsila_do_amaral.html",
+    "fecha_envio": "2026-11-12T05:32:46.256160"
   }
 ]
