@@ -1,3 +1,5 @@
+import logging
+
 from contratos.esquemas import ImagenObra
 from herramientas.imagenes_publicas import buscar_en_met, buscar_en_smithsonian, buscar_en_wikimedia
 
@@ -8,13 +10,18 @@ from herramientas.imagenes_publicas import buscar_en_met, buscar_en_smithsonian,
 # aplicar el filtro ahí descartaría fotos correctas por error.
 DISCIPLINAS_CON_AUTOR_VERIFICABLE = {"pintura", "escultura"}
 
+logger = logging.getLogger(__name__)
+
 
 def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool, autor_real: str) -> list[ImagenObra]:
     try:
         imagenes = buscar_en_met(consulta, cantidad, autor_real=autor_real)
-    except Exception:
+    except Exception as error:
         # La API del Met tiene un límite de peticiones no documentado y puede
         # devolver 403 de forma intermitente: nunca debe tumbar el pipeline.
+        # Pero se deja constancia en el log: el 2026-10-01 retiraron el endpoint
+        # de búsqueda (410) y estuvo 6 semanas caído sin que nadie lo notara.
+        logger.warning(f"Met no disponible ({error}); se continúa sin esa fuente")
         imagenes = []
 
     if len(imagenes) < cantidad:
@@ -31,8 +38,8 @@ def _buscar_generico(consulta: str, cantidad: int, verificar_autor: bool, autor_
             imagenes += buscar_en_smithsonian(
                 consulta, cantidad - len(imagenes), verificar_autor, autor_real=autor_real
             )
-        except Exception:
-            pass
+        except Exception as error:
+            logger.warning(f"Smithsonian no disponible ({error}); se continúa sin esa fuente")
 
     return imagenes
 

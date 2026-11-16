@@ -7,17 +7,49 @@ from bs4 import BeautifulSoup
 from contratos.esquemas import ImagenObra
 
 MET_BASE = "https://collectionapi.metmuseum.org/public/collection/v1"
+# El Met retiró /v1/search el 2026-10-01 (410 Gone): la búsqueda va ahora por
+# /v1.1/search (paginada con limit/offset); /v1/objects/{id} sigue igual.
+MET_BUSQUEDA = "https://collectionapi.metmuseum.org/public/collection/v1.1/search"
 WIKIMEDIA_API = "https://commons.wikimedia.org/w/api.php"
 SMITHSONIAN_API = "https://api.si.edu/openaccess/api/v1.0/search"
-CABECERAS = {"User-Agent": "newsletter-arte-proyecto-aprendizaje/1.0 (uso educativo, sin fines comerciales)"}
+# Wikimedia pide un User-Agent con una URL de contacto y da más margen de
+# peticiones a quien la incluye; desde las IPs compartidas de GitHub Actions
+# un agente anónimo recibe 429 con facilidad (fallo real del 16 nov 2026).
+CABECERAS = {
+    "User-Agent": "newsletter-arte-proyecto-aprendizaje/1.0 (https://github.com/rgst77/newsletter-arte; uso educativo, sin fines comerciales)"
+}
+
+
+def _get_con_reintentos(url: str, params: dict, intentos: int = 4) -> requests.Response:
+    # Los fallos transitorios (429 por exceso de peticiones, 5xx del servidor,
+    # timeouts y cortes de conexión) se reintentan con espera en vez de tumbar
+    # toda la ejecución diaria. Un 429 manda su propia espera (Retry-After).
+    for intento in range(intentos):
+        ultimo = intento == intentos - 1
+        try:
+            respuesta = requests.get(url, params=params, headers=CABECERAS, timeout=10)
+        except (requests.Timeout, requests.ConnectionError):
+            if ultimo:
+                raise
+            time.sleep(3 * 2**intento)
+            continue
+        transitorio = respuesta.status_code == 429 or respuesta.status_code >= 500
+        if not transitorio or ultimo:
+            return respuesta
+        try:
+            espera = min(float(respuesta.headers.get("Retry-After", "")), 30)
+        except ValueError:
+            espera = 3 * 2**intento
+        time.sleep(espera)
+    return respuesta
 
 
 def buscar_en_met(consulta: str, max_resultados: int = 3, autor_real: str | None = None) -> list[ImagenObra]:
     # Nota: "artistOrCulture=true" del Met devuelve 0 resultados con nombres de
     # varias palabras (bug confirmado de su API) — se filtra por autor a mano abajo.
     busqueda = requests.get(
-        f"{MET_BASE}/search",
-        params={"q": consulta, "hasImages": "true"},
+        MET_BUSQUEDA,
+        params={"q": consulta, "hasImages": "true", "limit": 25},
         headers=CABECERAS,
         timeout=10,
     )
@@ -71,9 +103,9 @@ def buscar_en_wikimedia(
     requerir_dominio_publico: bool = False,
     autor_real: str | None = None,
 ) -> list[ImagenObra]:
-    respuesta = requests.get(
+    respuesta = _get_con_reintentos(
         WIKIMEDIA_API,
-        params={
+        {
             "action": "query",
             "generator": "search",
             "gsrsearch": consulta,
@@ -85,8 +117,6 @@ def buscar_en_wikimedia(
             "iiprop": "url|extmetadata",
             "format": "json",
         },
-        headers=CABECERAS,
-        timeout=10,
     )
     respuesta.raise_for_status()
     paginas = respuesta.json().get("query", {}).get("pages", {})

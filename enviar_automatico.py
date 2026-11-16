@@ -146,10 +146,24 @@ def main() -> None:
     if forzado:
         logger.info("Modo forzado: se ignora la cadencia de 3 días tanto para generar como para enviar.")
 
-    generar_issue_del_dia(forzado)
+    # Generar contenido nuevo y enviar el ya existente son dos trabajos
+    # independientes: si la generación falla (ej. una API externa limitando
+    # peticiones), los suscriptores a quienes les toca un issue que ya existe
+    # deben recibirlo igualmente. Se envía siempre y, al final, se vuelve a
+    # fallar para que el run siga apareciendo en rojo en GitHub Actions.
+    fallo_generacion: Exception | None = None
+    try:
+        generar_issue_del_dia(forzado)
+    except Exception as error:
+        logger.exception("Falló la generación del issue de hoy — se envía igualmente lo ya existente.")
+        fallo_generacion = error
+
     generar_archivo()
     generar_landing()
     enviar_pendientes(forzado)
+
+    if fallo_generacion is not None:
+        raise fallo_generacion
 
 
 if __name__ == "__main__":
