@@ -1,10 +1,18 @@
 import json
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from contratos.esquemas import AutorCatalogo, RegistroEnvio
 
 RUTA_CATALOGO = Path(__file__).resolve().parent.parent / "datos" / "catalogo_autores.json"
 RUTA_ENVIADOS = Path(__file__).resolve().parent.parent / "datos" / "autores_enviados.json"
+RUTA_OMITIDOS = Path(__file__).resolve().parent.parent / "datos" / "autores_sin_imagen.json"
+
+# Un autor sin imágenes libres (típicamente un artista vivo o reciente, con la
+# obra aún protegida) se aparca este tiempo en vez de volver a investigarlo en
+# cada vuelta de la rotación. Pasado el plazo se reintenta, por si Commons ha
+# incorporado algo entretanto.
+DIAS_APARCADO = 90
 
 # Progresión cronológica para el envío automático: cada vez se avanza al
 # siguiente siglo de la lista (con vuelta al principio), en vez de aleatorio,
@@ -27,10 +35,33 @@ def cargar_enviados() -> list[RegistroEnvio]:
         return [RegistroEnvio(**item) for item in json.load(f)]
 
 
+def registros_aparcados() -> dict[str, dict]:
+    # El archivo es un historial (solo se añade, nunca se borra): de cada autor
+    # vale el último registro. Un autor "liberado" vuelve a la rotación pero
+    # sigue constando por qué y desde cuándo estuvo aparcado.
+    if not RUTA_OMITIDOS.exists():
+        return {}
+    ultimo: dict[str, dict] = {}
+    for item in json.loads(RUTA_OMITIDOS.read_text(encoding="utf-8")):
+        previo = ultimo.get(item["nombre"])
+        if previo is None or datetime.fromisoformat(item["fecha"]) > datetime.fromisoformat(previo["fecha"]):
+            ultimo[item["nombre"]] = item
+    return ultimo
+
+
+def nombres_aparcados_vigentes() -> set[str]:
+    limite = datetime.now() - timedelta(days=DIAS_APARCADO)
+    return {
+        nombre
+        for nombre, registro in registros_aparcados().items()
+        if registro.get("estado", "aparcado") == "aparcado" and datetime.fromisoformat(registro["fecha"]) >= limite
+    }
+
+
 def elegir_autor_pendiente(
     siglo: str, disciplina: str = "cualquiera", excluir: set[str] | None = None
 ) -> AutorCatalogo | None:
-    nombres_enviados = {r.nombre for r in cargar_enviados()} | (excluir or set())
+    nombres_enviados = {r.nombre for r in cargar_enviados()} | (excluir or set()) | nombres_aparcados_vigentes()
     candidatos = [
         autor
         for autor in cargar_catalogo()

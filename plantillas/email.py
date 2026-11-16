@@ -139,6 +139,30 @@ def _header() -> str:
     </tr>"""
 
 
+IMAGENES_POR_ISSUE = 3
+_NUMERO_EN_PALABRAS = {1: "one", 2: "two"}
+
+
+def _nota_pocas_imagenes(nombre: str, cantidad: int) -> str:
+    # Cada issue aspira a tres imágenes. Si solo hay una o dos, se dice con
+    # naturalidad y con el mismo tono bajo del pie, en vez de dejar al lector
+    # pensando que algo ha fallado. Solo se publica lo que se puede mostrar
+    # legalmente, y eso es justo lo que explica la nota.
+    if not 0 < cantidad < IMAGENES_POR_ISSUE:
+        return ""
+    cuantas = _NUMERO_EN_PALABRAS[cantidad]
+    plural = "" if cantidad == 1 else "s"
+    return f"""
+    <tr>
+      <td style="padding:0 0 8px 0;">
+        <p style="margin:0; font-family:{FUENTE_PEQUENA}; font-size:12px; line-height:1.6; color:{GRIS_TENUE};">
+          We usually share three images per issue. Only {cuantas} public-domain or freely-licensed
+          image{plural} of {html.escape(nombre)} could be found, and we only publish what we can legally show.
+        </p>
+      </td>
+    </tr>"""
+
+
 def _footer() -> str:
     return f"""
     <tr>
@@ -180,7 +204,7 @@ def renderizar_html(flashcard: FlashcardNewsletter) -> str:
     bloques_imagenes = "".join(
         _bloque_imagen(img.url_imagen, img.titulo_obra, img.creditos, img.url_fuente)
         for img in flashcard.imagenes
-    )
+    ) + _nota_pocas_imagenes(flashcard.nombre, len(flashcard.imagenes))
 
     return f"""<!DOCTYPE html>
 <html lang="en">

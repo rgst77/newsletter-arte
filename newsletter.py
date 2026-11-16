@@ -9,17 +9,21 @@ from agentes.redactor import redactar
 from agentes.verificador import verificar
 from contratos.esquemas import RegistroEnvio, SolicitudNewsletter
 from costes.registro import resumen_gasto
-from herramientas.catalogo import elegir_autor_pendiente, registrar_envio
+from herramientas.catalogo import RUTA_OMITIDOS, elegir_autor_pendiente, registrar_envio
 from modelos.anthropic_adapter import AnthropicAdapter
 from plantillas.email import DISCIPLINAS_EN, _siglo_a_ordinal, renderizar_html
 
 logger = logging.getLogger(__name__)
 
 RUTA_SALIDA = Path(__file__).resolve().parent / "salida"
-RUTA_OMITIDOS = Path(__file__).resolve().parent / "datos" / "autores_sin_imagen.json"
 
 
-def _registrar_omitido(nombre: str, disciplina: str, siglo: str) -> None:
+def _registrar_omitido(
+    nombre: str,
+    disciplina: str,
+    siglo: str,
+    motivo: str = "sin imágenes libres encontradas (ni de la obra ni de la persona)",
+) -> None:
     # No se marca como "enviado" (para no perderlo del catálogo para siempre),
     # pero sin dejar constancia en algún sitio se perdería igual: quedaría
     # pendiente en el catálogo pero nadie sabría por qué el pipeline lo salta
@@ -31,7 +35,8 @@ def _registrar_omitido(nombre: str, disciplina: str, siglo: str) -> None:
             "nombre": nombre,
             "disciplina": disciplina,
             "siglo": siglo,
-            "motivo": "sin imágenes libres encontradas (ni de la obra ni de la persona)",
+            "estado": "aparcado",
+            "motivo": motivo,
             "fecha": datetime.now().isoformat(),
         }
     )
@@ -54,6 +59,28 @@ def generar_newsletter(solicitud: SolicitudNewsletter):
 
     while True:
         logger.info(f"Autor elegido: {autor.nombre}")
+
+        # Comprobación previa, antes de gastar una investigación completa con
+        # la IA (~1 min cada una): si ni siquiera buscando solo por nombre hay
+        # imágenes libres, no las habrá con los títulos concretos tampoco (la
+        # búsqueda por título incluye esta misma). Es lo habitual con artistas
+        # vivos, cuya obra sigue protegida — y sin esto, una vuelta al siglo XXI
+        # investigaba y descartaba uno tras otro.
+        if not elegir_imagenes(autor.nombre, autor.disciplina, [], cantidad=3):
+            logger.warning(f"Sin imágenes libres para {autor.nombre} (comprobación previa) — se aparca y se prueba el siguiente")
+            _registrar_omitido(
+                autor.nombre, autor.disciplina, autor.siglo,
+                motivo="sin imágenes libres (comprobación previa, antes de investigar)",
+            )
+            intentados.add(autor.nombre)
+            autor = elegir_autor_pendiente(solicitud.siglo, solicitud.disciplina, excluir=intentados)
+            if autor is None:
+                raise RuntimeError(
+                    f"Ningún autor pendiente en {solicitud.siglo} / {solicitud.disciplina} "
+                    f"tiene imágenes libres disponibles — revisa datos/autores_sin_imagen.json"
+                )
+            continue
+
         notas = investigar(autor, modelo_investigador)
         logger.info(f"Investigación completa: {len(notas.titulos_obras_conocidas)} obras encontradas")
 
