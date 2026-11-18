@@ -38,7 +38,10 @@ jobs:
           FORZAR_ENVIO: ${{ github.event.inputs.forzar }}
         run: python enviar_automatico.py
 
+      # Se ejecuta aunque la generación haya fallado: así no se pierde lo que
+      # sí quedó hecho (p. ej. autores aparcados) y el siguiente run parte de él.
       - name: Commit del newsletter generado
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "curiosARTy bot"
           git config user.email "actions@github.com"

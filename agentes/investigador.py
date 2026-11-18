@@ -6,7 +6,17 @@ from herramientas.buscador import buscar
 from herramientas.lector import leer_pagina
 from modelos.base import ModeloLLM
 
-MAX_ITERACIONES = 6
+# El prompt permite hasta 8 búsquedas, así que el bucle necesita más turnos que
+# eso (6 se agotaba buscando, sin llegar a entregar: fallo real del 17 nov 2026
+# con Antony Gormley, un autor con pocas fuentes y buscadores degradados).
+MAX_ITERACIONES = 10
+
+AVISO_ULTIMO_TURNO = (
+    "This is your LAST turn: no more searches are possible. Deliver your notes "
+    "NOW by calling 'entregar_notas' with what you have verified so far. Partial "
+    "notes are fine — list only works and sources you actually saw, and say in "
+    "'notas' what could not be verified."
+)
 
 SYSTEM_PROMPT = (
     "You are a research agent specialized in art history, sculpture, architecture "
@@ -91,6 +101,17 @@ HERRAMIENTA_ENTREGAR_NOTAS = DefinicionHerramienta(
 )
 
 
+def _anadir_aviso(historial: list[dict], aviso: str) -> None:
+    # El último mensaje es siempre del usuario (la petición inicial o los
+    # resultados de herramientas): el aviso se le añade para no romper la
+    # alternancia usuario/asistente que exige la API.
+    ultimo = historial[-1]
+    if isinstance(ultimo["content"], list):
+        ultimo["content"] = [*ultimo["content"], {"type": "text", "text": aviso}]
+    else:
+        ultimo["content"] = f"{ultimo['content']}\n\n{aviso}"
+
+
 def investigar(autor: AutorCatalogo, modelo: ModeloLLM) -> NotasAutor:
     historial = [
         {
@@ -103,10 +124,20 @@ def investigar(autor: AutorCatalogo, modelo: ModeloLLM) -> NotasAutor:
         }
     ]
 
-    for _ in range(MAX_ITERACIONES):
+    for turno in range(MAX_ITERACIONES):
+        # En el último turno solo se ofrece entregar: mejor unas notas parciales
+        # (que el prompt ya permite) que tumbar la ejecución entera por seguir
+        # buscando indefinidamente.
+        ultimo_turno = turno == MAX_ITERACIONES - 1
+        if ultimo_turno:
+            _anadir_aviso(historial, AVISO_ULTIMO_TURNO)
         respuesta = modelo.conversar(
             historial,
-            herramientas=[HERRAMIENTA_BUSCAR, HERRAMIENTA_LEER, HERRAMIENTA_ENTREGAR_NOTAS],
+            herramientas=(
+                [HERRAMIENTA_ENTREGAR_NOTAS]
+                if ultimo_turno
+                else [HERRAMIENTA_BUSCAR, HERRAMIENTA_LEER, HERRAMIENTA_ENTREGAR_NOTAS]
+            ),
             system=SYSTEM_PROMPT,
         )
         historial.append(respuesta.mensaje_bruto)
