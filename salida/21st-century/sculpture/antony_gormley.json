@@ -1,0 +1,33 @@
+{
+  "nombre": "Antony Gormley",
+  "nacionalidad": "British",
+  "disciplina": "escultura",
+  "siglo": "siglo XXI",
+  "corriente": "Contemporary figurative installation",
+  "periodo": "1980s–present",
+  "biografia": "Antony Gormley is a British sculptor who has spent decades exploring the human body through monumental installations and large-scale figurative works. His practice invites us to think deeply about presence and absence—how sculpture can occupy space and speak to our relationship with the physical world around us. Working primarily since the 1980s, Gormley has become a defining figure in contemporary art, creating works that often begin with his own body as a starting point. His installations have captivated audiences internationally, transforming public and gallery spaces into places of reflection and wonder. Through his art, he asks us to see the familiar form of the human body in entirely new ways.",
+  "imagenes": [
+    {
+      "titulo_obra": "Another Time XIX, NPG, London 01.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Another_Time_XIX%2C_NPG%2C_London_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Another_Time_XIX,_NPG,_London_01.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "14GTR — CC0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Another Time XIX, NPG, London 02.jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Another_Time_XIX%2C_NPG%2C_London_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Another_Time_XIX,_NPG,_London_02.jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "14GTR — CC0 (Wikimedia Commons)"
+    },
+    {
+      "titulo_obra": "Antony Gormley 6 Times statue in Powderhall, Edinburgh (portrait).jpg",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Antony_Gormley_6_Times_statue_in_Powderhall%2C_Edinburgh_%28portrait%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "url_fuente": "https://commons.wikimedia.org/wiki/File:Antony_Gormley_6_Times_statue_in_Powderhall,_Edinburgh_(portrait).jpg",
+      "fuente": "Wikimedia Commons",
+      "creditos": "Mike Shaw — CC BY-SA 4.0 (Wikimedia Commons)"
+    }
+  ],
+  "generado_en": "2026-11-18T05:43:35.788294"
+}

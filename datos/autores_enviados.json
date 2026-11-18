@@ -286,5 +286,14 @@
     "siglo": "siglo XX",
     "archivo_html": "salida/20th-century/painting/tarsila_do_amaral.html",
     "fecha_envio": "2026-11-12T05:32:46.256160"
+  },
+  {
+    "nombre": "Antony Gormley",
+    "disciplina": "escultura",
+    "corriente": "Contemporary figurative installation",
+    "periodo": "1980s–present",
+    "siglo": "siglo XXI",
+    "archivo_html": "salida/21st-century/sculpture/antony_gormley.html",
+    "fecha_envio": "2026-11-18T05:43:40.692393"
   }
 ]
